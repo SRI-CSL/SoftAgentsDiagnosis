@@ -1,0 +1,3 @@
+--- initS2mvaf1
+load ../../Models/BotTeam/load1
+red getEDevsL(addFaults(initS2t, mvaf(1)), bot0base bot1base, 150,0,150) .

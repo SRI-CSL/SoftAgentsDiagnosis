@@ -1,0 +1,188 @@
+SoftAgent Module organization: 
+  directories, files, modules, and location of key sorts and functions
+
+The directory Lib contains the framework definition
+File names end in .maude
+Module names are all caps
+Sort Naming Conventions
+  <Sort>Set  -- set with elements of sort <Sort> 
+   empty set none, empty syntax construction
+  Tuple types  {Sort,Sort} : <SortPair>  
+
+Interface operations are to be defined by each model.  
+
+*** load-sa.maude -- commands to load the framework definition
+The framework module hierarchy
+
+
+         SOLVE-SCP{Z :: VALUATION}  VALUATION   SOFT-AGENT-RULES   
+                                \        |        /  
+                                    SOFT-AGENTS  
+                                         |
+                                      SA-CONF 
+                                         |
+                                       AGENT  ___
+                                    /              \
+                                   /                \         
+                    SA-KNOWLEDGE                     EVENTS      
+                /        |         \                   |  \
+ CLOCK-KNOWLEDGE LOCATION-KNOWLEDGE SENSOR-KNOWLEDGE   |   RVAL
+                \        |         /                  / 
+                     KNOWLEDGE     ------------------  
+                     /       \
+                 ID-SET NAT-TIME-INF
+
+
+
+*** time.maude 
+  --- defines a Time interface and discrete / dense instantiations
+  TIME-INF --- general interface for time with infinity
+    sorts Time NzTime TimeInf .
+    op zero : -> Time .
+    op infty : -> TimeInf .
+  NAT-TIME-INF --- NAT as discrete time domain
+  POSRAT-TIME-INF --- positive rationals as a dense time domain
+
+*** knowledge.maude 
+
+ID-SET 
+  subsort Id < IdSet .
+
+KNOWLEDGE -- basic knowledge sorts and operations
+  subsort PKItem TKItem < KItem < KB .
+  sort Class .
+  op class : Id Class -> PKItem .
+
+  sort Info .
+  op _@_ : Info Time -> TKItem .
+  op _<<_ : KItem KItem -> Bool .  ************* Knowledge PO
+  op addK : KB KB -> KB .   --- resolving <<
+
+CLOCK-KNOWLEDGE is
+  op clock : Time -> KItem [ctor] .
+
+LOCATION-KNOWLEDGE is
+  sort Loc .
+  op noLoc : -> Loc [ctor] .
+  op atloc : Id Loc -> Info [ctor] .
+  op distance : Loc Loc -> Nat [comm] . 
+
+SENSOR-KNOWLEDGE 
+  sort Sensor .
+  op locS : -> Sensor [ctor] .
+  **** used by doTask rule
+  op readSensors : Id SensorSet KB -> KBPair .
+
+*** rval.maude
+RVAL 
+--- and interface for ranking values 
+--- the relevant parts of a c-semi-ring
+  sort RVal . 
+  op _<_ : RVal  RVal -> Bool .
+  op zero : -> RVal [ctor] . --- least Rval
+  op one : -> RVal [ctor] .  --- max Rval
+
+*** events.maude
+EVENTS
+  subsort Event < EventSet .
+**** tasks 
+  sort Task .
+  op tick : -> Task [ctor] .  --- default tasks
+**** actions (must be annotated by ids)
+   subsort Action < ActSet .
+   op noAct : -> Action [ctor] .
+   subsort RAct < RActSet .
+   op {_,_} : RVal Action -> RAct [ctor] .
+**** immediate events .
+   subsort IEvent < Event . 
+   op rcv : KB -> IEvent [ctor] .
+   op post : InfoSet -> IEvent [ctor] .
+**** delayed events
+   subsort DEvent < Event .  
+   op _@_ : Task Time -> DEvent .    --- for agent todo: task @ delay
+   op _@_ : Action Time -> DEvent .  --- for the envt: action @ delay 
+   op _@_ : RAct Time -> DEvent .    --- for the envt: {rval,act} @ delay 
+**** Agents have class specific procedures for executing scheduled tasks
+   op {_,_} : KB EventSet -> KBEvents [ctor] .
+   op {_,_,_} : KB EventSet KB -> KBEventsKB [ctor] .
+**** doTask returns new local knowledge, events, and posts
+*****                        ievs     devs  sensorkb lkb
+   op doTask : Class Id Task EventSet EventSet KB KB 
+                      -> KBEventsKBSet .
+**** interface to soft constraint solver
+**** used by doTask 
+   op solveSCP : Id KB ActSet -> RActSet .
+   op selectKeK : KB KBEventsKBSet -> KBEventsKBSet .
+**** options for selectKeK
+   op allKeK : KB KBEventsKBSet -> KBEventsKBSet .
+   op bestKeK : KB KBEventsKBSet ->  KBEventsKBSet .
+
+*** soft-agents.maude
+AGENT 
+ op [_:_|_] : Id Class AttributeSet -> Agent [ctor] .
+ op lkb`:_ : KB -> Attribute [ctor] .
+ op ckb`:_ : KB -> Attribute [ctor] .
+ op sensors`:_ : SensorSet -> Attribute [ctor] .
+ op evs`:_ : EventSet -> Attribute [ctor] .
+
+ op [_|_] : Id KB -> Env [ctor] . 
+ op inContact : Id Id KB -> Bool .  --- interface for knowledge sharing
+
+SA-CONF
+ subsorts Agent  < ConfElt < Conf . --- set of ConfElt
+ subsort Env < ConfElt .
+**** available actions (with delay 0)
+ op effActs : Conf -> EventSet .
+ op effActs : EventSet -> EventSet .
+ op envKB : Conf -> KB .   --- the kb from the Env ConfElt if any
+ op updateEnv : KB Conf -> Conf .  adds KB to envKB
+**** time elapse (also update local clocks)
+ op timeEffect : Conf Time -> Conf .
+**** min time before there is an available task, 
+ op mte : Conf -> TimeInf .
+ op mte : EventSet -> TimeInf .  
+****  performs actions evs for duration nzt from global time t
+****  i.e. for nzt unit time increments, doUnitEnvAct(t,ekb,evs)
+  op doEnvAct : Time Time KB EventSet -> KB .
+**** Interface ops
+**** compute envkb update as result of doing actions in eventset for 1 unit dur
+**** Time is the clock at current time unit
+	op doUnitEnvAct : Time KB EventSet -> KB .
+**** check if there is collision
+  op okEnv : KB -> Bool .
+**** the first KB argument the proposed update to the second KB argument
+**** the starting envkb.  Needed to deal with conflicts due to concurrent action
+    op resolveKB : Id KB KB -> KB .
+****
+**** builtin Logging mechanism
+  op {_,_,_} : Time RActSet Conf -> LogItem [ctor] .
+**** updateLog(aconf1, t,nzt,effActs(aconf))
+  op updateLog : Conf Time NzTime EventSet -> Conf .  --- uses second updatLog
+****                 cur  todo      
+  op updateLog : Log Time Time EventSet Conf -> Log . --- calls kbLog
+***** Interface ops 
+  op kbLog : Conf Conf -> Conf .
+****
+**** built in mechansim to bound length of execution
+  op bound : Nat -> ConfElt .
+  op stopped : Conf -> Conf .
+
+SOFT-AGENTS
+**** when top level is needed
+op `{_`} : Conf -> ASystem .
+op envKB : ASystem -> KB .
+
+
+*** solve-scp.maude
+
+*** sa-rules.maude    
+SOFT-AGENT-RULES 
+ op shareKnowledge : Conf -> Conf .
+ crl[doTask] 
+    uses readSensors, doTask, selectKeK
+ crl[timeStep]:
+    uses effActs, doEnvAct, resolveKB,shareKnowledge,
+         updateLog, updateConf
+
+           
+

@@ -1,0 +1,224 @@
+
+**** 0 ... 100  C for 100
+fmod CVAL is
+  pr CONVERSION .
+  inc RVAL .
+
+  sort CVal .
+  subsort CVal < RVal .
+  op cv : Nat -> CVal .   
+
+  vars n n0 n1 : Nat .
+  var nz : NzNat .    
+
+  op _<_ : CVal CVal -> Bool  .
+  op equivZero : CVal -> Bool .
+
+  eq equivZero(cv(0)) = true .
+  eq equivZero(cv(nz)) = false .  
+
+  eq cv(n0) < cv(n1) = (n0 < n1) .
+  
+endfm
+
+ **** Unit Real Interval -- should be between 0 and 1 inclusive
+ fmod UVAL is
+  pr CONVERSION .
+  inc RVAL .
+
+  vars u0 u1 u2 : UVal .
+  vars f0 f1 f2 : Float .
+
+  sort UVal .
+  subsort UVal < RVal .
+  op u : Float -> UVal . 
+  
+  op equivZero : UVal -> Bool .
+  eq equivZero(u(0.0)) = true .
+  eq equivZero(u1) = false [owise] .
+
+  eq u(f0) < u(f1) = f0 < f1 .
+
+endfm
+
+fmod CUVAL is
+  inc CVAL .
+  inc UVAL .
+  
+  sort CUVal .  subsort CUVal < RVal .
+  op {_,_} : CVal UVal -> CUVal .
+  op _<_ : CUVal CUVal -> Bool .
+  op equivZero : CUVal -> Bool .
+
+  vars c1 c2 : CVal .
+  vars u1 u2 : UVal .  
+ 
+  eq {c1,u1} < {c2,u2} = (c1 < c2) or (c1 == c2 and u1 < u2) .
+  eq equivZero({c1,u1}) = (equivZero(c1)) .
+
+  op cu2c : CUVal -> CVal .
+  op cu2u : CUVal -> UVal .
+  eq cu2c({c1,u1})  = c1 .
+  eq cu2u({c1,u1})  = u1 .
+  
+endfm
+
+fmod VAL-ENERGY is
+  inc SOFT-AGENTS .
+  inc CUVAL .
+  inc MODEL-ACTIONS .
+
+  var cl : Class .
+  vars kb kb' : KB .
+  vars id st id0 : Id .
+  vars loc locb l0 lb : Loc .
+  vars t0 t t1 t3 t4  : Time .
+  vars e e0 e1 : Nat .
+  var act : Action .
+  vars loc0 loc1 loc2 locf  ptll ptur : Loc .
+  vars dir dir1 : Pt2 .  --- Dir
+  var  enval : CVal .
+ 
+***  op thresh : Id RVal -> PKItem .
+***  op doMv : Loc Pt2 Loc Loc -> Loc .
+****          Dir start tgt ll ur
+  op towards : Pt2 Loc Loc Loc Loc -> Bool .
+  eq towards(dir,l0,lb,ptll, ptur) = 
+         (distance(lb,l0) > distance(lb,doMv(l0,dir,ptll,ptur))) .
+
+**** bot = cv(0), mid = (cv(50)), top = cv(100)
+
+  op val-energy : Id KB  -> CVal .
+  ceq val-energy(id,(energy(id,e) @ t0) (atloc(id,loc) @ t) 
+                    (atloc(id0,locb) @ t3) class(id0,Station) kb) = 
+     (if e >= (e0 + e1)
+      then cv(100) 
+      else (if e > e0 then cv(50) else cv(0) fi) fi)
+  if e0 := cost2loc(loc,locb) 
+  /\ e1 := getEreserve(id,kb) .
+
+  op val-energy : Id KB Action  -> CVal .
+
+  ceq val-energy(id,kb,mv(id,dir)) =
+    (if (enval =/= cv(50))
+     then enval
+     else (if towards(dir,loc,locb,ptll,ptur)
+           then cv(50)
+           else cv(0) fi) fi)
+  if enval := val-energy(id,addK(kb,doAct(mv(id,dir),kb)))
+  /\ (atloc(id,loc) @ t) 
+      (atloc(id0,locb) @ t3) class(id0,Station) 
+      (fence(id,ptll,ptur) @ t4) kb' := kb .
+  
+  eq val-energy(id,
+         (energy(id,e) @ t0) (atloc(id,loc) @ t) 
+         (atloc(id0,locb) @ t3) class(id0,Station)  kb,
+          charge(id)) =
+         (if (loc == locb) 
+          then (if (e >= 100) then cv(0) else cv(100) fi)
+          else cv(0) fi) .
+
+  eq val-energy(id,kb,act) = cv(0) [owise] .  **** shouldn't happen
+
+endfm
+
+--- Agent  moves along y=myY in direction myDir until border, 
+--- then reverses direction. If current loc = pt(x,y) and y =/= myY,  
+--- move to correct instead of moving along dir.
+
+
+fmod VAL-Y-PATROL is
+  inc SOFT-AGENTS .
+  inc CUVAL .
+  inc MODEL-ACTIONS .
+
+  vars kb kb' : KB .
+  vars id st : Id .
+  vars x y x1 y1 z1 x0 y0 z0 n : Nat .
+  var act : Action .
+  vars loc0 loc1 loc2 : Loc .
+  vars dir dir1 : Pt2 .   --- Dir
+  vars t t0 t1 t2 : Time .
+ 
+****  op val-patrol : Id KB  -> Float .
+**** prefer to get back on myY if off, ow to move in myDir
+  op val-myy : Id KB Action -> Float .
+  op val-patrol : Id KB Action -> Float .
+  op val-ypatrol : Id KB Action -> UVal .
+
+  eq val-ypatrol(id, kb, act) = 
+        u(min(val-patrol(id, kb, act),val-myy(id, kb, act))) .
+
+***(
+ Define the goal preference for a move to be $.8$ if the move 
+  goes closer to the goal, $.5$  if the move
+  stays the same distance from the goal, and $.2$ if the move 
+  goes away from the goal.
+)
+  eq val-patrol(id, 
+	    (atloc(id,pt(x,y)) @ t) class(id,Bot) (myDir(id,dir) @ t0) kb,
+       mv(id,dir1)) = 
+   (if  (dir == dir1) 
+    then 0.8
+    else (if dir1 == reverseDir(dir) 
+          then .2
+          else .5 fi) fi) .
+
+***(
+Define the `staying on track' preference of a move to be $.8$ if the
+move goes closer to on track, stays on track or stays off track by at
+most $1$ unit for at most $2$ times; and $.5$ if the move goes off
+track by $2$ or more units, or stays off for more than $2$ times.
+ y == y0 (then n should be 0) then .8
+ abs(y - y0) = 1 and n <= 1 
+             E,W .8
+     y0 < y  S .8 N .5
+abs(y-y0) >= 2  
+   y0 < y  S .8
+   E,W, N .5
+)
+  eq val-myy(id, 
+	    (atloc(id,pt(x,y)) @ t) class(id,Bot)
+	    (myY(id,y0) @ t1) (offTrack(id,n) @ t2) kb,
+      mv(id,dir1)) = 
+      (if (y0 == y) 
+       then .8
+       else (if (abs(y - y0) == 1 and n <= 1)
+             then (if (dir1 == E) or (dir1 == W)
+                   then .8
+                   else (if (dir1 == S)
+                        then (if (y0 < y) then .8 else .5 fi)
+                        else (if (y0 < y) then .5 else .8 fi)
+                        fi)
+                    fi)
+              --- abs(y - y0) >= 2
+             else (if (y0 < y)
+                   then (if (dir1 == S) then .8 else .5 fi) 
+                   else (if (dir1 == N) then .8 else .5 fi) 
+                   fi) 
+             fi) fi) .   
+
+  eq val-patrol(id, kb, charge(id))  = 1.0 .
+  eq val-myy(id, kb, charge(id))  = 1.0 .
+	
+endfm
+
+fmod VAL-Y-PATROL-ENERGY is
+  inc VAL-ENERGY .
+  inc VAL-Y-PATROL .
+
+  var id : Id . 
+  var kb : KB . 
+  var act : Action .
+  vars c1 c2 : CVal .
+  vars u1 u2 : UVal .
+  
+  op val : Id KB -> CUVal .
+  op val : Id KB Action -> CUVal .
+  eq val(id,kb) = {val-energy(id,kb),u(1.0)} .
+  eq val(id,kb,act) = {val-energy(id,kb,act),val-ypatrol(id,kb,act)} .
+
+  
+endfm
+
+view  val2ypatrolenergy from VALUATION to VAL-Y-PATROL-ENERGY is endv  

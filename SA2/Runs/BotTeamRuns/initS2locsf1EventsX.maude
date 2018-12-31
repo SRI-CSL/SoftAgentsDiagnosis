@@ -1,0 +1,3 @@
+--- initS2locsf1
+load ../../Models/BotTeam/load
+red getLocTreatEnergyEvs(addFaultsR(initS2t,locsf(1),500),  120) .

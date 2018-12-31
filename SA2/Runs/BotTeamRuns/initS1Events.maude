@@ -1,0 +1,3 @@
+--- initS1
+load ../../Models/BotTeam/load
+red getLocTreatEvs(initS1t,150) .

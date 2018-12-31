@@ -1,0 +1,3 @@
+--- initS1
+load ../../Models/BotTeam/load1
+red getLocTreatEnergyEvs(initS1t,150) .

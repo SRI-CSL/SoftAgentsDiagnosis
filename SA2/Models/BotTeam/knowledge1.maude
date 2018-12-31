@@ -1,0 +1,445 @@
+fmod MODEL-KNOWLEDGE is
+  inc SOFT-AGENTS .
+	inc CONVERSION .
+	inc RANDOM .
+
+  vars t t0 t1 t2 t3 t4 t5 t6 : Time .
+  var n i j j0 j1 n0 n1 e e0 e1 e2 : Nat .
+  vars x y x1 y1 x0 y0 xll xur yll yur i0 i1 : Int .
+  vars id id0 id1 : Id .
+	var cl : Class .
+  vars l l0 l1 l2 l3 loc : Loc .
+  vars ll ll0 ll1 ur ur0 ur1 pt0 pt1 pt dl0 dl1 : Pt2 .
+  vars ekb ekb0 ekb1 kb  lkb kb1 lkb0 kb0 kb2 :  KB .
+  vars dir dir0 dir1 : Pt2 . **** Dir .
+  vars  ff ff0 ff1 fp0 fp1 rp0 rp1 : FiniteFloat .
+	vars act act0 act1 : Action .
+
+**** Measure charge in % full
+**** Max is thus 100
+
+**** scenario parameters
+
+****  op botDelay : -> Nat .
+**** % battery
+  op costMv : -> Nat . 
+  op chargeUnit : -> Nat .
+  ops costLoad costTreatS costTreatI costTreatF : -> Nat . 
+         --- supply/energy per treat I/F
+  op loadUnit : -> Nat .
+
+ **** Model specific classes
+   sort BotClass .
+   subsort BotClass < Class .
+   op BotI : -> BotClass [ctor] .
+   op BotF : -> BotClass [ctor] .
+*** non Bot classes
+   op Station : -> Class [ctor] .
+   op Obstacle : -> Class [ctor] .
+   op Depot : -> Class [ctor] .
+
+*** location
+  sort LocList .
+  subsort Loc < LocList .
+  op nil : -> LocList [ctor] .
+  op _;_ : LocList LocList -> LocList [ctor assoc id: nil] .
+
+  op llFirst : LocList -> Loc .
+  op llRest : LocList -> LocList .
+
+  eq llFirst(nil) = noLoc .
+  eq llFirst(l:Loc ; ll:LocList) = l:Loc .
+  eq llRest(nil) = nil .
+  eq llRest(l:Loc ; ll:LocList) = ll:LocList .
+
+
+  sort Pt2 .
+  subsort Pt2 < Loc .
+  op pt : Int Int -> Pt2 .
+
+  op sum : Pt2 Loc -> Loc .
+  eq sum(pt(x0,y0),pt(x1,y1)) = pt(x0 + x1, y0 + y1) .
+  eq sum(pt(x0,y0),l:Loc) = l:Loc [owise] .
+
+  op mult : Int Loc -> Loc .
+  eq mult(x,pt(x1,y1)) = pt(x * x1, x * y1) .
+  eq mult(x,l:Loc) = l:Loc [owise] .
+
+  ****          pt   ll   ur
+  op inBounds : Pt2 Pt2 Pt2 -> Bool .
+  eq inBounds(pt(x,y), pt(x0,y0), pt(x1,y1)) =
+       (x0 <= x) and (x <= x1) and (y0 <= y) and (y <= y1) .
+
+  op energy : Id Nat -> Info [ctor] .
+  eq hasId(id,energy(id,e) @ t) = true .
+
+  op getEnergy : Id KB -> Nat .
+  eq getEnergy(id, (energy(id,e) @ t) lkb ) = e .
+  eq getEnergy(id,lkb ) = 0 [owise] .
+
+  op ereserve : Id Nat -> Info [ctor] .
+  eq hasId(id, ereserve(id,e) @ t) = true .
+  op getEreserve : Id KB -> Nat .
+  eq getEreserve(id, (ereserve(id,e) @ t) kb) = e .
+  eq getEreserve(id,  kb) =  costMv [owise] .  
+  
+**** Boundary for location of bot id 
+**** lower left and upper right corners
+	op fence : Id Pt2 Pt2 -> Info [ctor] .
+
+**** max communication distance
+
+	op comDist : Nat -> PKItem [ctor] .
+  op getComDist : KB -> Nat .
+  eq getComDist(comDist(n) kb) = n .
+  eq getComDist(kb) = 0 [owise] .
+
+  op getComDistKI :  KB -> KB .
+  eq getComDistKI(comDist(n) kb) = comDist(n) .
+  eq getComDistKI(kb) = none [owise] .
+
+**** for modeling faults 
+  op randInc : Nat -> KItem .
+  op rand : Id Nat Nat -> Info .
+
+**** abstracting random numbers to [0,1]
+  ops randMax rand.25 rand.5 rand.75 rand.125 : -> Nat .
+  eq randMax = 4294967295 .
+	eq rand.25 = 1073741824 .
+	eq rand.5  = 2147483647 .
+	eq rand.75 = 3221225471 .
+  eq rand.125 = 536870912 .
+
+
+***  sort Dir .   subsort Dir < Pt2 .
+  ops E W N S : -> Pt2 .  **** east (right) west (left) north south
+  eq E = pt(1,0) .
+  eq W = pt(-1,0) .
+  eq N = pt(0,1) .
+  eq S = pt(0,-1) .
+
+*** partial order
+****  eq atloc(id,l0) @ t0 << atloc(id,l1) @ t1 = t0 < t1 .
+****  eq (clock(t0)) << (clock(t1)) = t0 < t1 .
+  eq (energy(id,e0) @ t0) << (energy(id,e1) @ t1) =  t0 < t1 .
+  eq (fence(id,ll0, ur0) @ t0) 
+         << (fence(id,ll1,ur1) @ t1) = t0 < t1 .
+  eq (rand(id,n0,j0) @ t0) << (rand(id,n1,j1) @ t1) = t0 < t1 .
+
+ 
+  ops obstacleS energyS treatS supplyS : -> Sensor [ctor] .
+
+  sort Mode .
+  op treat : -> Mode [ctor] .
+  op loading : -> Mode [ctor] .
+  op ready : -> Mode [ctor] .
+  op done : -> Mode [ctor] .
+  op enroute : Loc -> Mode [ctor] .
+  
+  op mode : Id Mode -> Info [ctor] .
+  op home : Id Loc -> PKItem [ctor] .
+  op targets : LocList -> Info [ctor] .
+  op target : Loc -> Info [ctor] .
+  op targetF : Loc -> Info [ctor] .     --- BotI choice doesn't overwrite
+  op supply : Id Nat -> Info [ctor] .   --- % supply left
+  op treatStage : Loc Nat ->  Info [ctor] .
+  op treatRisk : Id Bool -> Info [ctor] .
+ 
+  eq (treatStage(loc,j0) @ t0) << (treatStage(loc,j1) @ t1) =  t0 < t1 .
+  eq (supply(id,e0) @ t0) << (supply(id,e1) @ t1) =  t0 < t1 .
+  eq (target(l0) @ t0) << (target(l1) @ t1) =  t0 < t1 .
+  eq (targetF(l0) @ t0) << (targetF(l1) @ t1) =  t0 < t1 .
+  eq (targets(locs0:LocList) @ t0) << (targets(locs1:LocList) @ t1) =  t0 < t1 .
+  eq (mode(id,m0:Mode) @ t0) << (mode(id,m1:Mode) @ t1) =  t0 < t1 .
+  eq (treatRisk(id,b0:Bool) @ t0) << (treatRisk(id,b1:Bool) @ t1) =  t0 < t1 .
+   
+  op getHome : Id KB -> Loc .
+  eq getHome(id, home(id,loc) kb) = loc .
+  eq getHome(id,kb) = noLoc [owise] .
+  
+  op getTreatStage : Loc KB -> FindResult .
+  eq getTreatStage(loc, (treatStage(loc,j) @ t) kb) = j .
+  eq getTreatStage(loc,kb) = notFound [owise] .
+
+  op getTarget : KB -> Loc .
+  eq getTarget((target(loc) @ t) kb) = loc .
+  eq getTarget(kb) = noLoc [owise] .
+
+  op getTargetF : KB -> Loc .
+  eq getTargetF((targetF(loc) @ t) kb) = loc .
+  eq getTargetF(kb) = noLoc [owise] .
+
+  op getSupply : Id KB -> Nat .
+  eq getSupply(id,(supply(id,e0) @ t) kb) = e0 .
+  eq getSupply(id,kb) = 0 [owise] .
+
+  op getTreatRisk : Id KB -> Bool .
+  eq getTreatRisk(id,(treatRisk(id,b:Bool) @ t) kb) = b:Bool .
+  eq getTreatRisk(id,kb) = false [owise] .
+  
+  op isDone : Id KB -> Bool .
+  eq isDone(id,(mode(id,done) @ t) kb) = true .
+  eq isDone(id,kb) = false [owise] .
+
+  op adjacent : Id KB Loc -> Bool .
+  eq adjacent(id,(atloc(id,l0) @ t) lkb,l) = distance(l0,l) == 1 .
+  eq adjacent(id,lkb,l) = false [owise] .
+
+  
+endfm	
+
+******** bot  actions
+fmod MODEL-ACTIONS is 
+  inc MODEL-KNOWLEDGE .  
+
+  vars t t0 t1 t2 t3 t4 t5 t6 : Time .
+  var n i j j0 j1 n0 n1 e e0 e1 e2 : Nat .
+  vars x y x1 y1 x0 y0 xll xur yll yur i0 i1 : Int .
+  vars id id0 id1 : Id .
+	var cl : Class .
+  vars l l0 l1 l2 l3 loc loc0 : Loc .
+  vars ll ll0 ll1 ur ur0 ur1 pt0 pt1 pt dl dl0 dl1 : Pt2 .
+  vars ekb ekb0 ekb1 kb  lkb kb1 lkb0 kb0 kb2 :  KB .
+  vars dir dir0 dir1 : Pt2 . **** Dir .
+  vars  ff ff0 ff1 fp0 fp1 rp0 rp1 : Rat .
+	vars act act0 act1 : Action .
+
+  op mv : Id Pt2 -> Action [ctor] .
+  op charge : Id -> Action [ctor] .
+  op load : Id -> Action [ctor] .
+  op treat : Id -> Action [ctor] .
+  
+  op actId : Action ~> Id .
+  eq actId(mv(id,pt)) = id .
+  eq actId(charge(id)) = id .
+  eq actId(load(id)) = id .
+  eq actId(treat(id)) = id .
+ 
+********* helpers
+**** assume at most one of canTreat, canLoad, canCharge will hold
+ op myActs : Class Id KB -> ActSet .
+
+ eq myActs(cl, id,lkb) =
+		(if canTreat(cl,id,lkb) 
+     then (if ((cl == BotF) or ((cl == BotI) and botFReady(getTarget(lkb),lkb)))
+           then treat(id) 
+           else none 
+           fi)
+     else (if canLoad(cl,id,lkb)
+           then load(id)
+           else (if canCharge(cl,id,lkb)
+                 then charge(id)
+                 else (if ((cl == BotF) and botFmustWait(id,lkb))
+                       then none                        
+                       else myMvs(cl,id,lkb)
+                      fi) fi) fi) fi) .
+     
+**** at station and not fully charged 
+  op canCharge : Class Id KB -> Bool .
+  ceq canCharge(cl,id,lkb) = true
+	if (atloc(id,l) @ t0) class(id,cl)
+     (atloc(id1,l) @ t1) class(id1,Station)
+		 (energy(id,e) @ t2) lkb0 := lkb
+  /\ cl :: BotClass
+  /\ e < 100 .
+	
+  eq canCharge(cl,id,lkb) = false [owise] .
+
+**** at depot and not fully charged 
+  op canLoad : Class Id KB -> Bool .
+  ceq canLoad(BotF,id,lkb) = true
+	if (atloc(id,l) @ t0) class(id,BotF) 
+     (atloc(id1,l) @ t1) class(id1,Depot)
+     (mode(id,loading) @ t3)
+		 (supply(id,e) @ t2) lkb0 := lkb
+  /\ e < 100 .
+	
+  eq canLoad(cl,id,lkb) = false [owise] .
+
+ *** finisher bot is next door
+ op botFReady : Loc KB -> Bool .
+ ceq botFReady(loc,kb) =  distance(loc,loc0) <= 1
+ if (atloc(id,loc0) @ t0) class(id,BotF) kb0 := kb .
+ 
+**** at target
+  op canTreat : Class Id KB -> Bool .
+  ceq canTreat(BotI,id,lkb) = true
+	if (atloc(id,l) @ t0) class(id,BotI) (treatStage(l,j) @ t2)
+     (target(l) @ t1) (mode(id,treat) @ t3)
+     lkb0 := lkb
+***  /\ botFReady(l,lkb)     
+  /\ j < 2 .
+	
+  ceq canTreat(BotF,id,lkb) = true
+	if (atloc(id,l) @ t0) class(id,cl) (treatStage(l,j) @ t3)
+     (targetF(l) @ t1) (mode(id,treat) @ t4)
+     (supply(id,e0) @ t2) lkb0 := lkb
+  /\ e0 > costTreatS 
+  /\ 2 <= j 
+  /\ j < 4 
+  .
+
+  eq canTreat(cl,id,lkb) = false [owise] .
+
+
+  op botFmustWait : Id KB -> Bool .
+  eq botFmustWait(id,(targetF(l) @ t0) (treatStage(l,j) @ t2) 
+                      (mode(id,enroute(l)) @ t3) lkb)
+      = adjacent(id,lkb,l) and (occupied(l,lkb) or j < 2) .
+  eq botFmustWait(id,lkb) = false [owise] .
+     
+  op myMvs : Class Id KB -> ActSet .
+
+	ceq myMvs(cl,id, lkb (fence(id, pt(xll,yll), pt(xur,yur)) @ t)) =
+    ((if occupied(l0,lkb) then none else mv(id,E) fi)
+     (if occupied(l1,lkb) then none else mv(id,W) fi)		
+     (if occupied(l2,lkb) then none else mv(id,S) fi)				
+     (if occupied(l3,lkb) then none else mv(id,N) fi)	)
+	if l := getLoc(id,lkb)
+  /\ cl :: BotClass
+	/\ l0 := doMv(l,E, pt(xll,yll), pt(xur,yur))
+	/\ l1 := doMv(l,W, pt(xll,yll), pt(xur,yur))
+	/\ l2 := doMv(l,S, pt(xll,yll), pt(xur,yur))
+	/\ l3 := doMv(l,N, pt(xll,yll), pt(xur,yur)) .
+
+	eq myMvs(cl,id,lkb) = none [owise] .
+
+  op occupied : Loc KB -> Bool .
+  eq occupied(l0,(atloc(id,l0) @ t) class(id,cl:BotClass) ekb) = true .
+  eq occupied(l0,(atloc(id,l0) @ t) class(id,Obstacle) ekb) = true .
+  eq occupied(l0, ekb) = false [owise] .
+
+  --- in contact if distance is less than or equal to comDistance
+  eq inContact(id0,id1,ekb) 
+   = distance(getLoc(id0,ekb),getLoc(id1,ekb)) <= getComDist(ekb) .
+
+ op isInverseMv : Action Action -> Bool .
+ eq isInverseMv(mv(id,pt0), mv(id,pt1)) = (sum(pt0,pt1) == pt(0,0)) .
+ eq isInverseMv(act0,act1) = false [owise] .
+ 
+**** model of expected result of move actions
+  op doMv : Loc Pt2 Loc Loc -> Loc .
+  ceq doMv(l,pt,pt0,pt1) =
+    if inBounds(l1,pt0,pt1) then l1 else l fi
+  if l1 := sum(l,pt)  .
+  eq doMv(loc,pt,pt0,pt1) = loc [owise] .
+
+*** agents model of action = maude physics when no interference
+*** returns the kb update
+op doAct :  Action KB -> KB .
+
+*********** move
+ceq doAct(mv(id, dir), 
+         clock(t) (atloc(id,l) @ t0) (energy(id,e) @  t1) 
+         (fence(id,pt0, pt1) @ t3) lkb)
+  = (atloc(id,l1) @ s t) (energy(id,e1) @ s t) 
+  if l0 := sum(l,dir)  
+  /\ l1 := (if (inBounds(l0,pt0,pt1) and not(occupied(l0,lkb)))
+           then l0
+           else l fi)
+  /\ e1 := max(e - costMv,0)  .
+  
+*************   charge
+eq doAct(charge(id), 
+         clock(t) (atloc(id,l) @ t0) (energy(id,e) @  t1) 
+         (atloc(id0,l) @ t3) class(id0,Station) lkb)
+  =  (energy(id,min(e + chargeUnit,100)) @ s t) 
+  .
+
+*************   load
+eq doAct(load(id), 
+         clock(t) (atloc(id,l) @ t0) class(id,BotF)
+         (supply(id,e) @  t1)  (energy(id,e0) @  t2) 
+         (atloc(id0,l) @ t3) class(id0,Depot) lkb)
+  =  (supply(id,min(e + loadUnit,100)) @ s t) 
+     (energy(id,max(e0 - costLoad,0)) @  s t) 
+  .
+
+*************  treat
+ceq doAct(treat(id), 
+         clock(t) (atloc(id,l) @ t0) class(id,BotF)
+         (supply(id,e0) @  t1) (energy(id,e) @  t2) 
+         (treatStage(l,j) @ t4) lkb)
+  =  (supply(id,max(e0 - costTreatS,0)) @ s t) 
+     (energy(id,max(e - costTreatF,0)) @  s t) 
+     (treatStage(l,s j) @ s t) 
+  if j >= 2
+  /\ j < 4
+  .
+
+ceq doAct(treat(id), 
+         clock(t) (atloc(id,l) @ t0) class(id,BotI)
+         (energy(id,e) @  t2) 
+         (treatStage(l,j) @ t4) lkb)
+  =  (energy(id,max(e - costTreatI,0)) @  s t) 
+     (treatStage(l,s j) @ s t) 
+  if j < 2
+  .
+
+eq doAct(a:Action,kb) = none [owise] .
+
+eq distance(pt(x0,y0),pt(x1,y1)) 
+    = abs(x0 - x1) + abs(y0 - y1) .
+ 
+  op cost2loc : Loc Loc -> Nat .
+  eq cost2loc(l0,l1) = distance(l0,l1) * costMv .
+  
+endfm
+
+fmod FAULT-MODEL is
+  inc MODEL-KNOWLEDGE .
+  
+***(
+physical knowledge
+ class(id,cl)
+ atloc(id,loc) @ t
+ energy(id,e) @ t
+ supply(id,e)
+ treatStage(loc,j) 
+fence
+  
+sensor names 
+  locS
+  energyS
+  obstacleS
+  treatS 
+  supplyS
+
+fence, station, depot info are part of agents kb if relevant
+
+Actions
+  mv(id,dir)    
+  charge(id)
+  load(id)
+  treat(id)
+
+) 
+
+**** Fault/Failure model  
+
+sort FVal .
+op ffV : Rat -> FVal .
+op ptV : Pt2 -> FVal .
+op intV : Int -> FVal .
+
+vars  ff ff0 ff1  : Rat .
+vars  pt0 pt1 pt  : Pt2 .
+vars i0 i1 : Int .
+
+op sum : FVal FVal -> FVal .
+op mult : Int FVal -> FVal .
+
+eq sum(ffV(ff0), ffV(ff1)) = ffV(ff0 + ff1) .
+eq sum(ptV(pt0), ptV(pt1)) = ptV(sum(pt0, pt1)) .
+eq sum(intV(i0), intV(i1)) = intV(i0 + i1) .
+
+sorts FType FPars .
+op simpleFT : -> FType [ctor] .
+op sFP : Rat Rat FVal -> FPars [ctor] .
+****      prob scale   prob shift  (scale shift) 
+
+op boolFT : -> FType [ctor] .
+op bFP : Rat -> FPars [ctor] .  *** prob of fail
+
+endfm
+

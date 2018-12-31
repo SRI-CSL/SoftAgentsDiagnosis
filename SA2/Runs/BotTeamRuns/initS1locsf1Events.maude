@@ -1,0 +1,3 @@
+--- initS1locsf1
+load ../../Models/BotTeam/load
+red getLocTreatEvs(addFaultsR(initS1t,locsf(1),500),  210) .

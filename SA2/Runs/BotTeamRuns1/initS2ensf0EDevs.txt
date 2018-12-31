@@ -1,0 +1,33 @@
+==========================================
+reduce in SCENARIO-DIAGNOSIS : getEDevsL(addFaultsR(initS2t, ensf(0), 500), bot0base bot1base, 180, 0, 180) .
+rewrites: 164754 in 252ms cpu (258ms real) (651626 rewrites/second)
+result EDevsList: 
+[2,
+{{{cv(100),u(1)},mv(b(0), pt(1, 0))},
+(targets(pt(2, 0) ; pt(1, 4)) @ 0) (target(pt(5, 1)) @ 0) (atloc(b(0), pt(2, 1)) @ 2) (atloc(b(1), pt(0, 4)) @ 0) (energy(b(0), 100) @ 2) mode(b(0), enroute(pt(5, 1))) @ 2,
+(atloc(b(0), pt(3, 1)) @ 3) energy(b(0), 95) @ 3,
+energy(b(0), 85) @ 3}
+]
+ ; 
+[12,
+{{{cv(100),u(1)},mv(b(0), pt(-1, 0))},
+(targets(pt(1, 4)) @ 11) (target(pt(2, 0)) @ 11) (atloc(b(0), pt(5, 2)) @ 12) (atloc(b(1), pt(4, 1)) @ 8) (energy(b(0), 60) @ 12) (mode(b(0), enroute(pt(2, 0))) @ 12) treatStage(pt(2, 0), 0) @ 0,
+(atloc(b(0), pt(4, 2)) @ 13) energy(b(0), 55) @ 13,
+energy(b(0), 45) @ 13}
+]
+ ; 
+[39,
+{{{cv(100),u(1)},mv(b(1), pt(1, 0))},
+(targets(nil) @ 36) (target(pt(1, 4)) @ 30) (targetF(pt(1, 4)) @ 36) (atloc(b(0), pt(3, 2)) @ 36) (atloc(b(1), pt(2, 3)) @ 39) (energy(b(1), 50) @ 39) (mode(b(1), enroute(pt(3, 3))) @ 39) (supply(b(1), 20) @ 35) treatStage(pt(1, 4), 0) @ 0,
+(atloc(b(1), pt(3, 3)) @ 40) energy(b(1), 45) @ 40,
+{atloc(b(1), pt(3, 3)) @ 40,(none).KB}}
+]
+ ; 
+[57,
+{{{cv(100),u(1)},mv(b(0), pt(0, -1))},
+(targets(nil) @ 30) (target(pt(1, 4)) @ 30) (atloc(b(0), pt(1, 2)) @ 57) (atloc(b(1), pt(2, 4)) @ 51) (energy(b(0), 60) @ 57) (mode(b(0), enroute(pt(0, 1))) @ 57) treatStage(pt(1, 4), 2) @ 54,
+(atloc(b(0), pt(1, 1)) @ 58) energy(b(0), 55) @ 58,
+energy(b(0), 45) @ 58}
+]
+
+Bye.

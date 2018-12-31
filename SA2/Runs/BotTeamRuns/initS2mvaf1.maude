@@ -1,0 +1,3 @@
+--- initS2mvaf1
+load ../../Models/BotTeam/load
+rew [150] addFaults(initS2t, mvaf(1)) .

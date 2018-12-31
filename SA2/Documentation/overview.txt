@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+We are interested in specifying/deploying agents that
+have given capabilities and resource requirements
+(actions, their effects on the agents state and the local environment
+and resources consumed/produced).
+The agents behavior is to try to achieve given goals based
+on his model of the effects of actions and the local environement.
+
+Agents communicate / collaborate by sharing knowledge rather than
+explicit pt-pt messages.   
+
+To be resilient and robust to unexpected situations,
+Agents behavior is specified using soft constraint problems.
+
+Key questions
+  1. how to formulate goals and constraint problems
+    to ensure progress under reasonable conditions.
+  2. how to detect when goals/expectations are not being met
+    and determine the root cause.
+
+
+A Sof tAgent configuration consists of an environment object, 
+one or more agent objects, and possibly other configuration elements
+that can be used for instrumentation and analysis.
+The environment object provides knowledge for reading sensors
+and for `executing' actions.  It can be purely a Maude object
+using an abstract model of the physics, or the associated
+functions can make use of detailed simulators (not included in
+this version).   Eventually, it can wrap an actual device.
+
+An agent object has the following information
+  class, id, lkb (local knowledgebase), sensors, evs (pending events)
+
+Key data structures/sorts are
+  KItem, KB (set of KItems) -- agent knowledge, partially ordered 
+    some built in, some model specific
+  Event ~ TaskEvent + DEvent  + IEvent
+  Action
+    
+The semantics is given by two rewrite rules: doTask and timeStep
+
+doTask rule -- applies to an agent plus the environment
+  the agent
+    reads sensors associated with the agent
+        (accounting for any sensor fault models)
+    processes communication and sensor information
+    generates a ranked action set
+    posts knowledge to share, updates its lkb, updates pending events
+
+  
+timeStep rule  -- applies to the whole system state
+  compute mte -- time of the next task
+     --- mte is 1 (or 0) in the current case studies
+  doEnvAct -- do unitEnvAct for mte time units and updateEnv
+  shareKnowledge -- between agents that are in contact
+  updateLog -- if a log is present, record information for this step
+  updateConf -- update metadata configuration elements as defined
+                by the model
+
+unitEnvAct 
+  interprets actions, accounting for environment factors and 
+  action fault models, and returns updates for the local physical state
+
+see sadiagnosis.pdf for more details. 
+ 

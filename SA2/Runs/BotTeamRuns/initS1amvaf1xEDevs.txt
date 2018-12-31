@@ -1,0 +1,75 @@
+==========================================
+reduce in SCENARIO-DIAGNOSIS : getEDevsL(addFaultsR(mkInitS(pt(4, 0) ; pt(5, 4), true), mvaf(1), 500), bot0base bot1base, 150, 0, 150) .
+rewrites: 133517 in 205ms cpu (212ms real) (650804 rewrites/second)
+result EDevsList: 
+[7,
+{{{cv(100),u(3/4)},mv(b(1), pt(0, 1))},
+(targets(pt(5, 4)) @ 2) (target(pt(4, 0)) @ 0) (targetF(pt(4, 0)) @ 1) (atloc(b(0), pt(3, 0)) @ 4) (atloc(b(1), pt(2, 0)) @ 7) (energy(b(1), 70) @ 7) (mode(b(1), enroute(pt(4, 0))) @ 7) supply(b(1), 100) @ 0,
+(atloc(b(1), pt(2, 1)) @ 8) energy(b(1), 65) @ 8,
+atloc(b(1), pt(2, 0)) @ 8}
+]
+ ; 
+[8,
+{{{cv(100),u(1)},mv(b(1), pt(1, 0))},
+(targets(pt(5, 4)) @ 2) (target(pt(4, 0)) @ 0) (targetF(pt(4, 0)) @ 1) (atloc(b(0), pt(4, 0)) @ 5) (atloc(b(1), pt(2, 0)) @ 8) (energy(b(1), 65) @ 8) (mode(b(1), enroute(pt(4, 0))) @ 8) supply(b(1), 100) @ 0,
+(atloc(b(1), pt(3, 0)) @ 9) energy(b(1), 60) @ 9,
+atloc(b(1), pt(2, 0)) @ 9}
+]
+ ; 
+[17,
+{{{cv(50),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(3, 2)) @ 13) (atloc(b(1), pt(4, 1)) @ 17) (energy(b(1), 25) @ 17) (mode(b(1), enroute(pt(5, 4))) @ 17) supply(b(1), 60) @ 15,
+(atloc(b(1), pt(4, 2)) @ 18) energy(b(1), 20) @ 18,
+atloc(b(1), pt(4, 1)) @ 18}
+]
+ ; 
+[26,
+{{{cv(100),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(5, 4)) @ 20) (atloc(b(1), pt(3, 3)) @ 26) (energy(b(1), 95) @ 26) (mode(b(1), enroute(pt(5, 4))) @ 26) supply(b(1), 60) @ 15,
+(atloc(b(1), pt(3, 4)) @ 27) energy(b(1), 90) @ 27,
+atloc(b(1), pt(3, 3)) @ 27}
+]
+ ; 
+[27,
+{{{cv(100),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(5, 4)) @ 20) (atloc(b(1), pt(3, 3)) @ 27) (energy(b(1), 90) @ 27) (mode(b(1), enroute(pt(5, 4))) @ 27) supply(b(1), 60) @ 15,
+(atloc(b(1), pt(3, 4)) @ 28) energy(b(1), 85) @ 28,
+atloc(b(1), pt(3, 3)) @ 28}
+]
+ ; 
+[38,
+{{{cv(50),u(3/4)},mv(b(1), pt(0, -1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(3, 1)) @ 37) (atloc(b(1), pt(3, 3)) @ 38) (energy(b(1), 35) @ 38) (mode(b(1), enroute(pt(0, 4))) @ 38) (supply(b(1), 20) @ 34) treatStage(pt(5, 4), 4) @ 34,
+(atloc(b(1), pt(3, 2)) @ 39) energy(b(1), 30) @ 39,
+atloc(b(1), pt(3, 1)) @ 39}
+]
+ ; 
+[39,
+{{{cv(50),u(1/4)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(2, 1)) @ 38) (atloc(b(1), pt(3, 1)) @ 39) (energy(b(1), 30) @ 39) (mode(b(1), enroute(pt(0, 4))) @ 39) (supply(b(1), 20) @ 34) treatStage(pt(5, 4), 4) @ 34,
+(atloc(b(1), pt(3, 2)) @ 40) energy(b(1), 25) @ 40,
+atloc(b(1), pt(3, 1)) @ 40}
+]
+ ; 
+[40,
+{{{cv(50),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(1, 1)) @ 39) (atloc(b(1), pt(3, 1)) @ 40) (energy(b(1), 25) @ 40) (mode(b(1), enroute(pt(0, 4))) @ 40) (supply(b(1), 20) @ 34) treatStage(pt(5, 4), 4) @ 34,
+(atloc(b(1), pt(3, 2)) @ 41) energy(b(1), 20) @ 41,
+atloc(b(1), pt(3, 1)) @ 41}
+]
+ ; 
+[48,
+{{{cv(100),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(1, 1)) @ 39) (atloc(b(1), pt(3, 3)) @ 48) (energy(b(1), 95) @ 48) (mode(b(1), enroute(pt(0, 4))) @ 48) (supply(b(1), 20) @ 34) treatStage(pt(5, 4), 4) @ 34,
+(atloc(b(1), pt(3, 4)) @ 49) energy(b(1), 90) @ 49,
+atloc(b(1), pt(3, 3)) @ 49}
+]
+ ; 
+[50,
+{{{cv(100),u(1)},mv(b(1), pt(-1, 0))},
+(targets(nil) @ 17) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 16) (atloc(b(0), pt(1, 1)) @ 39) (atloc(b(1), pt(3, 4)) @ 50) (energy(b(1), 85) @ 50) (mode(b(1), enroute(pt(0, 4))) @ 50) (supply(b(1), 20) @ 34) treatStage(pt(5, 4), 4) @ 34,
+(atloc(b(1), pt(2, 4)) @ 51) energy(b(1), 80) @ 51,
+atloc(b(1), pt(2, 3)) @ 51}
+]
+
+Bye.

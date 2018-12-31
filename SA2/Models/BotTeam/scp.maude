@@ -1,0 +1,248 @@
+
+**** 0 ... 100  C for 100 percent
+fmod CVAL is
+  pr CONVERSION .
+  inc RVAL .
+
+  sort CVal .
+  subsort CVal < RVal .
+  op cv : Nat -> CVal .   
+
+  vars n n0 n1 : Nat .
+  var nz : NzNat .    
+
+  op _<_ : CVal CVal -> Bool  .
+  op equivZero : CVal -> Bool .
+
+  eq equivZero(cv(0)) = true .
+  eq equivZero(cv(nz)) = false .  
+
+  eq cv(n0) < cv(n1) = (n0 < n1) .
+  
+endfm
+
+ **** Unit Real Interval -- should be between 0 and 1 inclusive
+ fmod UVAL is
+  pr CONVERSION .
+  inc RVAL .
+
+  vars u0 u1 u2 : UVal .
+  vars f0 f1 f2 : Rat .
+
+  sort UVal .
+  subsort UVal < RVal .
+  op u : Rat -> UVal . 
+  
+  op equivZero : UVal -> Bool .
+  eq equivZero(u(0)) = true .
+  eq equivZero(u1) = false [owise] .
+
+  eq u(f0) < u(f1) = f0 < f1 .
+
+endfm
+
+****  energy,treat
+fmod CUVAL is
+  inc CVAL .
+  inc UVAL .
+  
+  sort CUVal .  subsort CUVal < RVal .
+  op {_,_} : CVal UVal -> CUVal .
+  op _<_ : CUVal CUVal -> Bool .
+  op equivZero : CUVal -> Bool .
+
+  vars c1 c2 : CVal .
+  vars u1 u2 : UVal .  
+ 
+  eq {c1,u1} < {c2,u2} = (c1 < c2) or (c1 == c2 and u1 < u2) .
+  eq equivZero({c1,u1}) = (equivZero(c1)) .
+
+  op cu2c : CUVal -> CVal .
+  op cu2u : CUVal -> UVal .
+  eq cu2c({c1,u1})  = c1 .
+  eq cu2c({c1,u1})  = u1 .
+  
+endfm
+
+fmod VAL-ENERGY is
+  inc SOFT-AGENTS .
+  inc CUVAL .
+  inc MODEL-ACTIONS .
+
+  var cl : Class .
+  vars kb kb' : KB .
+  vars id st id0 : Id .
+  vars loc locb l0 lb : Loc .
+  vars t0 t t1 t3 t4  : Time .
+  vars e e0 e1 : Nat .
+  var act : Action .
+  vars loc0 loc1 loc2 locf  ptll ptur : Loc .
+  vars dir dir1 : Pt2 .  --- Dir
+  var  enval : CVal .
+ 
+***  op thresh : Id RVal -> PKItem .
+***  op doMv : Loc Pt2 Loc Loc -> Loc .
+****          Dir start tgt ll ur
+  op towards : Pt2 Loc Loc Loc Loc -> Bool .
+  eq towards(dir,l0,lb,ptll, ptur) = 
+         (distance(lb,l0) > distance(lb,doMv(l0,dir,ptll,ptur))) .
+
+**** bot = cv(0), mid = (cv(50)), top = cv(100)
+  op val-energy : Id KB  -> CVal .
+  ceq val-energy(id,(energy(id,e) @ t0) (atloc(id,loc) @ t) 
+                    (atloc(id0,locb) @ t3) class(id0,Station) kb) = 
+     (if e >= (e0 + e1)
+      then cv(100) 
+      else (if e > e0 then cv(50) else cv(0) fi) fi)
+  if e0 := cost2loc(loc,locb) 
+  /\ e1 := getEreserve(id,kb) .
+
+  op val-energy : Id KB Action  -> CVal .
+
+**** mv
+  ceq val-energy(id,kb,mv(id,dir)) =
+    (if (enval =/= cv(50))
+     then enval
+     else (if towards(dir,loc,locb,ptll,ptur)
+           then cv(50)
+           else cv(0) fi) fi)
+  if enval := val-energy(id,addK(kb,doAct(mv(id,dir),kb)))
+  /\ (atloc(id,loc) @ t) 
+      (atloc(id0,locb) @ t3) class(id0,Station) 
+      (fence(id,ptll,ptur) @ t4) kb' := kb .
+
+**** charge  
+  eq val-energy(id,
+         (energy(id,e) @ t0) (atloc(id,loc) @ t) 
+         (atloc(id0,locb) @ t3) class(id0,Station)  kb,
+          charge(id)) =
+         (if (loc == locb) 
+          then (if (e >= 100) then cv(0) else cv(100) fi)
+          else cv(0) fi) .
+
+**** treat
+  ceq val-energy(id,kb,treat(id)) =
+   (if (enval =/= cv(50))
+    then enval
+    else (if getTreatRisk(id,kb)
+          then enval
+          else cv(0) fi) fi) --- don't use more energy
+  if  enval := val-energy(id,addK(kb,doAct(treat(id),kb))) .
+
+**** load
+  ceq val-energy(id,kb,load(id)) =
+   (if (enval =/= cv(50))
+    then enval
+    else cv(0) fi) --- don't use more energy
+  if (atloc(id,loc) @ t) (atloc(id0,loc) @ t3) 
+     class(id,BotF) class(id0,Depot) kb'
+      := kb
+  /\  enval := val-energy(id,addK(kb,doAct(load(id),kb))) .
+  
+  eq val-energy(id,kb,act) = cv(0) [owise] .  **** shouldn't happen
+
+endfm
+
+fmod VAL-TARGET is
+***  inc SOFT-AGENTS .
+  inc CUVAL .
+  inc MODEL-ACTIONS .
+
+  vars kb kb' : KB .
+  var cl : Class .
+  vars id st : Id .
+  vars x y x1 y1 z1 x0 y0 z0 n : Nat .
+  var d : Int .
+  var act : Action .
+  vars loc0 loc1 loc2 loc ptll ptur : Loc .
+  vars dir dir1 : Pt2 .   --- Dir
+  vars t t0 t1 t2 t3 t4 : Time .
+ 
+ op progress : Pt2 Loc Loc Loc Loc -> Int .
+ eq progress(dir,loc,loc0,ptll, ptur) =         
+      distance(loc0,loc) - distance(loc0,doMv(loc,dir,ptll,ptur)) .
+ 
+  op val-target : Id KB Action -> UVal .
+
+  eq val-target(id, kb, act) = u(0) [owise] .
+
+  ceq val-target(id,kb,mv(id,dir)) =
+    (if isInverseMv(mv(id,dir),act)
+     then u(1/4)
+     else (if d > 0 
+     then u(1)
+     else (if d >= -1 then u(3/4) else u(1/4) fi)
+     fi) fi)
+  if class(id,cl) (mode(id,enroute(loc0)) @ t0) 
+     (atloc(id,loc) @ t2) (fence(id,ptll,ptur) @ t4) kb' := kb
+  /\ act := getLastAct(kb')     
+  /\ d := progress(dir,loc,loc0,ptll,ptur)   .
+
+ ***(  
+  ceq val-target(id,kb,mv(id,dir)) =
+    (if d > 0 
+     then u(1)
+     else (if d >= -1 then u(3/4) else u(1/4) fi)
+     fi)
+  if class(id,cl) (mode(id,enroute(loc0)) @ t0) (target(loc1) @ t1)
+     (atloc(id,loc) @ t2) (fence(id,ptll,ptur) @ t4) kb' := kb
+  /\ d := progress(dir,loc,loc0,ptll,ptur)   .
+
+ **** mv isn't an option if treating!
+  ceq val-target(id,kb,mv(id,dir)) =
+    (if d > 0 
+     then u(1)
+     else (if d >= -1 then u(3/4) else u(1/4) fi)
+     fi)
+  if class(id,cl) (mode(id,treat) @ t0) (target(loc1) @ t1)
+     (atloc(id,loc) @ t2) (fence(id,ptll,ptur) @ t4) kb' := kb
+  /\ loc =/= loc1   
+  /\ d := progress(dir,loc,loc1,ptll,ptur)  .
+)
+  eq val-target(id,kb,mv(id,dir)) = u(0) [owise] .
+    
+
+  eq val-target(id, kb, charge(id))  = u(1) .
+
+  eq val-target(id, kb, load(id))  = u(1) .
+
+
+  ceq val-target(id, class(id,BotI) kb, treat(id))  = 
+    (if (n < 2)
+     then u(1)
+     else u(0)
+     fi)
+   if (atloc(id,loc) @ t) (mode(id,treat) @ t2)
+      (target(loc) @ t3) (treatStage(loc,n) @ t1) kb' := kb .
+
+  ceq val-target(id, class(id,BotF) kb, treat(id))  = 
+    (if  ((2 <= n) and (n < 4))
+     then u(1)
+     else u(0)
+     fi)
+   if (atloc(id,loc) @ t) class(id,cl) (mode(id,treat) @ t2)
+      (targetF(loc) @ t3) (treatStage(loc,n) @ t1) kb' := kb .
+
+  eq val-target(id, kb, treat(id))  = u(0) [owise] .
+
+endfm
+
+fmod VAL-TARGET-ENERGY is
+  inc VAL-ENERGY .
+  inc VAL-TARGET .
+
+  var id : Id . 
+  var kb : KB . 
+  var act : Action .
+  vars c1 c2 : CVal .
+  vars u1 u2 : UVal .
+  
+  op val : Id KB -> CUVal .
+  op val : Id KB Action -> CUVal .
+  eq val(id,kb) = {val-energy(id,kb),u(1)} .
+  eq val(id,kb,act) = {val-energy(id,kb,act),val-target(id,kb,act)} .
+
+  
+endfm
+
+view  val2tgtenergy from VALUATION to VAL-TARGET-ENERGY is endv  

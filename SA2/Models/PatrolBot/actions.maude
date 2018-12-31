@@ -1,0 +1,108 @@
+fmod ENV-ACTIONS is
+  inc MODEL-ACTIONS .
+	inc RANDOM .
+  inc FAULT-MODEL .
+  
+  vars t t' t0 t1 t2 t3 t4 t5 t6 : Time .
+  var nzt : NzTime .
+  vars id id' id0 st : Id .
+  vars l l0 l1 l2 l3 loc : Loc .
+  vars lkb ekb ekb' ekb0 ekb1 : KB .
+  var dir dl dl0 dl1 pt2 pt0 pt1 : Pt2 . **** Dir .
+  var b b0 b1 b2 : Bool .
+  var evs : EventSet .
+  vars fp0 fp1 rp0 rp1 : FiniteFloat .
+	var n r j i  e e0 e1 : Nat .
+  var act : Act .
+  var ftype : FType .
+  var fpars : FPars .
+  var rv : RVal .
+  
+ **** var wpars : WindPars .  
+
+  eq okEnv(class(id,Bot)  (atloc(id, l1) @ t) 
+                 class(id',Bot) (atloc(id',l1) @ t) ekb) = false .
+  eq okEnv(ekb) = true [owise] .
+
+
+ 
+ **** Action failures  need action names to avoid param specific
+ sort Act .
+ ops mvA  chargeA : -> Act [ctor] .
+ op aF : Id Act FType FPars -> Info .
+ ***(
+  aF(id,mvA,simpleFT,sFP(fp0, fp1, ptV(pt2))) 
+  --- fp0 prob of 0, fp1 prob of diversion by pt
+  --- could be composition of wind 1,pw,(i,j)
+  --- and faulty wheel/motor pr0,1,(0,0)
+ )
+ ***(
+  aF(id,chargeA,boolFT,bFP(fp0))  --- charge or not
+ )
+ ***(
+  aF(id,rotA, simpleFT,sFP(fp0,fp1,intV(k')))
+  aF(id,clickA,simpleFT,sFT(fp0,fp1,bV(b)))
+   rp0 < fp0 -- no picture taken
+   rp1 < fp1 and b=false -- bad picture taken
+ )
+
+ op getAF : Id Act KB -> KB .
+ eq getAF(id, act, (aF(id,act,ftype,fpars) @ t) ekb) =
+           (aF(id,act,ftype,fpars) @ t) .
+
+ *** physics model of action
+ *** returns only the updats (so far only local to action id)
+ op doEAct : Time Action KB -> KB .
+
+ ceq doEAct(t, mv(id, dl), 
+            (atloc(id,l) @ t0) (energy(id,e) @  t1) 
+            (rand(id,i,j) @ t5 ) ekb)
+   =
+      (atloc(id,l1) @ s t) (energy(id,e1) @ s t) 
+      (rand(id,i,s s j) @ s t )  
+   if (aF(id, mvA,simpleFT,sFP(fp0, fp1, ptV(pt2))) @ t6)
+      (fence(id,pt0, pt1) @ t3)  randInc(n) ekb0
+      := ekb
+   /\ rp0 := float(random( (n * j) + i)) / float(randMax)
+   /\ rp1 := float(random( (n * (j + 1)) + i)) / float(randMax)
+   /\ dl0 := if rp0 < fp0 then pt(0,0) else dl fi
+   /\ dl1 := if rp1 < fp1 then pt2 else pt(0,0) fi
+   /\ l0 := sum(sum(l,dl0),dl1)
+   /\ l1 := if inBounds(l0,pt0,pt1) then l0 else l fi
+   /\ e1 := max(e - costMv,0) 
+   .
+    
+ ceq doEAct(t, charge(id), (energy(id,e) @ t1) (rand(id,i,j) @ t5 )  ekb)
+    =
+      (energy(id,e1) @ s t) (rand(id,i,s s j) @ s t )  
+   if (aF(id,chargeA,boolFT,bFP(fp0)) @ t6) (atloc(id,l) @ t0)
+      (atloc(id0,l) @ t3) class(id0,Station) randInc(n)  ekb0
+      := ekb
+   /\ rp0 := float(random( (n * j) + i) / randMax)
+   /\ e0 := e + (if (rp0 < fp0) then 0 else chargeUnit fi)
+   /\ e1 := min(e0,100)
+   .
+  
+ eq doEAct(t, a:Action, ekb) = doAct(a:Action, ekb) [owise] .
+
+
+---- performs actions for one-time unit 
+---- assume each agent has at most one entry in the event set
+---- returns the envt change to be applied
+***  op doUnitEnvAct : Time KB EventSet -> KB .
+  op doUnitEnvActX : Time KB KB EventSet -> KB .
+
+eq doUnitEnvAct(t,ekb, evs) = doUnitEnvActX(t,ekb,none,evs) .
+
+ceq doUnitEnvActX(t,ekb, ekb0, (a:Action @ 0) evs) =
+       doUnitEnvActX(t,ekb,addK(ekb1,ekb0),evs)
+if ekb1 := doEAct(t,a:Action,ekb) .
+
+ceq doUnitEnvActX(t,ekb, ekb0, ({rv, a:Action} @ 0) evs) =
+       doUnitEnvActX(t,ekb,addK(ekb1,ekb0),evs)
+if ekb1 := doEAct(t,a:Action,ekb) .
+
+eq doUnitEnvActX(t,ekb, ekb0, none) = ekb0 .
+
+endfm
+

@@ -1,0 +1,413 @@
+==========================================
+rewrite [132] in SCENARIO-DIAGNOSIS : addFaults(initS1t, obst(0, pt(2, 3))) .
+rewrites: 102672 in 116ms cpu (121ms real) (881562 rewrites/second)
+result ASystem: {
+[eI |
+  clock(44) comDist(12) randInc(3) class(b(0), BotI) class(b(1), BotF) class(st(0), Station) class(dp(0), Depot) class(ob(0), Obstacle) (atloc(b(0), pt(3, 4)) @ 44) (atloc(b(1), pt(1, 5)) @ 27) (atloc(st(0), pt(3, 2)) @ 0) (atloc(dp(0), pt(3, 3)) @ 0) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 90) @ 44) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) (treatStage(pt(2, 4), 4) @ 24) (fence(b(0), pt(0, 0), pt(6, 5)) @ 0) (fence(b(1), pt(0, 0), pt(6, 5)) @ 0) (rand(eI, 2, 0) @ 44) (rand(b(0), 0, 0) @ 0) rand(b(1), 1, 0) @ 0] (
+{0,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(0, 2)) @ 1) (atloc(b(1), pt(0, 4)) @ 0) (energy(b(0), 95) @ 1) (energy(b(1), 100) @ 0) (supply(b(1), 100) @ 0) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(0, 1)) @ 0) (energy(b(0), 100) @ 0) mode(b(0), enroute(pt(2, 4))) @ 0)] 
+[b(1) : BotF |
+  lkb : ((atloc(b(1), pt(0, 4)) @ 0) (energy(b(1), 100) @ 0) (mode(b(1), ready) @ 0) supply(b(1), 100) @ 0)]}
+ ; 
+{1,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))} {{cv(100),u(1)},mv(b(1), pt(1, 0))},
+[eI |
+  (atloc(b(0), pt(0, 3)) @ 2) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 90) @ 2) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(0, 2)) @ 1) (atloc(b(1), pt(0, 4)) @ 0) (energy(b(0), 95) @ 1) mode(b(0), enroute(pt(2, 4))) @ 1)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(0, 1)) @ 0) (atloc(b(1), pt(0, 4)) @ 0) (energy(b(1), 100) @ 0) (mode(b(1), enroute(pt(2, 4))) @ 1) supply(b(1), 100) @ 0)]}
+ ; 
+{2,
+	{{cv(100),u(1)},mv(b(0), pt(1, 0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(1, 3)) @ 3) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 85) @ 3) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(0, 3)) @ 2) (atloc(b(1), pt(0, 4)) @ 0) (energy(b(0), 90) @ 2) mode(b(0), enroute(pt(2, 4))) @ 2)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(0, 2)) @ 1) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{3,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  (atloc(b(0), pt(1, 2)) @ 4) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 80) @ 4) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(1, 3)) @ 3) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 85) @ 3) mode(b(0), enroute(pt(2, 4))) @ 3)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(1, 3)) @ 3) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 3) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{4,
+	{{cv(100),u(1)},mv(b(0), pt(1, 0))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(2, 2)) @ 5) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 75) @ 5) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(1, 2)) @ 4) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 80) @ 4) mode(b(0), enroute(pt(2, 4))) @ 4)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(1, 3)) @ 3) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 4) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{5,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  (atloc(b(0), pt(2, 1)) @ 6) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 70) @ 6) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 2)) @ 5) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 75) @ 5) mode(b(0), enroute(pt(2, 4))) @ 5)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(1, 2)) @ 4) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 5) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{6,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  (atloc(b(0), pt(2, 0)) @ 7) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 65) @ 7) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 1)) @ 6) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 70) @ 6) mode(b(0), enroute(pt(2, 4))) @ 6)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 2)) @ 5) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 6) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{7,
+	{{cv(100),u(3/4)},mv(b(0), pt(1, 0))},
+[eI |
+  (atloc(b(0), pt(3, 0)) @ 8) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 60) @ 8) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 0)) @ 7) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 65) @ 7) mode(b(0), enroute(pt(2, 4))) @ 7)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 1)) @ 6) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 7) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{8,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 1)) @ 9) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 55) @ 9) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 0)) @ 8) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 60) @ 8) mode(b(0), enroute(pt(2, 4))) @ 8)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 0)) @ 7) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 8) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{9,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 50) @ 10) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 1)) @ 9) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 55) @ 9) mode(b(0), enroute(pt(2, 4))) @ 9)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 0)) @ 8) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 9) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{10,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 70) @ 11) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 50) @ 10) mode(b(0), enroute(pt(2, 4))) @ 10)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 1)) @ 9) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 10) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{11,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 90) @ 12) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 70) @ 11) mode(b(0), enroute(pt(2, 4))) @ 11)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 11) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{12,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 100) @ 13) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 90) @ 12) mode(b(0), enroute(pt(2, 4))) @ 12)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 12) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{13,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 3)) @ 14) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 95) @ 14) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 100) @ 13) mode(b(0), enroute(pt(2, 4))) @ 13)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 13) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{14,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 4)) @ 15) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 90) @ 15) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 3)) @ 14) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 95) @ 14) mode(b(0), enroute(pt(2, 4))) @ 14)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 2)) @ 10) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 14) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{15,
+	{{cv(100),u(1)},mv(b(0), pt(-1, 0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 85) @ 16) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(3, 4)) @ 15) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 90) @ 15) (mode(b(0), enroute(pt(2, 4))) @ 15) treatStage(pt(2, 4), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 3)) @ 14) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 15) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{16,
+	{{cv(100),u(1)},treat(b(0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 75) @ 17) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 1) @ 17] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 85) @ 16) (mode(b(0), treat) @ 16) treatStage(pt(2, 4), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 16) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 0) @ 0)]}
+ ; 
+{17,
+	{{cv(100),u(1)},treat(b(0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 65) @ 18) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 75) @ 17) (mode(b(0), treat) @ 17) treatStage(pt(2, 4), 1) @ 17)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 17) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 1) @ 17)]}
+ ; 
+{18,
+	none,
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 65) @ 18) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18] 
+[b(0) : BotI |
+  lkb : ((targets(pt(0, 5)) @ 0) (target(pt(2, 4)) @ 0) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 65) @ 18) (mode(b(0), ready) @ 18) treatStage(pt(2, 4), 2) @ 18)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 18) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18)]}
+ ; 
+{19,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(2, 5)) @ 20) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 60) @ 20) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 65) @ 18) mode(b(0), enroute(pt(0, 5))) @ 19)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(2, 4)) @ 0) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 19) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18)]}
+ ; 
+{20,
+	{{cv(100),u(3/4)},mv(b(0), pt(1, 0))},
+[eI |
+  (atloc(b(0), pt(3, 5)) @ 21) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 55) @ 21) (energy(b(1), 95) @ 2) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(2, 5)) @ 20) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 60) @ 20) mode(b(0), enroute(pt(0, 5))) @ 20)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(0, 5)) @ 19) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 4)) @ 16) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 20) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18)]}
+ ; 
+{21,
+	{{cv(100),u(1)},mv(b(1), pt(1, 0))} {{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) class(ob(0), Obstacle) (atloc(b(0), pt(3, 4)) @ 22) (atloc(b(1), pt(2, 4)) @ 22) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 50) @ 22) (energy(b(1), 90) @ 22) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 5)) @ 21) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(0), 55) @ 21) mode(b(0), enroute(pt(0, 5))) @ 21)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(0, 5)) @ 19) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(2, 5)) @ 20) (atloc(b(1), pt(1, 4)) @ 2) (energy(b(1), 95) @ 2) (mode(b(1), enroute(pt(2, 4))) @ 21) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18)]}
+ ; 
+{22,
+	{{cv(100),u(0)},treat(b(1))} {{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 3)) @ 23) (atloc(b(1), pt(2, 4)) @ 22) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 45) @ 23) (energy(b(1), 80) @ 23) (supply(b(1), 80) @ 23) treatStage(pt(2, 4), 3) @ 23] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 4)) @ 22) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(0), 50) @ 22) mode(b(0), enroute(pt(0, 5))) @ 22)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(0, 5)) @ 19) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 4)) @ 22) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(1), 90) @ 22) (mode(b(1), treat) @ 22) (supply(b(1), 100) @ 0) treatStage(pt(2, 4), 2) @ 18)]}
+ ; 
+{23,
+	{{cv(100),u(0)},treat(b(1))} {{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 40) @ 24) (energy(b(1), 70) @ 24) (supply(b(1), 60) @ 24) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 23) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(0), 45) @ 23) mode(b(0), enroute(pt(0, 5))) @ 23)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(0, 5)) @ 19) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 4)) @ 22) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(1), 80) @ 23) (mode(b(1), treat) @ 23) (supply(b(1), 80) @ 23) treatStage(pt(2, 4), 3) @ 23)]}
+ ; 
+{24,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 60) @ 25) (energy(b(1), 70) @ 24) (supply(b(1), 60) @ 24) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(0), 40) @ 24) mode(b(0), enroute(pt(0, 5))) @ 24)] 
+[b(1) : BotF |
+  lkb : ((targets(pt(0, 5)) @ 1) (target(pt(0, 5)) @ 19) (targetF(pt(2, 4)) @ 1) (atloc(b(0), pt(3, 3)) @ 23) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(1), 70) @ 24) (mode(b(1), ready) @ 24) (supply(b(1), 60) @ 24) treatStage(pt(2, 4), 4) @ 24)]}
+ ; 
+{25,
+	{{cv(100),u(1)},charge(b(0))} {{cv(100),u(1)},mv(b(1), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 5)) @ 26) (energy(b(0), 80) @ 26) (energy(b(1), 65) @ 26) (supply(b(1), 60) @ 24) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(0), 60) @ 25) mode(b(0), enroute(pt(0, 5))) @ 25)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(1), 70) @ 24) (mode(b(1), enroute(pt(0, 5))) @ 25) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{26,
+	{{cv(100),u(1)},charge(b(0))} {{cv(100),u(1)},mv(b(1), pt(-1, 0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 100) @ 27) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 4)) @ 22) (energy(b(0), 80) @ 26) mode(b(0), enroute(pt(0, 5))) @ 26)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 5)) @ 26) (energy(b(1), 65) @ 26) (mode(b(1), enroute(pt(0, 5))) @ 26) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{27,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 3)) @ 28) (atloc(b(1), pt(1, 5)) @ 27) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 95) @ 28) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(2, 5)) @ 26) (energy(b(0), 100) @ 27) mode(b(0), enroute(pt(0, 5))) @ 27)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{28,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 4)) @ 29) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 90) @ 29) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 28) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 95) @ 28) mode(b(0), enroute(pt(0, 5))) @ 28)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 24) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 28) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{29,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 5)) @ 30) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 85) @ 30) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 4)) @ 29) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 90) @ 29) mode(b(0), enroute(pt(0, 5))) @ 29)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 3)) @ 28) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 29) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{30,
+	{{cv(100),u(1)},mv(b(0), pt(-1, 0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) (atloc(b(0), pt(2, 5)) @ 31) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 80) @ 31) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 5)) @ 30) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 85) @ 30) mode(b(0), enroute(pt(0, 5))) @ 30)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 4)) @ 29) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 30) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{31,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(2, 4)) @ 32) (atloc(b(1), pt(1, 5)) @ 27) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 75) @ 32) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(2, 5)) @ 31) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 80) @ 31) mode(b(0), enroute(pt(0, 5))) @ 31)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(2, 5)) @ 31) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 31) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{32,
+	{{cv(100),u(1)},mv(b(0), pt(-1, 0))},
+[eI |
+  class(b(0), BotI) class(b(1), BotF) (atloc(b(0), pt(1, 4)) @ 33) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 70) @ 33) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(2, 4)) @ 32) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 75) @ 32) mode(b(0), enroute(pt(0, 5))) @ 32)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(2, 5)) @ 31) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 32) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{33,
+	{{cv(100),u(1)},mv(b(0), pt(-1, 0))},
+[eI |
+  (atloc(b(0), pt(0, 4)) @ 34) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 65) @ 34) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(1, 4)) @ 33) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 70) @ 33) mode(b(0), enroute(pt(0, 5))) @ 33)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(1, 4)) @ 33) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 33) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{34,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  (atloc(b(0), pt(0, 3)) @ 35) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 60) @ 35) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(0, 4)) @ 34) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 65) @ 34) (mode(b(0), enroute(pt(0, 5))) @ 34) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(1, 4)) @ 33) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 34) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{35,
+	{{cv(100),u(3/4)},mv(b(0), pt(0, -1))},
+[eI |
+  (atloc(b(0), pt(0, 2)) @ 36) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 55) @ 36) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(0, 3)) @ 35) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 60) @ 35) (mode(b(0), enroute(pt(0, 5))) @ 35) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(0, 4)) @ 34) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 35) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{36,
+	{{cv(100),u(3/4)},mv(b(0), pt(1, 0))},
+[eI |
+  (atloc(b(0), pt(1, 2)) @ 37) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 50) @ 37) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(0, 2)) @ 36) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 55) @ 36) (mode(b(0), enroute(pt(0, 5))) @ 36) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(0, 3)) @ 35) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 36) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{37,
+	{{cv(100),u(3/4)},mv(b(0), pt(1, 0))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(2, 2)) @ 38) (atloc(b(1), pt(1, 5)) @ 27) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 45) @ 38) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(1, 2)) @ 37) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 50) @ 37) (mode(b(0), enroute(pt(0, 5))) @ 37) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(0, 2)) @ 36) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 37) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{38,
+	{{cv(100),u(3/4)},mv(b(0), pt(1, 0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 40) @ 39) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(2, 2)) @ 38) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 45) @ 38) (mode(b(0), enroute(pt(0, 5))) @ 38) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(1, 2)) @ 37) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 38) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{39,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 60) @ 40) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 40) @ 39) (mode(b(0), enroute(pt(0, 5))) @ 39) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(2, 2)) @ 38) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 39) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{40,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 80) @ 41) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 60) @ 40) (mode(b(0), enroute(pt(0, 5))) @ 40) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 40) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{41,
+	{{cv(100),u(1)},charge(b(0))},
+[eI |
+  (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 100) @ 42) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 80) @ 41) (mode(b(0), enroute(pt(0, 5))) @ 41) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 41) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{42,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  class(ob(0), Obstacle) (atloc(b(0), pt(3, 3)) @ 43) (atloc(b(1), pt(1, 5)) @ 27) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 95) @ 43) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 100) @ 42) (mode(b(0), enroute(pt(0, 5))) @ 42) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 42) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+ ; 
+{43,
+	{{cv(100),u(1)},mv(b(0), pt(0, 1))},
+[eI |
+  (atloc(b(0), pt(3, 4)) @ 44) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 90) @ 44) (energy(b(1), 60) @ 27) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) treatStage(pt(2, 4), 4) @ 24] 
+[b(0) : BotI |
+  lkb : ((targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 43) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(0), 95) @ 43) (mode(b(0), enroute(pt(0, 5))) @ 43) treatStage(pt(0, 5), 0) @ 0)] 
+[b(1) : BotF |
+  lkb : ((targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (energy(b(1), 60) @ 27) (mode(b(1), enroute(pt(0, 5))) @ 43) (supply(b(1), 60) @ 24) treatStage(pt(0, 5), 0) @ 0)]}
+) 
+[b(0) : BotI |
+  lkb : (clock(44) class(b(0), BotI) class(b(1), BotF) class(st(0), Station) class(ob(0), Obstacle) (lastAct(mv(b(0), pt(0, 1))) @ 43) (targets(nil) @ 19) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 43) (atloc(b(1), pt(1, 5)) @ 27) (atloc(st(0), pt(3, 2)) @ 0) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(0), 95) @ 43) (ereserve(b(0), 35) @ 0) (mode(b(0), enroute(pt(0, 5))) @ 43) (treatStage(pt(0, 5), 0) @ 0) (treatStage(pt(2, 4), 4) @ 24) (treatRisk(b(0), true) @ 0) (fence(b(0), pt(0, 0), pt(6, 5)) @ 0) home(b(0), pt(0, 1))),
+  ckb : (class(b(0), BotI) class(b(1), BotF) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 43) atloc(b(1), pt(1, 5)) @ 27),
+  sensors : (locS obstacleS energyS treatS),
+  evs : (rcv(none) tick @ 0)] 
+[b(1) : BotF |
+  lkb : (clock(44) class(b(0), BotI) class(b(1), BotF) class(st(0), Station) class(dp(0), Depot) class(ob(0), Obstacle) (lastAct(mv(b(1), pt(-1, 0))) @ 26) (targets(nil) @ 25) (target(pt(0, 5)) @ 19) (targetF(pt(0, 5)) @ 25) (atloc(b(0), pt(3, 2)) @ 39) (atloc(b(1), pt(1, 5)) @ 27) (atloc(st(0), pt(3, 2)) @ 0) (atloc(dp(0), pt(3, 3)) @ 0) (atloc(ob(0), pt(2, 3)) @ 0) (energy(b(1), 60) @ 27) (ereserve(b(1), 35) @ 0) (mode(b(1), enroute(pt(0, 5))) @ 43) (supply(b(1), 60) @ 24) (treatStage(pt(0, 5), 0) @ 0) (treatStage(pt(2, 4), 4) @ 24) (treatRisk(b(1), true) @ 0) (fence(b(1), pt(0, 0), pt(6, 5)) @ 0) home(b(1), pt(0, 4))),
+  ckb : (class(b(0), BotI) class(b(1), BotF) (target(pt(0, 5)) @ 19) (atloc(b(0), pt(3, 3)) @ 43) atloc(b(1), pt(1, 5)) @ 27),
+  sensors : (locS obstacleS energyS treatS supplyS),
+  evs : (rcv(atloc(b(0), pt(3, 3)) @ 43) tick @ 0)]}
+Bye.

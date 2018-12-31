@@ -1,0 +1,144 @@
+*****  bot patroling from side to side (myDir flip)
+fmod MODEL-TASKS is
+  inc MODEL-ACTIONS .
+
+  vars x y x0 y0 cury n n1 : Nat .
+  vars id : Id .
+	var cl : Class .
+	vars  t t0 t1 t2 t3 t4 t5 : Time .
+  vars l loc locf : Loc .
+  vars ll ur : Pt2 .
+  vars kb kbp lkb lkb0 lkb1 lkb2 lkb3 skb skb0 ekb ekb0 : KB .
+  vars evs evs' ievs devs : EventSet .
+  var dir dir1 : Pt2 .  **** Dir
+  var act : Action .
+	vars acts acts0 : ActSet .
+	var e : FiniteFloat .
+  vars rval rv0 : RVal .
+  var racts : RActSet .  
+  
+**** bot processes shared information (rcv(kb) events)
+**** should not be any others
+  op handleS : Class Id KB EventSet -> KB .
+	eq handleS(cl,id,lkb,rcv(kb) ievs) =
+	      handleS(cl,id,addK(lkb,kb),ievs) .
+	eq handleS(cl,id,lkb,ievs) = lkb [owise] .  
+
+**** keeps only location and energy, updates myDir at the edge
+**** updates offTrack count
+**** should not increment otc if last action was charge
+  op proSensors : Id KB KB -> KB .
+  ceq proSensors(id,lkb,skb) = lkb2
+   if ((myDir(id,dir) @ t0) (myY(id,y0) @ t3) (offTrack(id,n) @ t4) 
+       (fence(id,ll,ur) @ t2) clock(t) lkb0) := lkb
+   /\ (atloc(id,pt(x,y)) @ t1)   skb0 := skb
+   /\ dir1 := (if atVEdge(pt(x,y), ll, ur) 
+               then reverseDir(dir) 
+               else dir fi) 
+   /\ n1 := (if (y == y0) 
+             then 0 
+             else (if isChargeLast(lkb0) then 0 else s n fi) fi)     
+   /\ lkb1 := addK(lkb0 (myDir(id,dir1) @ t) (myY(id,y0) @ t3)
+                        (offTrack(id,n1) @ t) (fence(id,ll,ur) @ t2) 
+                        clock(t), skb) 
+   /\ lkb2 := (if atVEdge(pt(x,y), ll, ur)                      
+              then updateVisits(id,lkb1,pt(x,y), t1)
+              else lkb1 fi) .
+ 
+ **** visits(id, ... [loc,t]...)             
+ op updateVisits : Id KB Loc Time -> KB .
+ eq updateVisits(id,lkb (visits(id,ltl:LocTimeList) @ t1),l:Loc,t) =
+     lkb (visits(id,ltl:LocTimeList ; [l:Loc,t]) @ t) .
+ eq updateVisits(id,lkb,l:Loc,t) = lkb [owise] .
+ 
+ 
+
+  eq proSensors(id,lkb,skb) =  lkb [owise] .  --- no loc sensor info
+
+  op isChargeLast :  KB -> Bool .
+  eq isChargeLast((lastAct(act) @ t0) lkb1) = isCharge(act) . 
+  eq isChargeLast(lkb1) = false [owise] .
+  
+  op isCharge : Action -> Bool .
+  eq isCharge(charge(id)) = true .
+  eq isCharge(act) = false [owise] .
+
+*** bot reads mail, reads and processes sensors to get current lkb
+*** then solves the botSCP restricted to available moves
+****   op solveScp : Id KB ActSet -> ActSet .
+
+  ceq doTask(cl,id,tick,ievs,devs,skb,lkb) = 
+    if racts == none then 
+       {lkb2, devs (tick @ botDelay), none }
+    else 
+       selector(doTask$(id,getThresh(id,lkb2),lkb2,
+                           devs (tick @ botDelay),racts))
+     fi  
+   if lkb0 := handleS(cl,id,lkb,ievs)
+   /\ lkb2 := proSensors(id,lkb0,skb)
+   /\ racts := actSCP(cl,id,lkb2)  .
+
+
+
+op actSCP : Class Id KB -> RActSet .
+
+ceq actSCP(cl,id,kb) = racts
+  if acts0 := myActs(cl,id,kb)
+  /\ racts := solveSCP(id,kb,acts0) .
+
+  
+  op doTask$ : Id RVal KB EventSet RActSet -> KBEventsKBSet .
+  ceq doTask$(id,rval,lkb2,devs,{rv0,act} racts) = 
+     (if (rval < rv0) then {lkb3,devs ({rv0,act} @ 0),kbp} else none fi)
+      doTask$(id,rval,lkb2,devs,racts)  
+   if kbp := tell(id,act,lkb2) 
+   /\ lkb3 := remember(id,act,lkb2) .
+  eq doTask$(id,rval,lkb2,devs,none) = none .
+
+**** remember -- as monitor function store expected effects
+
+  op remember : Id Action KB -> KB .
+  eq remember(id,act,lkb clock(t)) = addK(lkb,lastAct(act) @ t) clock(t) .
+  op tell : Id Action KB -> KB .
+  eq tell(id,act,(atloc(id,loc) @ t) class(id,cl) lkb) = 
+	         (atloc(id,loc) @ t) class(id,cl) .
+  eq tell(id,act,kb) = none [owise] .
+
+  op selector : KBEventsKBSet -> KBEventsKBSet .
+  eq selector(kbset:KBEventsKBSet) = kbset:KBEventsKBSet [owise] .
+
+***(
+  vars kek0 kek1 kek : KBEventsKB .
+  var  kekset : KBEventsKBSet . 
+	var  rval0 rval1 : RVal .
+	var act0 act1 : Action .
+  vars evs0 evs1 : EventSet .
+
+
+  op allKeK : KB KBEventsKBSet -> KBEventsKBSet .
+  op bestKeK : KB KBEventsKBSet ->  KBEventsKBSet .
+  op bestKeKX :  KBEventsKBSet KBEventsKB ->  KBEventsKBSet .
+
+  eq allKeK(kb,kek kekset) = kek kekset .
+  eq allKeK(kb,kekset) = {kb,(tick @ botDelay),none} [owise] .
+  eq bestKeK(kb,kek kekset) = bestKeKX(kekset, kek) .  
+  eq bestKeK(kb,kekset) = {kb,(tick @ botDelay),none} [owise] .
+  eq bestKeKX( kek0 kekset, kek1) =
+       bestKeKX(kekset, betterEvs(kek0, kek1)) .
+  eq bestKeKX(none, kek1) = kek1 .
+  
+  op betterEvs : KBEventsKB KBEventsKB -> KBEventsKB .
+  ceq betterEvs(kek0,kek1) =  
+       (if (rval0 < rval1) then kek1 else kek0 fi) 
+    if ({rval0,act0} @ t0) evs0 := getKEKEvents(kek0)
+    /\ ({rval1,act1} @ t1) evs1 := getKEKEvents(kek1)   
+    .
+)   
+***(
+  eq selectKeK(kb,kekset) = bestKeK(kb,kek kekset) .
+  eq selectKeK(kb,kekset) = allKeK(kb,kek kekset) .
+)
+
+
+endfm
+

@@ -1,0 +1,128 @@
+This file documents the scenarios run for each case study.
+(It assumed you have read the techreport - sadiagnosis.pdf)
+
+The scenario names, the input Maude files, protocols, and script files
+needed to execute run_all.sh are listed here.
+The scripts generate logs, events in the protocol language,
+and execution deviations.  
+
+For each case study, there is a summary.txt file that contains notes
+on the diagnosis process for each scenario.
+
+`gedanken' is run by hand according to notes in the summary.txt file
+
+For each case study, there is a configuration.cfg file the defines
+case study parameters that are not part of the protocol, but needed
+to define the constraint solving problem for a scenario.
+
+The scripts in run_all.sh are instances of the script template
+described in script-notes.txt.   
+
+The run_all.sh in each case study runs directory should be 
+exected in that directory.
+
+Note that in addition to Maude, to run the scripts requires R with
+the R libraries ggplot2, ggrepel, tidyr installed with dependencies.
+
+R does the visualization. If you don't have R, you can comment out
+the lines requiring R and still get all the Maude output.
+
+You can use the script template to make your own scenarios and script
+files.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+PatrolBotRuns
+  This case study is there to experiment with new ideas, carry first
+  tests of soft constraint designs and fault models.
+ No scripts are provided
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BotTeamRuns 
+  (load file load.maude, 
+   BotF needs to be within 3 grid units for BotI to start treatment)
+
+<scenarioInit>  
+  --- term representing the scenario initial system configuration 
+Maude files
+<scenarioName>.maude 
+  --- executes 
+<scenarioName>EDevsL.maude
+<scenarioName>Events.maude
+<scenarioName>EventsX.maude
+
+BotTeam ScenarioNames
+
+  initS1
+  initS1Obs1
+
+  initS1a
+  initS1aObs4-2
+  initS1aensfm1
+  initS1alocsf1x
+  initS1amvaf1
+  initS1amvaf1x
+  initS1locsf1
+
+  initS2
+  initS2ensf0
+  initS2ensf1
+  initS2locsf0x
+  initS2locsf1
+  initS2mvaf1
+
+R scripts
+  energy.R 
+  trajectory.R
+
+Shell scripts
+  run_all.sh  
+  run_energy.sh
+  run_loctreat.sh
+
+Protocols
+  protocol_initS1.txt                
+  protocol_initS1_event_only.txt     
+  protocol_initS1_no_local_order.txt
+
+  protocol_initS1a.txt
+  protocol_initS2.txt
+
+Deviate Configuration File
+  configuration.cfg
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BotTeamRuns1    same as BotTEamRuns with close = 1
+  (load file load1.maude, 
+   BotF needs to be within 1 grid unit for BotI to start treatment)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+DronesRuns
+  (load file load-mp.maude) 
+
+Maude files
+<scenarioName>.maude
+<scenarioName>Events.maude
+<scenarioName>EventsX.maude
+
+Drone Scenario Names
+  initS1
+  initS1gotoaf
+  initS1gotoaf2
+  initS1gotoaf3
+  initS1locsf
+  initS1locsf2
+  initS1locsf3
+
+R scripts
+  energy_3d.R 
+  trajectory_3d.R 
+
+Shell scripts
+  run_all.sh       
+  run_energy.sh    
+  run_loctarget.sh
+
+Deviate Configuration File
+  configuration.cfg

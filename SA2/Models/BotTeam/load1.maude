@@ -1,0 +1,18 @@
+load ../../Lib/load-sa
+
+load knowledge1
+load sensor-faults
+
+
+fmod MODEL-KAS  is
+  inc MODEL-KNOWLEDGE .
+  inc MODEL-ACTIONS .
+  inc SENSOR-FAULTS .
+endfm  
+
+load scp
+
+load tasks1
+load actions
+load scenario
+

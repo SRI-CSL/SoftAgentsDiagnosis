@@ -1,0 +1,3 @@
+--- initS2ensf1
+load ../../Models/BotTeam/load
+rew [180] addFaults(initS2t, ensf(1)) .

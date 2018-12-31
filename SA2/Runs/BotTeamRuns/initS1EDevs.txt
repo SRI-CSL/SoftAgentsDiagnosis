@@ -1,0 +1,5 @@
+==========================================
+reduce in SCENARIO-DIAGNOSIS : getEDevsL(initS1t, bot0base bot1base, 150, 0, 150) .
+rewrites: 101971 in 135ms cpu (136ms real) (751549 rewrites/second)
+result EDevsList: (nil).EDevsList
+Bye.

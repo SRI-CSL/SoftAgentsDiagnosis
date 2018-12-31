@@ -1,0 +1,872 @@
+mod SCENARIO is
+  inc SOFT-AGENT-RULES .
+  inc ENV-ACTIONS .
+  inc MODEL-TASKS .
+  inc MODEL-KAS .
+	inc SOLVE-SCP{val2tgtenergy} . 
+
+
+vars n n0 i j y ws wn gx gy : Nat .
+var e e0 e1 : Nat .
+var fp : FiniteFloat .
+var dir : Pt2 .  ---Dir
+vars wkb wkbs wkbn kb kb0 kb1 lkb ekb skb newkb oldkb : KB .
+var aconf lconf conf : Conf .
+var attrs : AttributeSet .
+vars id eid id0 id1 : Id .
+var ids : IdSet .
+var cl : Class .
+vars l loc l0 l1 loc0 loc1 : Loc .
+var t t0 t1 t2 t3 te0 te1 : Time .
+vars locl0 locl : LocList .
+var b : Bool .
+
+var v  : RVal .
+var act : Action .
+var rks : RActSet .
+var kek : KBEventsKB .
+var kekset : KBEventsKBSet .
+var sset : SensorSet  .
+  
+eq chargeUnit = 20 .
+eq loadUnit = 50 .
+
+eq botDelay = 1 .
+eq costMv = 5 .
+eq costLoad = 2 .
+eq costTreatS = 20 .   --- supply
+eq costTreatI = 10 .   --- energy BotI
+eq costTreatF = 10 .   --- energy BotF
+
+op b : Nat -> Id .
+op st : Nat -> Id .  *** station
+op dp : Nat -> Id .  *** depot
+op eI : -> Id .
+op ob : Nat -> Id .   **** obstacles
+
+
+**** resolving conflicts in concurrent actions -- just return resolved newkb
+eq resolveKB(eid, newkb, (rand(eid,i,j) @ t0) randInc(n) oldkb) =
+    resolveKBX(newkb, (rand(eid,i,j) @ t0) randInc(n)) .
+
+op resolveKBX : KB KB -> KB .
+ceq resolveKBX((atloc(id0,l) @ t0) (atloc(id1,l) @ t1) kb,
+              (rand(eid,i,j) @ t2) randInc(n))  =
+     resolveKBX(kb0 kb, (rand(eid,i,s j) @ t2) randInc(n)) 
+if fp :=  float(random( (n * j) + i) / randMax )
+/\ kb0 := (if fp < .5 then (atloc(id0,l) @ t0) else (atloc(id1,l) @ t1) fi) .
+
+eq resolveKBX(kb, (rand(eid,i, j) @ t2) randInc(n)) 
+     = (kb rand(eid,i,j) @ s t2) [owise] .
+     
+  
+***(
+7 x 6 grid  
+station at pt(3,2)
+depot at pt(3,3)
+b0 pt(0,1) 
+b1 pt(0,4)
+tgts pt(5,1) pt(1,4)
+)
+
+**** scenario 17sep27 fixed conf 
+**** need to parameaterize bot and env construction 
+
+ops bkb0 bkb1 : -> KB .
+ops bot0 bot1 : -> Agent .
+
+eq bkb0 = 
+  clock(0)
+  class(st(0),Station)
+  class(b(0),BotI)
+  home(b(0),pt(0,1))
+  (fence (b(0),pt(0,0),pt(6,5)) @ 0)
+  (mode(b(0),ready) @ 0)
+  (atloc(st(0),pt(3,2)) @ 0)
+  (ereserve(b(0),35) @ 0) .
+
+---- eventually add obstacleS to sensor set
+eq bot0 = 
+  [b(0) : BotI | lkb : bkb0,
+                ckb : none, 
+                sensors : (locS energyS obstacleS treatS), 
+                evs : (tick @ 0)] . 
+
+eq bkb1 = 
+  clock(0)
+  class(st(0),Station)
+  class(dp(0),Depot)
+  class(b(1),BotF)
+  home(b(1),pt(0,4))
+  (fence (b(1),pt(0,0),pt(6,5)) @ 0)
+  (mode(b(1),ready) @ 0)
+  (atloc(st(0),pt(3,2)) @ 0)
+  (atloc(dp(0),pt(3,3)) @ 0)
+  (ereserve(b(1),35) @ 0) .
+
+eq bot1 = 
+  [b(1) : BotF | lkb : bkb1,
+                ckb : none, 
+                sensors : (locS energyS obstacleS treatS supplyS),  
+                evs : (tick @ 0)] . 
+
+op env01 : -> Env .
+op ekb01 : -> KB .
+
+eq ekb01 =
+  clock(0)
+  randInc(3)
+  comDist(12)
+  class(b(1),BotF)
+  class(b(0),BotI)
+  class(st(0),Station)
+  class(dp(0),Depot)
+  (atloc(st(0),pt(3,2)) @ 0)
+  (atloc(dp(0),pt(3,3)) @ 0)
+
+  (atloc(b(0),pt(0,1)) @ 0 )
+  (energy(b(0),100) @ 0   )
+  (fence(b(0),pt(0,0),pt(6,5)) @ 0)
+
+  (atloc(b(1),pt(0,4))  @ 0)
+  (energy(b(1),100) @ 0   )
+  (supply(b(1),100) @ 0   )
+  (fence(b(1),pt(0,0),pt(6,5)) @ 0)
+
+  (rand(b(0),0,0) @ 0)  
+  (rand(b(1),1,0) @ 0) 
+  (rand(eI,2,0) @ 0) 
+ .
+
+ eq env01 =  [eI | ekb01 ] .
+
+**** use to add an obstacle j at p:Pt2
+op obst : Nat Pt2 -> KB .
+eq obst(j:Nat,p:Pt2) =  (class(ob(0),Obstacle)  (atloc(ob(j:Nat),p:Pt2)  @ 0)) .
+
+***(
+The effect of the fault models is defined by the function
+readSensor, which calls applySensorF  (in knowledge.maude)
+)***
+**** bot 0 location sensor is broken w prob .1 and offset pt(0,1) w prob .2
+op locsf : Nat -> KB .
+eq locsf(j) = (sF(b(j),locS,simpleFT,sFP(1/10,1/5,ptV(pt(0,1)))) @ 0) .
+
+**** w prob .1 the energy sensor returns 0, ow with prob .2 it adds 10 (-10)
+**** to the actual energy reading for bot j
+op ensf : Nat -> KB .
+eq ensf(j) = (sF(b(j),energyS,simpleFT,sFP(1/10,1/5,intV(10))) @ 0) .
+op ensfm : Nat -> KB .
+eq ensfm(j) = (sF(b(j),energyS,simpleFT,sFP(1/10,1/5,intV(-10))) @ 0) .
+
+***** see actions.maude doEAct for how this is used in computing an action
+ ***(
+  aF(id,mvA,simpleFT,sFP(fp0, fp1, ptV(pt2))) 
+  --- fp0 prob of 0 move, fp1 prob of diversion by pt2
+  --- could be composition of wind 1,pw,(i,j)
+  --- and faulty wheel/motor pr0,1,(0,0)
+ )
+**** mv action fault for b(j)  wind blows south
+op mvaf : Nat -> KB .
+eq mvaf(j) = (aF(b(j),mvA,simpleFT,sFP(1/10, 1/5, ptV(pt(0,-1)))) @ 0)  .
+
+ ***(
+  aF(id,chargeA,boolFT,bFP(fp0))  --- charge or not
+ )
+**** charge action fault for b(1)  with prob .15 charging fails
+op chrgaf : Nat -> KB .
+eq chrgaf(j) = (aF(b(j),chargeA,boolFT,bFP(3/20)) @ 0)  .
+
+**** treat sensor fault for b(j)  with prob .1 treat sensor fails, .2 overest
+op trtsf : Nat -> KB .
+eq trtsf(j) = (sF(b(j),treatS,simpleFT,sFP(1/10,1/5,intV(1))) @ 0) .
+
+**** treat action fault for b(j)  with prob .1 trt fails, .1 overdrive
+op trtaf : Nat -> KB .
+eq trtaf(j) = (sF(b(j),treatS,simpleFT,sFP(1/10,1/10,intV(1))) @ 0) .
+
+***!!!!need  treat and supply/load faults
+
+op setTargets : Agent LocList Bool Time -> Agent .
+op setTargets : Id KB LocList Bool Time -> KB .
+eq setTargets([id : cl | (lkb : lkb), attrs],locl,b,t) =
+    [id : cl | (lkb : setTargets(id,lkb,locl,b,t)), attrs ]  .
+eq setTargets(id,(targets(locl0) @ t0) kb, locl,b,t)  
+  = (targets(locl) @ t) (treatRisk(id,b) @ t) kb .
+eq setTargets(id,kb,locl,b,t)  = (targets(locl) @ t) (treatRisk(id,b) @ t) kb [owise] .
+
+op initTreatStage : Env LocList  Time -> Env .
+eq initTreatStage([eid | ekb],locl,t) = [eid | initTreatStage(ekb,locl,t)] .
+op initTreatStage : KB LocList Time -> KB .
+eq initTreatStage(kb,loc ; locl, t) =
+    initTreatStage(kb (treatStage(loc,0) @ t),locl,t) .
+eq initTreatStage(kb,nil,t) = kb .
+
+***(
+op addBotLkb : Agent KB -> Agent .
+op addBotLkb : Agent KB -> Agent .
+eq addBotLkb([id : cl | lkb : lkb, attrs ], kb) = 
+             [id : cl | lkb : addK(lkb,kb), attrs ] .
+)
+****** base case
+ op initC : -> Conf .
+ eq initC = (setTargets(bot0,( pt(5,1) ; pt(1,4) ), false,0)
+             setTargets(bot1,( pt(5,1) ; pt(1,4) ), false,0)
+             initTreatStage(env01,( pt(5,1) ; pt(1,4) ),0)
+             ) .
+ 
+ op initS : -> ASystem .
+ eq initS = { initC (nil).Log } .
+ 
+ **** add fault models to the basic ekb
+ op mkInitC : LocList Bool -> Conf .
+ eq mkInitC(locl,b) = 
+            (setTargets(bot0,locl,b,0)
+             setTargets(bot1,locl,b,0)
+             initTreatStage(env01,locl,0)
+             ) .
+
+              
+ op mkInitS : LocList Bool -> ASystem .
+ eq mkInitS(locl,b) = { mkInitC(locl,b) (nil).Log } .
+
+ op addFaults : ASystem KB -> ASystem .
+ op addFaults : Conf KB -> Conf .
+ eq addFaults({conf},kb) = { addFaults(conf,kb) } .
+ eq addFaults(conf [eid | ekb],kb) = conf [eid | addK(ekb,kb)] .
+
+**** nat is rand offset
+ op addFaultsR : ASystem KB Nat -> ASystem .
+ op addFaultsR : Conf KB Nat -> Conf .
+ eq addFaultsR({conf},kb,n) = { addFaultsR(conf,kb,n) } .
+ eq addFaultsR(conf [eid | ekb],kb,n) 
+      = conf [eid | offsetRand(addK(ekb,kb),n)] .
+
+ op offsetRand : KB Nat -> KB .
+ eq offsetRand((kb rand(id,i,j) @ t),n)
+    = (rand(id,i,j + n) @ t) offsetRand(kb,n) .
+ eq offsetRand(kb,n) = kb [owise] .
+ 
+
+ops initC0 initC1t initC1f initC2t initC2f : -> Conf .
+eq initC0 = mkInitC(( pt(5,1) ; pt(1,4) ),false) .
+eq initC1t = mkInitC(( pt(2,4) ; pt(0,5) ),true) .  
+eq initC1f = mkInitC(( pt(2,4) ; pt(0,5) ),false) .  
+eq initC2t = mkInitC(pt(5,1) ; pt(2,0) ; pt(1,4),true) .  
+eq initC2f = mkInitC(pt(5,1) ; pt(2,0) ; pt(1,4),false) .  
+
+ 
+ ops initS0 initS1t initS1f initS2t initS2f : -> ASystem .
+ 
+eq initS0 = mkInitS(( pt(5,1) ; pt(1,4) ),false) .
+eq initS1t = mkInitS(( pt(2,4) ; pt(0,5) ),true) .  
+eq initS1f = mkInitS(( pt(2,4) ; pt(0,5) ),false) .  
+eq initS2t = mkInitS(pt(5,1) ; pt(2,0) ; pt(1,4),true) .  
+eq initS2f = mkInitS(pt(5,1) ; pt(2,0) ; pt(1,4),false) .  
+
+
+*********** specifying interface functions
+**** choices for selecting from ranked actions
+***(
+**** maude can choose for all actions with non-zero rank
+ eq updateRks(rks,act,v) = updateRksAll(rks,act,v) .
+ eq selectKeK(kb,kekset) = allKeK(kb, kekset) .
+
+**** maude can choose from all maximally ranked actions
+ eq updateRks(rks,act,v) = updateRksMx(rks,act,v) .
+ eq selectKeK(kb,kekset) = allKeK(kb, kekset) .
+
+**** maude selects some best action from all ranked actions
+ eq updateRks(rks,act,v) = updateRksAll(rks,act,v) .
+ eq selectKeK(kb,kekset) = bestKeK(kb, kekset) .
+
+**** maude chooses some best action from the maximally ranked actions
+ eq updateRks(rks,act,v) = updateRksMx(rks,act,v) .
+ eq selectKeK(kb,kekset) = bestKeK(kb, kekset) .
+
+)
+
+**** replace these two equations by a pair from above
+**** if you want to see the effects of different action selections
+ eq updateRks(rks,act,v) = updateRksMx(rks,act,v) .
+ eq selectKeK(kb,kekset) = allKeK(kb, kekset) .
+
+
+
+**** printed by doTask rule
+eq toPrintKBL(id, (atloc(id,loc) @ t0) (energy(id,e) @ t1 ) lkb) =
+               (atloc(id,loc) @ t0) (energy(id,e) @ t1 ) .
+eq toPrintEvs({lkb,evs:EventSet,kb0} kekset:KBEventsKBSet) = 
+               getRankedEvs(evs:EventSet) 
+               toPrintEvs(kekset:KBEventsKBSet) .
+
+**** printed by timeStep rule
+***(
+eq toPrintKB( (atloc(b(1),loc1)  @ t1) (energy(b(1),e1) @ te1  )
+              (atloc(b(0),loc0) @ t0 ) (energy(b(0),e0) @ te0  ) ekb)
+           =  ((atloc(b(1),loc1)  @ t1) (energy(b(1),e1) @ te1 ) 
+               (atloc(b(0),loc0) @ t0 ) (energy(b(0),e0) @ te0 )) .
+**** eq toPrintKB(ekb) = none [owise] .
+)
+
+************** specifying log
+***(
+          aconf none
+op kbLog : Conf Conf -> Conf .
+eq kbLog(aconf,lconf) = lconf [owise] .
+)
+**** collects doActInfo for active entity and sensor readings for the env
+op kbLogX : Conf Conf KB -> Conf .
+eq kbLog(aconf,lconf) = kbLogX(aconf,lconf,none) .
+
+eq kbLogX([id : cl:BotClass | lkb : lkb, (sensors : sset), attrs]  aconf
+           [eid | ekb], lconf,skb) =
+    kbLogX(aconf [eid | ekb],
+           lconf [id : cl:BotClass | lkb : getDoActInfo(id,lkb) ],
+           addK(getSensorsKI(id,sset,ekb),skb)) .
+eq kbLogX(aconf [eid | ekb],lconf,skb) = lconf [eid | skb] [owise] .
+**** extractRand(ekb) 
+
+op getDoActInfo : Id KB  -> KB .
+eq getDoActInfo(id,kb) =
+   (getLocInfo(kb,none)) **** (getFenceInfo(id,kb)) 
+   (getEnergyInfo(id,kb))
+   (getTargetInfo(id,kb))
+   (getTreatInfo(id,kb)) 
+   (getSupplyInfo(id,kb)) 
+   (getModeInfo(id,kb)) 
+   .
+   
+
+op getLocInfo : KB KB -> KB .
+eq getLocInfo(class(id,cl:BotClass) (atloc(id,loc) @ t) kb, lkb)
+  = getLocInfo(kb, lkb (atloc(id,loc) @ t)) .
+eq getLocInfo(kb, lkb) = lkb [owise] .
+  
+vars ptul ptlr : Pt2 .  
+op getFenceInfo : Id KB -> KB .
+eq getFenceInfo(id,(fence(id,ptul,ptlr) @ t) kb) = 
+       (fence(id,ptul,ptlr) @ t) .
+eq getFenceInfo(id,kb) = none [owise] .
+
+op getEnergyInfo : Id KB -> KB .
+eq getEnergyInfo(id, (energy(id,e) @ t) lkb ) = (energy(id,e) @ t) .
+eq getEnergyInfo(id,lkb ) = none [owise] .
+
+op getTargetInfo : Id KB -> KB .
+eq getTargetInfo(id, 
+      (target(loc) @ t1) (targets(locs:LocList)@ t2) class(id,BotI) lkb ) 
+    = (target(loc) @ t1) (targets(locs:LocList)@ t2) .
+eq getTargetInfo(id, 
+      (targetF(loc) @ t1) (targets(locs:LocList)@ t2) class(id,BotF) lkb ) 
+    = (targetF(loc) @ t1) (targets(locs:LocList)@ t2) 
+      getTargetInfoX(id,lkb) .
+
+eq getTargetInfo(id,lkb ) = none [owise] .
+       
+op getTargetInfoX : Id KB -> KB .       
+eq getTargetInfoX(id,lkb (target(loc) @ t1)) = (target(loc) @ t1) .      
+eq getTargetInfoX(id,lkb) = none [owise] .
+
+op getTreatInfo : Id KB -> KB .
+eq getTreatInfo(id, 
+       (treatStage(loc,j) @ t0) (target(loc) @ t1) class(id,BotI) lkb )  
+     =  (treatStage(loc,j) @ t0) .
+eq getTreatInfo(id, 
+       (treatStage(loc,j) @ t0) (targetF(loc) @ t1) class(id,BotF) lkb )  
+     =  (treatStage(loc,j) @ t0)  .
+eq getTreatInfo(id,lkb ) = none [owise] .
+
+op getSupplyInfo : Id KB -> KB .
+eq getSupplyInfo(id, (supply(id,e) @ t) lkb ) = (supply(id,e) @ t) .
+eq getSupplyInfo(id,lkb ) = none [owise] .
+
+op getModeInfo : Id KB -> KB .
+eq getModeInfo(id, (mode(id,m:Mode) @ t) lkb) = (mode(id,m:Mode) @ t) .
+eq getModeInfo(id,lkb ) = none [owise] .
+
+
+op isDoneS : ASystem -> Bool .
+eq isDoneS({aconf}) = isDoneC(aconf) .
+eq isDoneS(asys:ASystem) = true [owise] .
+
+op isDoneC : Conf -> Bool .
+eq isDoneC([id : cl:BotClass | lkb : lkb, attrs] aconf)
+   = isDone(id,lkb) and isDoneC(aconf) .
+eq isDoneC(stopped(aconf)) = isDoneC(aconf) .
+eq isDoneC(aconf)   = true [owise] .
+
+
+endm
+
+***(
+search [1] {initC0} =>+ {aconf} such that isDoneC(aconf) . 
+
+)
+
+mod SCENARIO-DIAGNOSIS is
+ inc META-LEVEL .
+ inc SCENARIO .
+
+var b : Bool .
+vars t t0 t0a t1a t1 t2  : Time .
+var id eid : Id .
+var cl : Class .
+var act : Action .
+vars loc0 loc1 loc2 loc : Loc .
+vars lkb ekb ekb0 lkb0 lkb1 lkb2 kb kb0 bkb : KB .
+var ki : KItem .
+vars e e0 e1 e2 n j j0 : Nat .
+var rval : RVal .
+var racts : RActSet .
+vars aconf aconf1 lconf lconf0 bconf bconf0 : Conf .
+var kbps : KBPairSet .
+var kbpsl : KBPairSetList .
+
+var attrs attrs0 : AttributeSet .
+var  logitem litem : LogItem .
+var  log log0 log1 : Log .
+var  res? : ResultPair? .
+var  asys asys1 asysB : ASystem .
+var  asysT asys1T : Term .
+
+var edevs : EDevs .
+var edevsl : EDevsList .
+
+*** returns the kb update
+*** op doAct :  Action KB -> KB .
+*** Compute deviations kbDevs(id,t,act,lkb,ekb) : KBPairSet
+****  t is the time the actions are chosen, s t the ekb time
+*** id, t,act,lkb, ekb -> {lkb0,ekb0}  
+
+op kbDevs : Id Time Action KB KB -> KBPairSet .
+ceq kbDevs(id,t, act,lkb,ekb) =
+  (if (loc0 == loc1) then none 
+   else { clock(t) (atloc(id, loc0) @ t0),(atloc(id, loc1) @ t1)} fi)
+  (if (e0 == e1) then none 
+   else {clock(t) (energy(id, e0) @ t0a),(energy(id, e1) @ t1a)} fi)
+if lkb1 := doAct(act,lkb clock(t))
+/\ lkb2 := addK(lkb,lkb1)
+/\ (atloc(id, loc0) @ t0) (energy(id, e0) @ t0a) lkb0 := lkb2
+/\ (atloc(id, loc1) @ t1) (energy(id, e1) @ t1a) ekb0 := ekb
+. 
+
+op logItem2devs : LogItem -> KBPairSet .
+ceq logItem2devs({t,{rval,act} racts,lconf}) =
+kbDevs(id,t,act,lkb,ekb) logItem2devs({t,racts,lconf})
+if id := actId(act)
+/\ [id : cl | lkb : lkb ] [eid | ekb] aconf := lconf
+.
+
+eq logItem2devs({t,racts,lconf}) = none [owise] .
+
+sort KBPairSetList .
+op nil : -> KBPairSetList [ctor] .
+op [_] : KBPairSet -> KBPairSetList [ctor] .
+op _;_ : KBPairSetList KBPairSetList -> KBPairSetList [ctor assoc id: nil] .
+
+op log2devlist : Log KBPairSetList -> KBPairSetList .
+eq log2devlist(nil, kbpsl) = kbpsl .
+ceq log2devlist(logitem ; log, kbpsl) = 
+       log2devlist(log, kbpsl ; (if kbps == none then nil else [kbps] fi))
+ if kbps := logItem2devs(logitem) .
+
+
+**** run init n steps, apply log2devlist to final log
+op genLog : ASystem Nat -> Log .
+ceq genLog(asys,n) = getLog(getConf(asys1))
+if asysT := upTerm(asys)
+/\ res? := metaRewrite(['SCENARIO], asysT,n)
+/\ asys1T := if res? :: ResultPair then getTerm(res?) else asysT fi
+/\ asys1 := downTerm(asys1T,{(nil).Log})
+.
+
+**** run init n steps, apply log2devlist to final log
+op findDevs : ASystem Nat -> KBPairSetList .
+eq findDevs(asys,n) = log2devlist(genLog(asys,n),nil) .
+
+***(
+ceq findDevs(asys,n) = kbpsl
+if asysT := upTerm(asys)
+/\ res? := metaRewrite(['SCENARIO], asysT,n)
+/\ asys1T := if res? :: ResultPair then getTerm(res?) else asysT fi
+/\ asys1 := downTerm(asys1T,{(nil).Log})
+/\ kbpsl := log2devlist(getLog(getConf(asys1)),nil)   
+.
+)
+
+**** {ekball,lkball} -- the env and agent view flattened and dups removed
+op flatLog : Log KBPair -> KBPair . 
+op flatLogI : LogItem KBPair -> KBPair . 
+op flatLogC : Conf KB -> KB . 
+op flatKB : KB KB -> KB . 
+
+
+eq flatLog(logitem ; log,kbp:KBPair) =
+      flatLog(log,flatLogI(logitem,kbp:KBPair)) .
+
+eq flatLog((nil).Log, kbp:KBPair) = kbp:KBPair .
+
+eq flatLogI({t,racts,[eid | ekb] lconf},{ekb0,lkb0})
+    = {flatKB(ekb,ekb0), flatLogC(lconf,lkb0)} .
+     
+eq flatKB(ki kb,ki kb0) = flatKB(kb,ki kb0) .
+eq flatKB((atloc(id,noLoc) @ t) kb, kb0) = flatKB(kb,kb0) .
+
+eq flatKB(kb, kb0) = resolveKBs(kb, kb0) [owise] .
+
+***** look for loc, energy, ... with two values at the same time
+**** drop inconsistent pairs for now
+op resolveKBs : KB KB -> KB .
+
+ceq resolveKBs((atloc(id,noLoc) @ t) kb, (atloc(id,loc0) @ t) kb0 )
+    = resolveKBs(kb,(atloc(id,loc0) @ t) kb0)
+  if loc0 =/= noLoc .
+  
+ceq resolveKBs((atloc(id,loc) @ t) kb, (atloc(id,noLoc) @ t) kb0 )
+    = resolveKBs((atloc(id,loc) @ t) kb, kb0)
+  if loc =/= noLoc .
+  
+ceq resolveKBs((atloc(id,loc) @ t) kb, (atloc(id,loc0) @ t) kb0 )
+    = resolveKBs(kb, kb0)
+if loc =/= loc0 and loc =/= noLoc and loc0 =/= noLoc .
+
+ceq resolveKBs((energy(id,e:NzNat) @ t) kb, (energy(id,e0:NzNat) @ t) kb0 )
+    = resolveKBs(kb, kb0)
+if e:NzNat =/= e0:NzNat .
+
+ceq resolveKBs((energy(id,0) @ t) kb, (energy(id,e) @ t) kb0 )
+    = resolveKBs(kb, (energy(id,e) @ t) kb0)
+if e =/= 0 .
+
+ceq resolveKBs((energy(id,e) @ t) kb, (energy(id,0) @ t) kb0 )
+    = resolveKBs(kb (energy(id,e) @ t), kb0)
+if e =/= 0 .
+
+ceq resolveKBs((treatStage(loc,j) @ t) kb, (treatStage(loc,j0) @ t) kb0 )
+    = resolveKBs(kb, kb0)
+if j =/= j0 .
+
+eq resolveKBs(kb, kb0) = kb kb0 [owise] .
+
+
+eq flatLogC([id : cl | lkb : lkb0, attrs:AttributeSet] lconf,lkb1) = 
+    flatLogC(lconf, flatKB(lkb0,lkb1)) .
+
+eq flatLogC(lconf,lkb) = lkb [owise] .
+
+*** from flattened log events extract loc info
+op extractLocEv : KB -> KB .
+op extractLocEvX : KB KB -> KB .
+
+eq extractLocEv(kb) = extractLocEvX(kb,none)  .
+eq extractLocEvX((atloc(id,loc) @ t) kb,kb0) 
+    = extractLocEvX(kb,kb0 (atloc(id,loc) @ t)) .
+eq extractLocEvX(kb,kb0)  = kb0 [owise] .
+
+*** from flattened log events extract energy info
+op extractEnergyEv : KB -> KB .
+op extractEnergyEvX : KB KB -> KB .
+
+eq extractEnergyEv(kb) = extractEnergyEvX(kb,none)  .
+eq extractEnergyEvX((energy(id,e) @ t) kb,kb0) 
+    = extractEnergyEvX(kb,kb0 (energy(id,e) @ t)) .
+eq extractEnergyEvX(kb,kb0)  = kb0 [owise] .
+
+
+**** from flattened log events extract treatStage info
+op extractTreatEv : KB -> KB .
+op extractTreatEvX : KB KB -> KB .
+eq extractTreatEv(kb) = extractTreatEvX(kb,none)  .
+eq extractTreatEvX((treatStage(loc,j) @ t) kb,kb0) 
+    = extractTreatEvX(kb,kb0 (treatStage(loc,j) @ t)) .
+eq extractTreatEvX(kb,kb0)  = kb0 [owise] .
+
+op extractRand : KB -> KB .
+op extractRandX : KB KB -> KB .
+eq extractRand(kb) = extractRandX(kb,none)  .
+eq extractRandX((rand(id,j,j0) @ t) kb,kb0) 
+    = extractRandX(kb,kb0 (rand(id,j,j0) @ t)) .
+
+eq extractRandX(kb,kb0)  = kb0 [owise] .
+
+op getLocTreatEvs : ASystem Nat -> KBPair .
+eq getLocTreatEvs(asys,n) = getLocTreatREvs(asys,n,false) .
+op getLocTreatREvs : ASystem Nat Bool -> KBPair .
+ceq getLocTreatREvs(asys,n,b) = 
+      {extractLocEv(ekb) extractTreatEv(ekb) 
+      (if b then extractRand(ekb) else none fi),
+       extractLocEv(lkb) extractTreatEv(lkb) }
+if  log := genLog(asys,n)
+/\ {ekb,lkb} := flatLog(log, {none,none})
+. 
+
+op getLocTreatEvsBot : ASystem Nat -> KB .
+ceq getLocTreatEvsBot(asys,n) = lkb
+if {ekb,lkb}  := getLocTreatEvs(asys,n) .
+    
+op getLocTreatEnergyREvs : ASystem Nat Bool -> KBPair .
+op getLocTreatEnergyEvs : ASystem Nat -> KBPair .
+eq getLocTreatEnergyEvs(asys,n) = getLocTreatEnergyREvs(asys,n,false) .
+ceq getLocTreatEnergyREvs(asys,n,b) = 
+      {extractLocEv(ekb) extractTreatEv(ekb) extractEnergyEv(ekb) 
+      (if b then extractRand(ekb) else none fi),
+       extractLocEv(lkb) extractTreatEv(lkb) extractEnergyEv(lkb) }
+if  log := genLog(asys,n)
+/\ {ekb,lkb} := flatLog(log, {none,none})
+. 
+    
+sorts EDev EDevs .
+subsort EDev < EDevs .
+
+op none : -> EDevs [ctor] .
+op __ : EDevs EDevs -> EDevs [ctor assoc comm id: none] .
+op {_,_,_,_} : RAct KB KB KB -> EDev [ctor format(n d d n d n d n d n) ] .
+op {_,_,_,_} : RAct KB KB KBPair -> EDev [ctor format(n d d n d n d n d n) ] .
+
+sorts EDevsElt EDevsList .
+subsort EDevsElt < EDevsList .
+op [_,_] : Nat EDevs -> EDevsElt [ctor format(n d d d d n) ] .
+op nil : -> EDevsList [ctor] .
+op _;_ : EDevsList EDevsList -> EDevsList [ctor assoc id: nil] .
+
+op log2edevsl : Log Conf -> EDevsList .
+op log2edevslX : Log Conf EDevsList -> EDevsList .
+eq log2edevsl(log,bconf) = log2edevslX(log,bconf,nil) . 
+eq log2edevslX(nil,bconf,edevsl) = edevsl . 
+eq log2edevslX(litem ; log,bconf,edevsl) 
+      = log2edevslX(log,bconf,edevsl ; litem2edevs(litem,bconf)) .
+
+****   Conf is baseConf -- constants not carried in the log
+op litem2edevs : LogItem Conf -> EDevsList .
+op litem2edevsX : Time RActSet Conf Conf EDevs -> EDevsList .
+eq litem2edevs({t, racts, lconf},bconf) = litem2edevsX(t,racts,lconf,bconf,none) .
+
+eq litem2edevsX(t, none, lconf,bconf,edevs) 
+****    = (if (edevs == none) then nil else [t,edevs] fi) .
+    = litem2noSensor(t,lconf,edevs) .
+eq litem2edevsX(t, {rval,act} racts, lconf,bconf,edevs) 
+    = litem2edevsX(t, racts, lconf,bconf,edevs act2edevs(t,{rval,act},lconf,bconf)) .
+
+op litem2noSensor : Time Conf  EDevs -> EDevsList .
+eq litem2noSensor(t,lconf,edevs) 
+    = (if (edevs == none) then nil else [t,edevs] fi)  [owise] .
+eq litem2noSensor(t, [id : cl | lkb : lkb, attrs] [eid | ekb] lconf0,edevs) 
+      = litem2noSensor(t, [eid | ekb] lconf0,edevs getNoSensor(id,lkb,ekb,none)) .
+
+***** {{zero,noAct},lkb,failedsensor,envsensor}
+op getNoSensor : Id KB KB EDevs -> EDevs .
+eq getNoSensor(id,(atloc(id,noLoc) @ t) lkb, (atloc(id,loc) @ t0) ekb, edevs)
+   = getNoSensor(id,lkb, ekb, edevs   
+                 {{zero,noAct}, lkb,(atloc(id,noLoc) @ t), (atloc(id,loc) @ t0)}) .
+eq getNoSensor(id,(energy(id,0) @ t) lkb, (energy(id,e) @ t0) ekb, edevs)
+     = getNoSensor(id,lkb, ekb, edevs   
+                   {{zero,noAct}, lkb,(energy(id,0) @ t), (energy(id,e) @ t0)}) .
+
+eq getNoSensor(id,lkb, ekb, edevs) = edevs [owise] .
+
+
+****                      
+op act2edevs : Time RAct Conf Conf -> EDevs .  ***** none or one
+ceq act2edevs(t,{rval,act},lconf,bconf) = 
+  (if (ekb0 == none and lkb1 == none)
+   then none 
+   else (if (lkb1 =/= none)
+         then {{rval,act},lkb,lkb0,{lkb1,ekb0}} 
+         else {{rval,act},lkb,lkb0,ekb0}
+         fi)  fi)
+if id := actId(act)
+/\ [id : cl | lkb : lkb, attrs] [eid | ekb] lconf0 := lconf
+/\ [id : cl | lkb : bkb, attrs0] bconf0 := bconf
+/\ lkb0 := doAct(act,addK(bkb,lkb) clock(t))
+/\ {lkb1,ekb0} := kb2edevs(lkb0,ekb) ---- elements of ekb that disagree w lkb1 (model)
+.
+op kb2edevs :  KB KB -> KBPair .
+op kb2edevsX :  KB KB KB -> KBPair .
+
+eq kb2edevs(lkb,ekb) = kb2edevsX(lkb,ekb,none) .
+eq kb2edevsX((atloc(id,loc) @ t) lkb1,(atloc(id,loc0) @ t) ekb, ekb0) =
+     kb2edevsX (lkb1,ekb,ekb0 (if (loc =/= loc0) then (atloc(id,loc0) @ t) else none fi)) .
+
+eq kb2edevsX((energy(id,e) @ t) lkb1, (energy(id,e0) @ t) ekb,ekb0) =
+     kb2edevsX(lkb1,ekb,ekb0 (if (e =/= e0) then (energy(id,e0) @ t) else none fi)) .
+
+eq kb2edevsX((supply(id,e) @ t) lkb1, (supply(id,e0) @ t) ekb,ekb0) =
+     kb2edevsX(lkb1,ekb,ekb0 (if (e =/= e0) then (supply(id,e0) @ t) else none fi)) .
+
+eq kb2edevsX((treatStage(loc,j) @ t) lkb1, (treatStage(loc,j0) @ t) ekb,ekb0) =
+     kb2edevsX(lkb1, ekb,ekb0 (if (j =/= j0) then (treatStage(loc,j0) @ t) else none fi)) .
+
+eq kb2edevsX(lkb1, ekb,ekb0) = {lkb1,ekb0} [owise] .
+
+
+op getEDevsL : ASystem Conf Nat Nat Nat -> EDevsList .
+ceq getEDevsL(asys,bconf,n,j,j0) = log2edevsl(log0,bconf)
+if  log := genLog(asys,n)
+/\ log0 := subLog(log,j,j0)
+. 
+
+
+
+op tailLog : Log Nat -> Log .
+eq tailLog(log,0) = log .
+eq tailLog(nil,j) = nil .
+eq tailLog(litem ; log,s j) = tailLog(log,j) .
+
+op headLog : Log Nat -> Log .
+op headLogX : Log Nat Log -> Log .
+eq headLog(log,j) = headLogX(log,j,nil) .
+eq headLogX(litem ; log, s j, log0) = headLogX(log,j,log0 ; litem) .
+eq headLogX(log,0, log0) = log0 .
+eq headLogX(nil,j, log0) = log0 .
+
+op subLog : Log Nat Nat -> Log .
+eq subLog(log,j,j0) = headLog(tailLog(log,j),j0) .
+
+ops bkb0base bkb1base : -> KB .
+ops bot0base bot1base : -> Agent .
+eq bkb0base = 
+  class(st(0),Station)
+  (atloc(st(0),pt(3,2)) @ 0)
+  class(b(0),BotI)
+  home(b(0),pt(0,1))
+  (fence (b(0),pt(0,0),pt(6,5)) @ 0)
+  (ereserve(b(0),35) @ 0) .
+eq bot0base = 
+  [b(0) : BotI | lkb : bkb0base, sensors : (locS energyS obstacleS treatS)] . 
+
+eq bkb1base = 
+  class(st(0),Station)
+  class(dp(0),Depot)
+  (atloc(st(0),pt(3,2)) @ 0)
+  (atloc(dp(0),pt(3,3)) @ 0)
+  class(b(1),BotF)
+  home(b(1),pt(0,4))
+  (fence (b(1),pt(0,0),pt(6,5)) @ 0)
+  (ereserve(b(1),35) @ 0) .
+eq bot1base = 
+  [b(1) : BotF | lkb : bkb1base, sensors : (locS energyS obstacleS treatS supplyS)] . 
+
+op envbase : -> Env .
+op ekbbase : -> KB .
+eq ekbbase =
+  randInc(3)
+  comDist(12)
+  class(b(1),BotF)
+  class(b(0),BotI)
+  class(st(0),Station)
+  class(dp(0),Depot)
+  (atloc(st(0),pt(3,2)) @ 0)
+  (atloc(dp(0),pt(3,3)) @ 0)
+  (fence(b(0),pt(0,0),pt(6,5)) @ 0)
+  (fence(b(1),pt(0,0),pt(6,5)) @ 0)  .
+ eq envbase =  [eI | ekbbase ] .
+
+
+**** get log at transition time n,
+**** next state is time s n
+**** use that to create asys_n without faults
+**** run for k steps return resulting log.
+***(
+{t, racts, lconf} last item of rew 3 * (s t)
+clock before trans is t, after is s t
+clock of updated Sys should be n
+)
+
+ op mkInitCBase : LocList Bool -> Conf .
+ eq mkInitCBase(locl:LocList,b) = 
+            (setTreatRisk(bot0,b,0)
+             setTreatRisk(bot1,b,0)
+             initTreatStage(env01,locl:LocList,0)
+             ) .
+
+op setTreatRisk : Agent Bool Time -> Agent .
+eq setTreatRisk([id : cl | lkb : lkb, attrs],b,t)
+      = [id : cl | lkb : addK(lkb, (treatRisk(id,b) @ t)), attrs] .
+
+             
+ op mkInitSBase : LocList Bool -> ASystem .
+ eq mkInitSBase(locl:LocList,b) = { mkInitCBase(locl:LocList,b) (nil).Log } .
+
+op gedanken : ASystem ASystem Nat Nat  -> Log .
+ceq gedanken(asys,asysB,n,j) = log1
+if  log := genLog(asys, ((s n)  * 3))
+/\ litem := subLog(log,n,1)
+/\ ekb := getLIEnvKB(litem)
+/\ aconf := getLIAgents(litem)
+/\ asys1 := updateSys(asysB,s n, ekb,aconf)
+/\ log1 := genLog(asys1,j)
+. 
+
+
+**** example red gedanken(addFault(initS1a,...),initS1a,20,30)
+
+op getLIEnvKB : LogItem -> KB .
+op getLIAgents : LogItem -> Conf .
+op getConfAgents : Conf Conf -> Conf .
+
+
+op removeT0 : KB -> KB .
+eq removeT0(class(id,Obstacle) (atloc(id,loc) @ 0) ekb) = removeT0(ekb) .
+eq removeT0(ekb) = ekb [owise] .
+
+eq getLIEnvKB({t,racts,[eid | ekb] lconf}) = removeT0(ekb) .
+eq getLIEnvKB({t,racts,lconf}) = none [owise] .
+
+eq getLIAgents({t,racts, lconf}) = getConfAgents(lconf,none) .
+eq getConfAgents([id : cl | attrs] lconf, lconf0)
+       = getConfAgents(lconf, lconf0 [id : cl | attrs] ) .
+eq getConfAgents(lconf, lconf0) = lconf0 [owise] .
+
+op updateSys : ASystem Time KB Conf -> ASystem .
+ceq updateSys({[eid | ekb] aconf}, t, ekb0, lconf) = { aconf1 }
+  if aconf1 :=  [eid | addK(ekb,ekb0 clock(t))]
+                updateAConf(aconf,t,lconf) .
+  
+op updateAConf : Conf Time Conf -> Conf .
+eq updateAConf([id : cl | lkb : lkb, attrs] aconf, t,
+               [id : cl | lkb : lkb0, attrs0] lconf)
+   = [id : cl | lkb : addK(lkb,lkb0 clock(t)), attrs]
+      updateAConf(aconf,t,lconf) .
+eq updateAConf(aconf,t, lconf) = aconf [owise] .
+
+
+endm
+
+***(
+
+see Notes/BotRuns1/getEDevs.txt
+
+
+**** best to configure max ranked actions  
+**** using load.maude BotI waits til BotF within 3 to treat
+**** using load1.maude  BotI waits til BotF within 1 to treat
+***(
+****  two target locations
+
+**** no faults, two target locations
+rew [150]  mkInitS(( pt(4,0) ; pt(5,4) ),true) .
+
+**** flaky location for b(1)
+rew [175]  addFaultsR(mkInitS(pt(4, 0) ; pt(5, 4), true), locsf(1), 500) .
+
+**** the execution deviations
+red getEDevsL(addFaultsR(mkInitS(pt(4, 0) ; pt(5, 4), true), locsf(1), 500), bot0base bot1base, 175,0,175) .
+
+***** faulty move action b(1)
+rew [150] addFaultsR(mkInitS(( pt(4,0) ; pt(5,4) ),true),mvaf(1),500) .
+
+****  three target locations
+
+**** no faults
+rew [180] initS2t .
+
+**** location sensor faults for b(0)
+rew [180] addFaultsR(initS2t,locsf(0),500) .
+
+**** the execution deviations
+red getEDevsL(addFaultsR(initS2t,locsf(0),500), bot0base bot1base, 180,0,180) .
+
+q
+)
+

@@ -1,0 +1,3 @@
+--- initS1locsf1
+load ../../Models/BotTeam/load1
+rew [180] addFaultsR(initS1t,locsf(1),500) .

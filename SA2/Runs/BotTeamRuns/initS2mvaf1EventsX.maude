@@ -1,0 +1,3 @@
+--- initS2mvaf1
+load ../../Models/BotTeam/load
+red getLocTreatEnergyEvs(addFaults(initS2t, mvaf(1)), 210) .

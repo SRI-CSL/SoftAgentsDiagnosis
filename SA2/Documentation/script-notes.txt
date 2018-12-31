@@ -1,0 +1,120 @@
+The case study experiments are partially automated using
+shell scripts.   Each scenario is an instance 
+of a script template that coordinates execution of 
+maude execution and commands.  
+
+Analysis script template
+
+The template is parameterized by
+   <scenarioName> -- used to name files
+  <caseStudyName> -- used to name the directory holding the model
+
+Each template instance assumes the <caseStudy>Runs 
+directory contains
+
+Maude files
+  <scenarioName>.maude
+  <scenarioName>Events.maude
+  <scenarioName>EventsX.maude
+  <scenarioName>EDevsL.maude   (may not be used)
+
+These files all use 
+<caseStudyName> to find the model directory
+<scenarioInit> the term specifiying the scenario initial system state
+<n>  the number of rewrites to generate the log
+
+R scripts
+energy.R  (energy_3d.R  for Drones)
+trajectory.R  (trajectory_3d.R for Drones)
+
+Shell scripts
+  run_energy.sh    
+  run_loctarget.sh
+
+
+The shell script run_all.sh typcially contains all the
+instances for the case study.
+Scripts should be run from <caseStudy>Runs 
+
+##############################################################
+Shell script template 
+#---------------------------------------
+echo <scenarioName>
+maude -no-banner -no-wrap < <scenarioName>.maude > <scenarioName>.txt
+
+## <scenarioName>.maude runs the scenario
+## load ../../Models/<caseStudyName>/<loadfile>
+## assume the scenario file defines a term <scenarioInit> 
+## rew [n] <scenarioInit> .
+
+maude -no-banner -no-wrap < <scenarioName>Events.maude > <scenarioName>Events.txt
+
+## <scenarioName>Events.maude generates scenario events for partial order
+## load ../../Models/<caseStudyName>/<loadfile>
+## red getLocTreatEvs(<scenarioInit>,  n) .
+
+## generate the trajectory visualization
+./run_loctreat.sh <scenarioName>Events.txt <scenarioName>EventsEnv.txt <scenarioName>EventsBot.txt data_trajectory.csv
+Rscript --vanilla trajectory.R  data_trajectory.csv
+mv Rplots.pdf botteam_<scenarioName>_trajectory.pdf
+
+maude -no-banner -no-wrap < <scenarioName>EventsX.maude > <scenarioName>EventsX.txt
+
+## <scenarioName>EventsX.maude generates scenario events incl enerby
+## load ../../Models/<caseStudyName>/<loadfile>
+## red getLocTreatEnergyEvs(<scenarioInit>,  n) .
+
+## generate the energy visualization
+./run_energy.sh <scenarioName>EventsX.txt <scenarioName>EventsXEnv.txt <scenarioName>EventsXBot.txt data_energy.csv
+Rscript --vanilla energy.R  data_energy.csv
+mv Rplots.pdf botteam_<scenarioName>_energy.pdf
+
+maude -no-banner -no-wrap < <scenarioName>EDevsL.maude > <scenarioName>EDevs.txt
+
+## <scenarioName>EDevsL.maude generates the execution deviations
+## load ../../Models/<caseStudyName>/<loadfile>
+## red getEDevsL(<scenarioInit>, baseConf, n,0,n) .
+
+##################################################################
+Example BotTeam Script 
+   <scenarioName> = initS1alocsf1x
+  <caseStudyName> = BotTeam
+  <scenarioInit> =  
+    addFaultsR(mkInitS(pt(4, 0) ; pt(5, 4), true), locsf(1), 500)
+  n = 180     
+
+#---------------------------------------
+echo initS1alocsf1x
+maude -no-banner -no-wrap < initS1alocsf1x.maude > initS1alocsf1x.txt
+
+maude -no-banner -no-wrap < initS1alocsf1xEvents.maude > initS1alocsf1xEvents.txt
+./run_loctreat.sh initS1alocsf1xEvents.txt initS1alocsf1xEventsEnv.txt initS1alocsf1xEventsBot.txt data_trajectory.csv
+Rscript --vanilla trajectory.R  data_trajectory.csv
+mv Rplots.pdf botteam_initS1alocsf1x_trajectory.pdf
+
+maude -no-banner -no-wrap < initS1alocsf1xEventsX.maude > initS1alocsf1xEventsX.txt
+./run_energy.sh initS1alocsf1xEventsX.txt initS1alocsf1xEventsXEnv.txt initS1alocsf1xEventsXBot.txt data_energy.csv
+Rscript --vanilla energy.R  data_energy.csv
+mv Rplots.pdf botteam_initS1alocsf1x_energy.pdf
+
+maude -no-banner -no-wrap < initS1alocsf1xEDevsL.maude > initS1alocsf1xEDevs.txt
+
+##################################################################
+Example Drone script
+   <scenarioName> = initS1locsf
+  <caseStudyName> = Drones
+  <scenarioInit> = {addFaultsR(iC2(eI,100.0,5.0,20.0,pt(0,0,0),pt(100,100,40),50,25,pt(2,2,0),pt(10,80,25) ; pt(80,20,25),35,pt(98,98,0),pt(90,29,35) ; pt(20,90,35)), locsf(0,1/15,1/10,1),0) nil}
+  n = 209
+
+#---------------------------------------
+#--- initS1locsf
+maude -no-banner -no-wrap < initS1locsf.maude > initS1locsf.txt 
+maude -no-banner -no-wrap < initS1locsfEvents.maude > initS1locsfEvents.txt 
+maude -no-banner -no-wrap < initS1locsfEventsX.maude > initS1locsfEventsX.txt 
+./run_loctarget.sh initS1locsfEvents.txt initS1locsfEventsEnv.txt initS1locsfEventsBot.txt data_trajectory.csv
+./run_energy.sh initS1locsfEventsX.txt initS1locsfEventsXEnv.txt initS1locsfEventsXBot.txt data_energy.csv
+Rscript --vanilla trajectory_3d.R  data_trajectory.csv
+mv Rplots.pdf drone_initS1locsf_trajectory.pdf
+Rscript --vanilla energy_3d.R  data_energy.csv
+mv Rplots.pdf drone_initS1locsf_energy.pdf
+

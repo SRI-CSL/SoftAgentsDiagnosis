@@ -1,0 +1,3 @@
+--- initS2ensf1
+load ../../Models/BotTeam/load
+red getLocTreatEvs(addFaults(initS2t, ensf(1)),180) .

@@ -1,0 +1,3 @@
+--- initS2locsf0x
+load ../../Models/BotTeam/load
+rew [180] addFaultsR(initS2t,locsf(0),500) .

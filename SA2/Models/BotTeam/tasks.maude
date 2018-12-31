@@ -1,0 +1,264 @@
+*****  bot patroling from side to side (myDir flip)
+fmod MODEL-TASKS is
+  inc MODEL-ACTIONS .
+
+  vars x y x0 y0 cury n n1 j j1 : Nat .
+  var b : Bool .
+  vars id id0 : Id .
+	var cl : Class .
+	vars  t t0 t1 t2 t3 t4 t5 : Time .
+  vars l loc loc1 locf : Loc .
+  var locs : LocSet .
+  var locl : LocList .
+  vars ll ur : Pt2 .
+  vars kb kbp lkb lkb0 lkb1 lkb2 lkb3 skb skb0 ekb ekb0 : KB .
+  vars evs evs' ievs devs : EventSet .
+  var dir dir1 : Pt2 .  **** Dir
+  var act : Action .
+	vars acts acts0 : ActSet .
+	var e e1 : Nat .
+  vars rval rv0 : RVal .
+  var racts : RActSet .  
+  
+  sort KBBool .
+  op {_,_} : KB Bool -> KBBool [ctor]  .
+  
+**** bot processes shared information (rcv(kb) events)
+**** should not be any others
+  op handleS : Class Id KB EventSet -> KB .
+	eq handleS(cl,id,lkb,rcv(kb) ievs) =
+	      handleS(cl,id,addK(lkb,kb),ievs) .
+	eq handleS(cl,id,lkb,ievs) = lkb [owise] .  
+
+
+
+op addSensorK : KB KB -> KB .
+eq addSensorK(lkb,skb) = addK(lkb,skb) [owise] .
+eq addSensorK((atloc(id,loc) @ t) lkb, (atloc(id,loc1) @ t1) skb)
+   = addSensorK((atloc(id,loc1) @ t1) lkb, skb) .
+eq addSensorK((energy(id,e) @ t) lkb, (energy(id,e1) @ t1) skb)
+   = addSensorK((energy(id,e1) @ t1) lkb, skb) .
+eq addSensorK((supply(id,e) @ t) lkb, (supply(id,e1) @ t1) skb)
+   = addSensorK((supply(id,e1) @ t1) lkb, skb) .
+eq addSensorK((treatStage(loc,j) @ t) lkb, (treatStage(loc,j1) @ t1) skb)
+   = addSensorK((treatStage(loc,j1) @ t1) lkb, skb) .
+
+
+**** BotI locS energyS obstacleS  treatS 
+**** BotF sensors -- locS energyS obstacleS supplyS treatS
+
+**** if bool then compute actions using scp ow default to tick
+  op proSensorsX : Id KB KB -> KBBool .
+
+  eq proSensorsX(id,lkb (mode(id,done) @ t0),skb) 
+      = {addSensorK(lkb (mode(id,done) @ t0), skb), false} .
+**** noacts no tasks      
+
+***** ready     
+eq proSensorsX(id,lkb (mode(id,ready) @ t0) (targets(loc ; locl) @ t1) 
+                  class(id,BotI) clock(t),skb)  =
+    { addSensorK(addK(lkb (targets(locl) @  s t) class(id,BotI) clock(t) 
+                          (mode(id,enroute(loc)) @  t), 
+                      (target(loc) @  t)), 
+                  skb), true} .
+  ****scp acts 
+
+***(
+eq proSensorsX(id,lkb (mode(id,ready) @ t0) (targets(loc) @ t1) 
+                  class(id,BotI) clock(t),skb)  =
+    {addK(lkb (targets(nil) @ t) class(id,BotI) clock(t) 
+          (mode(id,enroute(loc)) @ t), 
+          (treatStage(loc,0) @ t) (target(loc) @ t) skb), true} .
+)
+ceq proSensorsX(id,lkb (mode(id,ready) @ t0) (targets(loc ; locl) @ t1) 
+                  class(id,BotF) (target(loc) @ t2) clock(t),skb)  =
+    {addSensorK(addK(lkb (targets(locl) @ s t) (target(loc) @ t2)
+                     class(id,BotF) clock(t) (mode(id,enroute(loc1)) @ t), 
+                     (targetF(loc) @  t)),   
+                skb),
+     true}
+  if (supply(id,e) @ t3) skb0 := skb
+  /\ loc1 :=  (if e <= 2 * costTreatS then getDepot(lkb) else loc fi) .
+
+***(
+ceq proSensorsX(id,lkb (mode(id,ready) @ t0) (targets(loc) @ t1) 
+                  class(id,BotF) (target(loc) @ t2) clock(t),skb)  =
+    {addK(lkb (targets(nil) @ t) (target(loc) @ t2) class(id,BotF)  clock(t) 
+          (targetF(loc) @ t)  (mode(id,enroute(loc1)) @ t), (targetF(loc) @ t) skb),
+     true}
+  if (supply(id,e) @ t3) skb0 := skb
+  /\ loc1 :=  (if e <= 2 * costTreatS then getDepot(lkb) else loc fi) .
+   ****scp acts 
+)
+eq proSensorsX(id,lkb (mode(id,ready) @ t0) (targets(nil) @ t1) 
+                   clock(t),skb)  =
+  {addSensorK(lkb (targets(nil) @ t1) clock(t)
+                  (mode(id,enroute(getHome(id,lkb))) @ t),  
+              skb), true} .
+   ****scp acts 
+
+**** botF must wait for tgt choice
+eq proSensorsX(id,lkb (mode(id,ready) @ t0) class(id,BotF),skb)  =
+    {addSensorK(lkb (mode(id,ready) @ t0) class(id,BotF), skb),false}  [owise].
+   ****no acts 1task
+
+
+***** enroute(loc) at loc
+eq proSensorsX(id,lkb (mode(id,enroute(loc)) @ t0)  clock(t),
+   (atloc(id,loc) @ t1) skb)  =
+ (if ( ((getClass(id,lkb) == BotI) and (loc == getTarget(lkb))) 
+       or 
+       ((getClass(id,lkb) == BotF) and (loc == getTargetF(lkb))) )
+  then {addSensorK(lkb (mode(id,treat) @ t)  clock(t),
+                   (atloc(id,loc) @ t1) skb), true}
+  else (if (loc == getDepot(lkb)) and (getClass(id,lkb) == BotF)
+        then {addSensorK(lkb (mode(id,loading) @ t) clock(t),
+                         (atloc(id,loc) @ t1) skb),
+              true}     
+        *** loc == home
+        else (if loc == getHome(id,lkb)
+              then {addSensorK(lkb (mode(id,done) @ t) clock(t),  
+                         (atloc(id,loc) @ t1) skb), false}
+              else {addSensorK(lkb clock(t), (atloc(id,loc) @ t1) skb), false}
+              fi)                             
+        fi)
+   fi)  .        
+  
+***** enroute(loc) not at loc
+eq proSensorsX(id,lkb (mode(id,enroute(loc)) @ t0) clock(t),skb)  =
+    {addSensorK(lkb clock(t)  (mode(id, enroute(loc)) @ t), skb),true} [owise] .
+**** scp acts
+
+
+**** target may have changed for BotF  use treatStage as criteria
+***** treat at tgt
+eq proSensorsX(id,lkb (mode(id,treat) @ t0) class(id,BotI) clock(t),
+                  (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb)
+      =
+  (if j < 2 
+   then {addSensorK(lkb class(id,BotI)  clock(t) (mode(id,treat) @ t),
+                   (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb),true}
+  else {addSensorK(lkb class(id,BotI)  clock(t) (mode(id,ready) @ t),     
+                  (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb),false}
+  fi) .
+
+eq proSensorsX(id,lkb (mode(id,treat) @ t0) class(id,BotF) clock(t),
+                  (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb) 
+     =
+  (if j < 4
+   then {addSensorK(lkb class(id,BotF) clock(t) (mode(id,treat) @ t), 
+                     (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb), true}
+   else {addSensorK(lkb class(id,BotF) clock(t) (mode(id,ready) @ t),
+                     (atloc(id,loc) @ t1) (treatStage(loc,j) @ t2) skb), false}
+   fi) .
+
+
+**** loading at depot 
+eq proSensorsX(id,lkb (mode(id,loading) @ t0) clock(t)
+                  class(id0,Depot) (atloc(id0,loc) @ t1), 
+                  (atloc(id,loc) @ t2) (supply(id,e) @ t3) skb)
+      =
+   {addSensorK(lkb clock(t) class(id0,Depot) (atloc(id0,loc) @ t1)
+     (if e < 100 
+      then (mode(id,loading) @ t) 
+      else (mode(id,enroute(getTargetF(lkb))) @ t) fi),
+      (atloc(id,loc) @ t2) (supply(id,e) @ t3) skb), true} .
+
+***!!! shouldn't happen???
+*** eq proSensorsX(id,lkb,skb) = {addSensorK(lkb,skb),false} [owise] .
+
+
+op getDepot : KB -> Loc .
+eq getDepot((atloc(id,loc) @ t0) class(id,Depot) kb) = loc .
+eq getDepot(kb) = noLoc [owise] .
+
+
+*** bot reads mail, reads and processes sensors to get current lkb
+*** then solves the botSCP restricted to available moves
+****   op solveScp : Id KB ActSet -> ActSet .
+
+
+  ceq doTask(cl,id,tick,ievs,devs,skb,lkb) = 
+    if racts == none then 
+       (if isDone(id,lkb2)
+        then {lkb2, devs, none }
+        else {lkb2, devs (tick @ botDelay), none }
+        fi)
+    else 
+       selector(doTask$(id,getThresh(id,lkb2),lkb2,
+                           devs (tick @ botDelay),racts))
+     fi  
+   if lkb0 := handleS(cl,id,lkb,ievs)
+   /\ {lkb2,b} := proSensorsX(id,lkb0,skb)
+   /\ racts := (if b then actSCP(cl,id,lkb2) else none fi)  .
+
+
+
+op actSCP : Class Id KB -> RActSet .
+
+ceq actSCP(cl,id,kb) = racts
+  if acts0 := myActs(cl,id,kb)
+  /\ racts := solveSCP(id,kb,acts0) .
+
+  
+  op doTask$ : Id RVal KB EventSet RActSet -> KBEventsKBSet .
+  ceq doTask$(id,rval,lkb2,devs,{rv0,act} racts) = 
+     (if (rval < rv0) then {lkb3,devs ({rv0,act} @ 0),kbp} else none fi)
+      doTask$(id,rval,lkb2,devs,racts)  
+   if kbp := tell(id,act,lkb2) 
+   /\ lkb3 := remember(id,act,lkb2) .
+  eq doTask$(id,rval,lkb2,devs,none) = none .
+
+**** remember -- as monitor function store expected effects
+  op getTgtInfo : KB -> KB .
+  eq getTgtInfo((target(loc) @ t) kb)  **** (treatStage(loc,0) @ t0) kb) 
+       = (target(loc) @ t) 
+****   (treatStage(loc,0) @ t0) 
+       .
+  eq getTgtInfo(kb) = none [owise] .
+  
+  op remember : Id Action KB -> KB .
+  eq remember(id,act,lkb clock(t)) = addK(lkb,lastAct(act) @ t) clock(t) .
+  op tell : Id Action KB -> KB .
+  eq tell(id,act,(atloc(id,loc) @ t) class(id,cl) lkb) = 
+	         (atloc(id,loc) @ t) class(id,cl) getTgtInfo(lkb) .
+  eq tell(id,act,kb) = none [owise] .
+
+  op selector : KBEventsKBSet -> KBEventsKBSet .
+  eq selector(kbset:KBEventsKBSet) = kbset:KBEventsKBSet [owise] .
+
+
+ ***(
+  vars kek0 kek1 kek : KBEventsKB .
+  var  kekset : KBEventsKBSet . 
+	var  rval0 rval1 : RVal .
+	var act0 act1 : Action .
+  vars evs0 evs1 : EventSet .
+
+  op allKeK : KB KBEventsKBSet -> KBEventsKBSet .
+  op bestKeK : KB KBEventsKBSet ->  KBEventsKBSet .
+  op bestKeKX :  KBEventsKBSet KBEventsKB ->  KBEventsKBSet .
+
+  eq allKeK(kb,kek kekset) = kek kekset .
+  eq allKeK(kb,kekset) = {kb,(tick @ botDelay),none} [owise] .
+  eq bestKeK(kb,kek kekset) = bestKeKX(kekset, kek) .  
+  eq bestKeK(kb,kekset) = {kb,(tick @ botDelay),none} [owise] .
+  eq bestKeKX( kek0 kekset, kek1) =
+       bestKeKX(kekset, betterEvs(kek0, kek1)) .
+  eq bestKeKX(none, kek1) = kek1 .
+  
+  op betterEvs : KBEventsKB KBEventsKB -> KBEventsKB .
+  ceq betterEvs(kek0,kek1) =  
+       (if (rval0 < rval1) then kek1 else kek0 fi) 
+    if ({rval0,act0} @ t0) evs0 := getKEKEvents(kek0)
+    /\ ({rval1,act1} @ t1) evs1 := getKEKEvents(kek1)   
+    .
+ 
+ )  
+***(
+  eq selectKeK(kb,kekset) = bestKeK(kb,kek kekset) .
+  eq selectKeK(kb,kekset) = allKeK(kb,kek kekset) .
+)
+
+
+endfm
