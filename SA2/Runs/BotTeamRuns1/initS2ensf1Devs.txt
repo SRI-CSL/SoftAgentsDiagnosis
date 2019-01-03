@@ -1,0 +1,794 @@
+--------------------------------------
+deviate  initS2ensf1EventsEnv.txt protocol_initS2.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 60
+FYI: no events at [11, 15, 22, 23, 24, 25, 30, 36, 43, 44, 46, 47, 48, 53, 59].
+
+Satisfiable.
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	s06 is 42
+	s07 is 52
+	s08 is 54
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_5_2
+	l1 is pt_2_1
+	l2 is pt_1_3
+--------------------------------------
+deviate  initS2ensf1EventsEnv.txt protocol_initS2.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 60
+FYI: no events at [11, 15, 22, 23, 24, 25, 30, 36, 43, 44, 46, 47, 48, 53, 59].
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 57
+	s03 is 20
+	s04 is 29
+	s05 is 57
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_3_2
+	l1 is pt_3_2
+	l2 is pt_3_2
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 56
+	s03 is 20
+	s04 is 29
+	s05 is 12
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_2_2
+	l1 is pt_5_2
+	l2 is pt_3_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 20
+	s04 is 29
+	s05 is 35
+	s06 is 42
+	s07 is 52
+	s08 is 56
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_5_2
+	l1 is pt_3_2
+	l2 is pt_2_2
+Level 3: context.check_context_with_assumptions returned SAT
+Level 3 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 20
+	s04 is 29
+	s05 is 32
+	s06 is 42
+	s07 is 52
+	s08 is 54
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_5_2
+	l1 is pt_2_2
+	l2 is pt_1_3
+--------------------------------------
+deviate  initS2ensf1EventsEnv.txt protocol_initS2.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 60
+FYI: no events at [11, 15, 22, 23, 24, 25, 30, 36, 43, 44, 46, 47, 48, 53, 59].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 14
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 17
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(0, 4)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(0, 5)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 17
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(1, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(1, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+	s11 is 17
+(2, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(2, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(2, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(2, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+	s11 is 17
+(3, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(3, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(3, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(3, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+(4, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+	s11 is 17
+(4, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(4, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(4, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(4, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 57
+	l1 is pt_3_2
+	s10 is 14
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 57
+	l1 is pt_3_2
+	s10 is 14
+	s11 is 17
+(5, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(5, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(5, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(5, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(6, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+(6, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+	s11 is 17
+(6, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(6, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(6, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(6, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(7, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+(7, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+	s11 is 17
+(7, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(7, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(7, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(7, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(8, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	l2 is pt_3_2
+	s10 is 14
+(8, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	l2 is pt_3_2
+	s10 is 14
+	s11 is 17
+(8, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	l2 is pt_3_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+(8, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 57
+	l2 is pt_3_2
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+(8, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 54
+	l2 is pt_1_3
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(8, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_4_2
+	s03 is 20
+	s04 is 29
+	s05 is 31
+	l1 is pt_2_1
+	s06 is 42
+	s07 is 52
+	s08 is 54
+	l2 is pt_1_3
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+Frontier: set([])
+--------------------------------------
+deviate  initS2ensf1EventsEnv.txt protocol_initS2.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 60
+FYI: no events at [11, 15, 22, 23, 24, 25, 30, 36, 43, 44, 46, 47, 48, 53, 59].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+Timeline of b(0) OK (Timeline timestamps are strictly increasing):
+
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 20
+	s04 is 29
+	s05 is 32
+	s06 is 42
+	s07 is 52
+	s08 is 57
+Timeline of b(1) OK (Timeline timestamps are strictly increasing):
+
+	s10 is 14
+	s11 is 17
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+--------------------------------------
+deviate  initS2ensf1EventsEnv.txt protocol_initS2.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 60
+FYI: no events at [11, 15, 22, 23, 24, 25, 30, 36, 43, 44, 46, 47, 48, 53, 59].
+context.check_context_with_assumptions returned SAT
+Calling unsat_core on a satisfiable theory is user error

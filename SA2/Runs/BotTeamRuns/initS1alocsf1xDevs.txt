@@ -1,0 +1,190 @@
+--------------------------------------
+deviate  initS1alocsf1xEventsEnv.txt protocol_initS1a.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [7, 12, 17, 18, 19, 33, 34, 35, 41, 42, 43, 44, 45, 49, 52, 55, 59, 60, 61, 68].
+No solution: smt_stat = 4
+
+--------------------------------------
+deviate  initS1alocsf1xEventsEnv.txt protocol_initS1a.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [7, 12, 17, 18, 19, 33, 34, 35, 41, 42, 43, 44, 45, 49, 52, 55, 59, 60, 61, 68].
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 1
+	s03 is 23
+	s04 is 26
+	s05 is 1
+	s10 is 48
+	s11 is 51
+	s12 is 65
+	s13 is 67
+	l0 is pt_0_0
+	l1 is pt_0_0
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 39
+	s03 is 23
+	s04 is 26
+	s05 is 1
+	s10 is 48
+	s11 is 51
+	s12 is 65
+	s13 is 67
+	l0 is pt_0_1
+	l1 is pt_0_0
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 13
+	s03 is 23
+	s04 is 26
+	s05 is 39
+	s10 is 48
+	s11 is 51
+	s12 is 65
+	s13 is 67
+	l0 is pt_4_1
+	l1 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+Level 3 unsat core is:
+
+(treatStage (pt 5 4) 4 s13)
+(treatStage (pt 5 4) 2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(and
+ (and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+      (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0))
+ (distinct s00 s01 s02 s03 s04 s05))
+(and
+ (and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0)
+      (< (+ s12 (* -1 s13)) 0))
+ (distinct s10 s11 s12 s13))
+(treatStage (pt 4 0) 2 s01)
+(< (+ -10 (* -1 s04) s13) 0)
+
+--------------------------------------
+deviate  initS1alocsf1xEventsEnv.txt protocol_initS1a.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [7, 12, 17, 18, 19, 33, 34, 35, 41, 42, 43, 44, 45, 49, 52, 55, 59, 60, 61, 68].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 48
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 48
+	s11 is 51
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 48
+	s11 is 51
+	s12 is 65
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 48
+	s11 is 51
+	s12 is 65
+	s13 is 67
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s10 is 48
+(1, 1)
+UNSAT
+
+Unsat core:
+
+(treatStage (pt 4 0) 4 s11)
+(treatStage (pt 4 0) 2 s01)
+(< (+ s10 (* -1 s11)) 0)
+(< (+ -10 (* -1 s01) s11) 0)
+
+
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s02 is 39
+	l0 is pt_0_1
+	s10 is 48
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s02 is 13
+	l0 is pt_4_1
+	s03 is 23
+	s10 is 48
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s02 is 13
+	l0 is pt_4_1
+	s03 is 23
+	s04 is 26
+	s10 is 48
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s02 is 13
+	l0 is pt_4_1
+	s03 is 23
+	s04 is 26
+	s05 is 39
+	l1 is pt_0_1
+	s10 is 48
+Frontier: set([(1, 1)])
+--------------------------------------
+deviate  initS1alocsf1xEventsEnv.txt protocol_initS1a.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [7, 12, 17, 18, 19, 33, 34, 35, 41, 42, 43, 44, 45, 49, 52, 55, 59, 60, 61, 68].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+Timeline of b(0) OK (Timeline timestamps are strictly increasing):
+
+	s00 is 5
+	s01 is 11
+	s02 is 13
+	s03 is 23
+	s04 is 26
+	s05 is 28
+Timeline of b(1) OK (Timeline timestamps are strictly increasing):
+
+	s10 is 48
+	s11 is 51
+	s12 is 65
+	s13 is 67
+--------------------------------------
+deviate  initS1alocsf1xEventsEnv.txt protocol_initS1a.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [7, 12, 17, 18, 19, 33, 34, 35, 41, 42, 43, 44, 45, 49, 52, 55, 59, 60, 61, 68].
+context.check_context_with_assumptions returned UNSAT
+(treatStage (pt 5 4) 4 s13)
+(treatStage (pt 5 4) 2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+     (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0))
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0))
+(treatStage (pt 4 0) 2 s01)
+(< (+ -10 (* -1 s04) s13) 0)

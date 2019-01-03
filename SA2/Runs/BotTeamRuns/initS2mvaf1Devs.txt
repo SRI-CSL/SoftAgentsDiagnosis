@@ -1,0 +1,563 @@
+--------------------------------------
+deviate  initS2mvaf1EventsEnv.txt protocol_initS2.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [11, 29, 30, 31, 36, 37, 38, 47, 52, 53, 54, 58, 60, 68].
+No solution: smt_stat = 4
+
+--------------------------------------
+deviate  initS2mvaf1EventsEnv.txt protocol_initS2.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [11, 29, 30, 31, 36, 37, 38, 47, 52, 53, 54, 58, 60, 68].
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 70
+	s03 is 20
+	s04 is 22
+	s05 is 70
+	s06 is 35
+	s07 is 61
+	s08 is 70
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+	l0 is pt_3_1
+	l1 is pt_3_1
+	l2 is pt_3_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 1
+	s03 is 20
+	s04 is 22
+	s05 is 13
+	s06 is 35
+	s07 is 61
+	s08 is 70
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+	l0 is pt_1_1
+	l1 is pt_3_1
+	l2 is pt_3_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 19
+	s03 is 20
+	s04 is 22
+	s05 is 33
+	s06 is 35
+	s07 is 61
+	s08 is 70
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+	l0 is pt_3_0
+	l1 is pt_3_4
+	l2 is pt_3_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+Level 3 unsat core is:
+
+(and
+ (and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0)
+      (< (+ s13 (* -1 s14)) 0) (< (+ s14 (* -1 s15)) 0))
+ (distinct s10 s11 s12 s13 s14 s15))
+(atloc (b 0) l1 s05)
+(treatStage (pt 2 0) 4 s13)
+(/= (pt 2 0) l1)
+(and
+ (and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+      (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0) (< (+ s05 (* -1 s06)) 0)
+      (< (+ s06 (* -1 s07)) 0) (< (+ s07 (* -1 s08)) 0))
+ (distinct s00 s01 s02 s03 s04 s05 s06 s07 s08))
+(treatStage (pt 2 0) 2 s04)
+(treatStage (pt 1 4) 2 s07)
+(< (+ s08 (* -1 s14)) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(atloc (b 0) (pt 1 4) s06)
+(< (+ s05 (* -1 s12)) 0)
+
+--------------------------------------
+deviate  initS2mvaf1EventsEnv.txt protocol_initS2.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [11, 29, 30, 31, 36, 37, 38, 47, 52, 53, 54, 58, 60, 68].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 15
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 17
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+(0, 4)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+(0, 5)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+	s11 is 17
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+(1, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+(1, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+	s11 is 17
+(2, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(2, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+(2, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+(2, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+	s11 is 17
+(3, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(3, 3)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+(3, 4)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+(3, 5)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s04 is 22
+	s10 is 15
+(4, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s04 is 22
+	s10 is 15
+	s11 is 17
+(4, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 14
+	l0 is pt_3_2
+	s03 is 20
+	s04 is 22
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(4, 3)
+UNSAT
+
+Unsat core:
+
+(treatStage (pt 2 0) 4 s13)
+(treatStage (pt 2 0) 2 s04)
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0))
+(treatStage (pt 5 1) 4 s11)
+(< (+ -10 (* -1 s04) s13) 0)
+
+
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s10 is 15
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s10 is 15
+	s11 is 17
+(5, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(6, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s10 is 15
+(6, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s10 is 15
+	s11 is 17
+(6, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(7, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s10 is 15
+(7, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s10 is 15
+	s11 is 17
+(7, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s10 is 15
+	s11 is 17
+	s12 is 44
+(8, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s08 is 63
+	l2 is pt_1_3
+	s10 is 15
+(8, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s08 is 63
+	l2 is pt_1_3
+	s10 is 15
+	s11 is 17
+(8, 2)
+SAT
+	s00 is 5
+	s01 is 10
+	s02 is 13
+	l0 is pt_3_1
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	l1 is pt_2_1
+	s06 is 35
+	s07 is 61
+	s08 is 63
+	l2 is pt_1_3
+	s10 is 15
+	s11 is 17
+	s12 is 44
+Frontier: set([(4, 3)])
+--------------------------------------
+deviate  initS2mvaf1EventsEnv.txt protocol_initS2.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [11, 29, 30, 31, 36, 37, 38, 47, 52, 53, 54, 58, 60, 68].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+Timeline of b(0) OK (Timeline timestamps are strictly increasing):
+
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 20
+	s04 is 22
+	s05 is 24
+	s06 is 35
+	s07 is 61
+	s08 is 70
+Timeline of b(1) OK (Timeline timestamps are strictly increasing):
+
+	s10 is 15
+	s11 is 17
+	s12 is 44
+	s13 is 46
+	s14 is 65
+	s15 is 67
+--------------------------------------
+deviate  initS2mvaf1EventsEnv.txt protocol_initS2.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 70
+FYI: no events at [11, 29, 30, 31, 36, 37, 38, 47, 52, 53, 54, 58, 60, 68].
+context.check_context_with_assumptions returned UNSAT
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0)
+     (< (+ s13 (* -1 s14)) 0) (< (+ s14 (* -1 s15)) 0))
+(treatStage (pt 2 0) 4 s13)
+(atloc (b 0) l1 s05)
+(/= (pt 2 0) l1)
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+     (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0) (< (+ s05 (* -1 s06)) 0)
+     (< (+ s06 (* -1 s07)) 0) (< (+ s07 (* -1 s08)) 0))
+(treatStage (pt 2 0) 2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage (pt 1 4) 2 s07)
+(< (+ s08 (* -1 s14)) 0)
+(atloc (b 1) (pt 1 4) s14)
+(treatStage (pt 1 4) 4 s15)
+(< (+ s05 (* -1 s12)) 0)

@@ -1,0 +1,70 @@
+--------------------------------------
+deviate  initS2locsf1EventsEnv.txt protocol_initS2.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 24
+FYI: no events at [7, 19, 20, 21].
+No solution: smt_stat = 4
+
+--------------------------------------
+deviate  initS2locsf1EventsEnv.txt protocol_initS2.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 24
+FYI: no events at [7, 19, 20, 21].
+Level 0: context.check_context_with_assumptions returned UNSAT
+Level 0 unsat core is:
+
+(treatStage (pt 1 4) 2 s07)
+
+--------------------------------------
+deviate  initS2locsf1EventsEnv.txt protocol_initS2.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 24
+FYI: no events at [7, 19, 20, 21].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+UNSAT
+
+Unsat core:
+
+(atloc (b 1) (pt 5 1) s10)
+
+
+Frontier: set([(0, 0)])
+--------------------------------------
+deviate  initS2locsf1EventsEnv.txt protocol_initS2.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 24
+FYI: no events at [7, 19, 20, 21].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+UNSAT at level 3, i.e. timestamp s03:Time
+
+Unsat core :
+
+(atloc (b 0) l0 s02)
+(treatStage (pt 5 1) 2 s01)
+(atloc (b 0) (pt 5 1) s00)
+(atloc (b 0) (pt 2 0) s03)
+
+
+UNSAT at level 0, i.e. timestamp s10:Time
+
+Unsat core :
+
+(atloc (b 1) (pt 5 1) s10)
+
+
+--------------------------------------
+deviate  initS2locsf1EventsEnv.txt protocol_initS2.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 24
+FYI: no events at [7, 19, 20, 21].
+context.check_context_with_assumptions returned UNSAT
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+     (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0) (< (+ s05 (* -1 s06)) 0)
+     (< (+ s06 (* -1 s07)) 0) (< (+ s07 (* -1 s08)) 0))
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0)
+     (< (+ s13 (* -1 s14)) 0) (< (+ s14 (* -1 s15)) 0))
+(treatStage (pt 1 4) 2 s07)
+(< (+ s08 (* -1 s14)) 0)

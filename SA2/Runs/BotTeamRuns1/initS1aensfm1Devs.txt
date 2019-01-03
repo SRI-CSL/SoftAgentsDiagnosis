@@ -1,0 +1,128 @@
+--------------------------------------
+deviate  initS1aensfm1EventsEnv.txt protocol_initS1a.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [7, 14, 20, 25, 26, 27, 29, 34, 40, 41, 42, 44, 49].
+No solution: smt_stat = 4
+
+--------------------------------------
+deviate  initS1aensfm1EventsEnv.txt protocol_initS1a.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [7, 14, 20, 25, 26, 27, 29, 34, 40, 41, 42, 44, 49].
+Level 0: context.check_context_with_assumptions returned UNSAT
+Level 0 unsat core is:
+
+(treatStage (pt 5 4) 4 s13)
+
+--------------------------------------
+deviate  initS1aensfm1EventsEnv.txt protocol_initS1a.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [7, 14, 20, 25, 26, 27, 29, 34, 40, 41, 42, 44, 49].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 31
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 31
+	s11 is 33
+(0, 2)
+UNSAT
+
+Unsat core:
+
+(treatStage (pt 4 0) 4 s11)
+(atloc (b 1) (pt 5 4) s12)
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0))
+
+
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 13
+	s10 is 31
+(1, 1)
+UNSAT
+
+Unsat core:
+
+(treatStage (pt 4 0) 4 s11)
+(treatStage (pt 4 0) 2 s01)
+(< (+ -10 (* -1 s01) s11) 0)
+
+
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 13
+	s02 is 24
+	l0 is pt_5_4
+	s10 is 31
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 13
+	s02 is 15
+	l0 is pt_3_0
+	s03 is 24
+	s10 is 31
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 13
+	s02 is 15
+	l0 is pt_3_0
+	s03 is 24
+	s04 is 48
+	s10 is 31
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 13
+	s02 is 15
+	l0 is pt_3_0
+	s03 is 24
+	s04 is 48
+	s05 is 50
+	l1 is pt_5_3
+	s10 is 31
+Frontier: set([(0, 2), (1, 1)])
+--------------------------------------
+deviate  initS1aensfm1EventsEnv.txt protocol_initS1a.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [7, 14, 20, 25, 26, 27, 29, 34, 40, 41, 42, 44, 49].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+Timeline of b(0) OK (Timeline timestamps are strictly increasing):
+
+	s00 is 5
+	s01 is 13
+	s02 is 16
+	s03 is 24
+	s04 is 48
+	s05 is 50
+UNSAT at level 2, i.e. timestamp s12:Time
+
+Unsat core :
+
+(treatStage (pt 4 0) 4 s11)
+(atloc (b 1) (pt 5 4) s12)
+
+
+--------------------------------------
+deviate  initS1aensfm1EventsEnv.txt protocol_initS1a.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [7, 14, 20, 25, 26, 27, 29, 34, 40, 41, 42, 44, 49].
+context.check_context_with_assumptions returned UNSAT
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0))
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+     (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0))
+(treatStage (pt 5 4) 4 s13)
+(< (+ s05 (* -1 s12)) 0)

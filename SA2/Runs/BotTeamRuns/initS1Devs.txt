@@ -1,0 +1,121 @@
+--------------------------------------
+deviate  initS1EventsEnv.txt protocol_initS1.txt -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+No solution: smt_stat = 4
+
+--------------------------------------
+deviate  initS1EventsEnv.txt protocol_initS1.txt -i -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Level 0: context.check_context_with_assumptions returned UNSAT
+Level 0 unsat core is:
+
+(treatStage (pt 0 5) 4 s13)
+
+--------------------------------------
+deviate  initS1EventsEnv.txt protocol_initS1.txt -fv -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+The timeline interpretation is: Timeline timestamps are strictly increasing
+
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 11
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 11
+	s11 is 13
+(0, 2)
+UNSAT
+
+Unsat core:
+
+(treatStage (pt 2 4) 4 s11)
+(atloc (b 1) (pt 0 5) s12)
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0))
+
+
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 7
+	s10 is 11
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 7
+	s10 is 11
+	s11 is 13
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 7
+	s02 is 10
+	l0 is pt_2_2
+	s10 is 11
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 7
+	s02 is 10
+	l0 is pt_2_2
+	s10 is 11
+	s11 is 13
+(3, 0)
+UNSAT
+
+Unsat core:
+
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0))
+(treatStage (pt 2 4) 2 s01)
+(atloc (b 1) (pt 2 4) s10)
+(< (+ -15 (* -1 s01) s03) 0)
+(atloc (b 0) (pt 0 5) s03)
+(atloc (b 0) l0 s02)
+(atloc (b 0) (pt 2 4) s00)
+(< (+ s02 (* -1 s10)) 0)
+
+
+Frontier: set([(3, 0), (0, 2)])
+--------------------------------------
+deviate  initS1EventsEnv.txt protocol_initS1.txt -m -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+There are 2 timelines (Timeline timestamps are strictly increasing)
+
+UNSAT at level 3, i.e. timestamp s03:Time
+
+Unsat core :
+
+(atloc (b 0) l0 s02)
+(treatStage (pt 2 4) 2 s01)
+(atloc (b 0) (pt 2 4) s00)
+(atloc (b 0) (pt 0 5) s03)
+
+
+UNSAT at level 2, i.e. timestamp s12:Time
+
+Unsat core :
+
+(treatStage (pt 2 4) 4 s11)
+(atloc (b 1) (pt 0 5) s12)
+
+
+--------------------------------------
+deviate  initS1EventsEnv.txt protocol_initS1.txt -u -g  configuration.cfg
+configuration.cfg
+Maximum time = 50
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+context.check_context_with_assumptions returned UNSAT
+(and (< (+ s10 (* -1 s11)) 0) (< (+ s11 (* -1 s12)) 0) (< (+ s12 (* -1 s13)) 0))
+(and (< (+ s00 (* -1 s01)) 0) (< (+ s01 (* -1 s02)) 0) (< (+ s02 (* -1 s03)) 0)
+     (< (+ s03 (* -1 s04)) 0) (< (+ s04 (* -1 s05)) 0))
+(treatStage (pt 0 5) 4 s13)
+(< (+ s05 (* -1 s12)) 0)
