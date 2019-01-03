@@ -1,0 +1,889 @@
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+
+Satisfiable.
+	s0 is 5
+	s1 is 7
+	s2 is 9
+	s3 is 11
+	s4 is 13
+	l0 is pt_3_4
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+
+Satisfiable.
+	s0 is 16
+	s1 is 18
+	s2 is 20
+	s3 is 22
+	s4 is 24
+	l0 is pt_2_5
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+No solution: smt_stat = 4
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+No solution: smt_stat = 4
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+
+Satisfiable.
+	s0 is 5
+	s1 is 7
+	s2 is 17
+	s3 is 28
+	s4 is 32
+	l0 is pt_0_2
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+No solution: smt_stat = 4
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+No solution: smt_stat = 4
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+No solution: smt_stat = 4
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+No solution: smt_stat = 4
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+No solution: smt_stat = 4
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+No solution: smt_stat = 4
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+No solution: smt_stat = 4
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+No solution: smt_stat = 4
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+No solution: smt_stat = 4
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+
+Satisfiable.
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 22
+	s04 is 24
+	s05 is 26
+	s06 is 41
+	s07 is 47
+	s08 is 50
+	s10 is 13
+	s11 is 15
+	s12 is 29
+	s13 is 31
+	s14 is 51
+	s15 is 53
+	l0 is pt_4_1
+	l1 is pt_1_0
+	l2 is pt_2_3
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+No solution: smt_stat = 4
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+
+Satisfiable.
+	s0 is 5
+	s1 is 7
+	s2 is 9
+	s3 is 11
+	s4 is 13
+	l0 is pt_3_4
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+
+Satisfiable.
+	s0 is 16
+	s1 is 18
+	s2 is 20
+	s3 is 22
+	s4 is 24
+	l0 is pt_2_5
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+No solution: smt_stat = 4
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+
+Satisfiable.
+	s0 is 5
+	s1 is 7
+	s2 is 17
+	s3 is 31
+	s4 is 32
+	l0 is pt_0_2
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+No solution: smt_stat = 4
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+No solution: smt_stat = 4
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+No solution: smt_stat = 4
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+No solution: smt_stat = 4
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+No solution: smt_stat = 4
+
+('Env: ', 0, 'initS1EventsEnv', 'protocol0')
+('Env: ', 1, 'initS1Obs1EventsEnv', 'protocol0')
+('Env: ', 2, 'initS1aObs4-2EventsEnv', 'protocol0')
+('Env: ', 3, 'initS1aensfmEventsEnv', 'protocol0')
+('Env: ', 4, 'initS1alocsf1EventsEnv', 'protocol0')
+('Env: ', 5, 'initS1amvaf1EventsEnv', 'protocol0')
+('Env: ', 6, 'initS1amvaf1xEventsEnv', 'protocol0')
+('Env: ', 7, 'initS1locsf1EventsEnv', 'protocol0')
+('Env: ', 8, 'initS2ensf0EventsEnv', 'protocol0')
+('Env: ', 9, 'initS2ensf1EventsEnv', 'protocol0')
+('Env: ', 10, 'initS2locsf0xEventsEnv', 'protocol0')
+('Env: ', 11, 'initS2locsf1EventsEnv', 'protocol0')
+('Env: ', 12, 'initS2mvaf1EventsEnv', 'protocol0')
+('Env: ', 13, 'initS1EventsEnv', 'protocol1')
+('Env: ', 14, 'initS1Obs1EventsEnv', 'protocol1')
+('Env: ', 15, 'initS1aObs4-2EventsEnv', 'protocol1')
+('Env: ', 16, 'initS1aensfmEventsEnv', 'protocol1')
+('Env: ', 17, 'initS1alocsf1EventsEnv', 'protocol1')
+('Env: ', 18, 'initS1amvaf1EventsEnv', 'protocol1')
+('Env: ', 19, 'initS1amvaf1xEventsEnv', 'protocol1')
+('Env: ', 20, 'initS1locsf1EventsEnv', 'protocol1')
+('Env: ', 21, 'initS2ensf0EventsEnv', 'protocol1')
+('Env: ', 22, 'initS2ensf1EventsEnv', 'protocol1')
+('Env: ', 23, 'initS2locsf0xEventsEnv', 'protocol1')
+('Env: ', 24, 'initS2locsf1EventsEnv', 'protocol1')
+('Env: ', 25, 'initS2mvaf1EventsEnv', 'protocol1')
+('Env: ', 26, 'initS1EventsEnv', 'protocol2')
+('Env: ', 27, 'initS1Obs1EventsEnv', 'protocol2')
+('Env: ', 28, 'initS1aObs4-2EventsEnv', 'protocol2')
+('Env: ', 29, 'initS1aensfmEventsEnv', 'protocol2')
+('Env: ', 30, 'initS1alocsf1EventsEnv', 'protocol2')
+('Env: ', 31, 'initS1amvaf1EventsEnv', 'protocol2')
+('Env: ', 32, 'initS1amvaf1xEventsEnv', 'protocol2')
+('Env: ', 33, 'initS1locsf1EventsEnv', 'protocol2')
+('Env: ', 34, 'initS2ensf0EventsEnv', 'protocol2')
+('Env: ', 35, 'initS2ensf1EventsEnv', 'protocol2')
+('Env: ', 36, 'initS2locsf0xEventsEnv', 'protocol2')
+('Env: ', 37, 'initS2locsf1EventsEnv', 'protocol2')
+('Env: ', 38, 'initS2mvaf1EventsEnv', 'protocol2')
+('Env: ', 39, 'initS1EventsEnv', 'protocol3')
+('Env: ', 40, 'initS1Obs1EventsEnv', 'protocol3')
+('Env: ', 41, 'initS1aObs4-2EventsEnv', 'protocol3')
+('Env: ', 42, 'initS1aensfmEventsEnv', 'protocol3')
+('Env: ', 43, 'initS1alocsf1EventsEnv', 'protocol3')
+('Env: ', 44, 'initS1amvaf1EventsEnv', 'protocol3')
+('Env: ', 45, 'initS1amvaf1xEventsEnv', 'protocol3')
+('Env: ', 46, 'initS1locsf1EventsEnv', 'protocol3')
+('Env: ', 47, 'initS2ensf0EventsEnv', 'protocol3')
+('Env: ', 48, 'initS2ensf1EventsEnv', 'protocol3')
+('Env: ', 49, 'initS2locsf0xEventsEnv', 'protocol3')
+('Env: ', 50, 'initS2locsf1EventsEnv', 'protocol3')
+('Env: ', 51, 'initS2mvaf1EventsEnv', 'protocol3')
+('Bot: ', 52, 'initS1EventsBot', 'protocol0')
+('Bot: ', 53, 'initS1Obs1EventsBot', 'protocol0')
+('Bot: ', 54, 'initS1aObs4-2EventsBot', 'protocol0')
+('Bot: ', 55, 'initS1aensfmEventsBot', 'protocol0')
+('Bot: ', 56, 'initS1alocsf1EventsBot', 'protocol0')
+('Bot: ', 57, 'initS1amvaf1EventsBot', 'protocol0')
+('Bot: ', 58, 'initS1amvaf1xEventsBot', 'protocol0')
+('Bot: ', 59, 'initS1locsf1EventsBot', 'protocol0')
+('Bot: ', 60, 'initS2ensf0EventsBot', 'protocol0')
+('Bot: ', 61, 'initS2ensf1EventsBot', 'protocol0')
+('Bot: ', 62, 'initS2locsf0xEventsBot', 'protocol0')
+('Bot: ', 63, 'initS2locsf1EventsBot', 'protocol0')
+('Bot: ', 64, 'initS2mvaf1EventsBot', 'protocol0')
+('Bot: ', 65, 'initS1EventsBot', 'protocol1')
+('Bot: ', 66, 'initS1Obs1EventsBot', 'protocol1')
+('Bot: ', 67, 'initS1aObs4-2EventsBot', 'protocol1')
+('Bot: ', 68, 'initS1aensfmEventsBot', 'protocol1')
+('Bot: ', 69, 'initS1alocsf1EventsBot', 'protocol1')
+('Bot: ', 70, 'initS1amvaf1EventsBot', 'protocol1')
+('Bot: ', 71, 'initS1amvaf1xEventsBot', 'protocol1')
+('Bot: ', 72, 'initS1locsf1EventsBot', 'protocol1')
+('Bot: ', 73, 'initS2ensf0EventsBot', 'protocol1')
+('Bot: ', 74, 'initS2ensf1EventsBot', 'protocol1')
+('Bot: ', 75, 'initS2locsf0xEventsBot', 'protocol1')
+('Bot: ', 76, 'initS2locsf1EventsBot', 'protocol1')
+('Bot: ', 77, 'initS2mvaf1EventsBot', 'protocol1')
+('Bot: ', 78, 'initS1EventsBot', 'protocol2')
+('Bot: ', 79, 'initS1Obs1EventsBot', 'protocolFYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+No solution: smt_stat = 4
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+No solution: smt_stat = 4
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+No solution: smt_stat = 4
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+No solution: smt_stat = 4
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+No solution: smt_stat = 4
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+No solution: smt_stat = 4
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+No solution: smt_stat = 4
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+No solution: smt_stat = 4
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+No solution: smt_stat = 4
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+No solution: smt_stat = 4
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+
+Satisfiable.
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 22
+	s04 is 24
+	s05 is 26
+	s06 is 41
+	s07 is 47
+	s08 is 50
+	s10 is 13
+	s11 is 15
+	s12 is 29
+	s13 is 31
+	s14 is 51
+	s15 is 53
+	l0 is pt_4_1
+	l1 is pt_1_0
+	l2 is pt_2_3
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+No solution: smt_stat = 4
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+No solution: smt_stat = 4
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+No solution: smt_stat = 4
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+No solution: smt_stat = 4
+
+2')
+('Bot: ', 80, 'initS1aObs4-2EventsBot', 'protocol2')
+('Bot: ', 81, 'initS1aensfmEventsBot', 'protocol2')
+('Bot: ', 82, 'initS1alocsf1EventsBot', 'protocol2')
+('Bot: ', 83, 'initS1amvaf1EventsBot', 'protocol2')
+('Bot: ', 84, 'initS1amvaf1xEventsBot', 'protocol2')
+('Bot: ', 85, 'initS1locsf1EventsBot', 'protocol2')
+('Bot: ', 86, 'initS2ensf0EventsBot', 'protocol2')
+('Bot: ', 87, 'initS2ensf1EventsBot', 'protocol2')
+('Bot: ', 88, 'initS2locsf0xEventsBot', 'protocol2')
+('Bot: ', 89, 'initS2locsf1EventsBot', 'protocol2')
+('Bot: ', 90, 'initS2mvaf1EventsBot', 'protocol2')
+('Bot: ', 91, 'initS1EventsBot', 'protocol3')
+('Bot: ', 92, 'initS1Obs1EventsBot', 'protocol3')
+('Bot: ', 93, 'initS1aObs4-2EventsBot', 'protocol3')
+('Bot: ', 94, 'initS1aensfmEventsBot', 'protocol3')
+('Bot: ', 95, 'initS1alocsf1EventsBot', 'protocol3')
+('Bot: ', 96, 'initS1amvaf1EventsBot', 'protocol3')
+('Bot: ', 97, 'initS1amvaf1xEventsBot', 'protocol3')
+('Bot: ', 98, 'initS1locsf1EventsBot', 'protocol3')
+('Bot: ', 99, 'initS2ensf0EventsBot', 'protocol3')
+('Bot: ', 100, 'initS2ensf1EventsBot', 'protocol3')
+('Bot: ', 101, 'initS2locsf0xEventsBot', 'protocol3')
+('Bot: ', 102, 'initS2locsf1EventsBot', 'protocol3')
+('Bot: ', 103, 'initS2mvaf1EventsBot', 'protocol3')
+/usr/local/bin/deviate logs/initS1aObs4-2EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsEnv.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsEnv.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsEnv.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsEnv.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsBot.txt logs/protocol0.txt
+/usr/local/bin/deviate logs/initS1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsBot.txt logs/protocol1.txt
+/usr/local/bin/deviate logs/initS1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2ensf0EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsBot.txt logs/protocol2.txt
+/usr/local/bin/deviate logs/initS1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1Obs1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1aObs4-2EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1aensfmEventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1alocsf1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1amvaf1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1amvaf1xEventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS1locsf1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2ensf1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2locsf0xEventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2locsf1EventsBot.txt logs/protocol3.txt
+/usr/local/bin/deviate logs/initS2mvaf1EventsBot.txt logs/protocol3.txt
+
+[ 'initS1aObs4-2EventsEnv', 'protocol0'],
+[ 'initS1aensfmEventsEnv', 'protocol0'],
+[ 'initS1alocsf1EventsEnv', 'protocol0'],
+[ 'initS1amvaf1EventsEnv', 'protocol0'],
+[ 'initS1amvaf1xEventsEnv', 'protocol0'],
+[ 'initS2ensf0EventsEnv', 'protocol0'],
+[ 'initS2ensf1EventsEnv', 'protocol0'],
+[ 'initS2locsf0xEventsEnv', 'protocol0'],
+[ 'initS2locsf1EventsEnv', 'protocol0'],
+[ 'initS2mvaf1EventsEnv', 'protocol0'],
+[ 'initS1EventsEnv', 'protocol1'],
+[ 'initS1Obs1EventsEnv', 'protocol1'],
+[ 'initS1aObs4-2EventsEnv', 'protocol1'],
+[ 'initS1aensfmEventsEnv', 'protocol1'],
+[ 'initS1alocsf1EventsEnv', 'protocol1'],
+[ 'initS1amvaf1EventsEnv', 'protocol1'],
+[ 'initS1amvaf1xEventsEnv', 'protocol1'],
+[ 'initS1locsf1EventsEnv', 'protocol1'],
+[ 'initS2ensf0EventsEnv', 'protocol1'],
+[ 'initS2ensf1EventsEnv', 'protocol1'],
+[ 'initS2locsf0xEventsEnv', 'protocol1'],
+[ 'initS2locsf1EventsEnv', 'protocol1'],
+[ 'initS2mvaf1EventsEnv', 'protocol1'],
+[ 'initS1EventsEnv', 'protocol2'],
+[ 'initS1Obs1EventsEnv', 'protocol2'],
+[ 'initS1aObs4-2EventsEnv', 'protocol2'],
+[ 'initS1aensfmEventsEnv', 'protocol2'],
+[ 'initS1alocsf1EventsEnv', 'protocol2'],
+[ 'initS1amvaf1EventsEnv', 'protocol2'],
+[ 'initS1amvaf1xEventsEnv', 'protocol2'],
+[ 'initS1locsf1EventsEnv', 'protocol2'],
+[ 'initS2ensf0EventsEnv', 'protocol2'],
+[ 'initS2ensf1EventsEnv', 'protocol2'],
+[ 'initS2locsf0xEventsEnv', 'protocol2'],
+[ 'initS2locsf1EventsEnv', 'protocol2'],
+[ 'initS2mvaf1EventsEnv', 'protocol2'],
+[ 'initS1EventsEnv', 'protocol3'],
+[ 'initS1Obs1EventsEnv', 'protocol3'],
+[ 'initS1aObs4-2EventsEnv', 'protocol3'],
+[ 'initS1aensfmEventsEnv', 'protocol3'],
+[ 'initS1alocsf1EventsEnv', 'protocol3'],
+[ 'initS1amvaf1EventsEnv', 'protocol3'],
+[ 'initS1amvaf1xEventsEnv', 'protocol3'],
+[ 'initS1locsf1EventsEnv', 'protocol3'],
+[ 'initS2ensf1EventsEnv', 'protocol3'],
+[ 'initS2locsf0xEventsEnv', 'protocol3'],
+[ 'initS2locsf1EventsEnv', 'protocol3'],
+[ 'initS2mvaf1EventsEnv', 'protocol3'],
+[ 'initS1aObs4-2EventsBot', 'protocol0'],
+[ 'initS1aensfmEventsBot', 'protocol0'],
+[ 'initS1alocsf1EventsBot', 'protocol0'],
+[ 'initS1amvaf1EventsBot', 'protocol0'],
+[ 'initS1amvaf1xEventsBot', 'protocol0'],
+[ 'initS2ensf0EventsBot', 'protocol0'],
+[ 'initS2ensf1EventsBot', 'protocol0'],
+[ 'initS2locsf0xEventsBot', 'protocol0'],
+[ 'initS2locsf1EventsBot', 'protocol0'],
+[ 'initS2mvaf1EventsBot', 'protocol0'],
+[ 'initS1EventsBot', 'protocol1'],
+[ 'initS1Obs1EventsBot', 'protocol1'],
+[ 'initS1aObs4-2EventsBot', 'protocol1'],
+[ 'initS1aensfmEventsBot', 'protocol1'],
+[ 'initS1alocsf1EventsBot', 'protocol1'],
+[ 'initS1amvaf1EventsBot', 'protocol1'],
+[ 'initS1amvaf1xEventsBot', 'protocol1'],
+[ 'initS1locsf1EventsBot', 'protocol1'],
+[ 'initS2ensf0EventsBot', 'protocol1'],
+[ 'initS2ensf1EventsBot', 'protocol1'],
+[ 'initS2locsf0xEventsBot', 'protocol1'],
+[ 'initS2locsf1EventsBot', 'protocol1'],
+[ 'initS2mvaf1EventsBot', 'protocol1'],
+[ 'initS1EventsBot', 'protocol2'],
+[ 'initS1Obs1EventsBot', 'protocol2'],
+[ 'initS1aObs4-2EventsBot', 'protocol2'],
+[ 'initS1aensfmEventsBot', 'protocol2'],
+[ 'initS1alocsf1EventsBot', 'protocol2'],
+[ 'initS1amvaf1EventsBot', 'protocol2'],
+[ 'initS1amvaf1xEventsBot', 'protocol2'],
+[ 'initS1locsf1EventsBot', 'protocol2'],
+[ 'initS2ensf0EventsBot', 'protocol2'],
+[ 'initS2ensf1EventsBot', 'protocol2'],
+[ 'initS2locsf0xEventsBot', 'protocol2'],
+[ 'initS2locsf1EventsBot', 'protocol2'],
+[ 'initS2mvaf1EventsBot', 'protocol2'],
+[ 'initS1EventsBot', 'protocol3'],
+[ 'initS1Obs1EventsBot', 'protocol3'],
+[ 'initS1aObs4-2EventsBot', 'protocol3'],
+[ 'initS1aensfmEventsBot', 'protocol3'],
+[ 'initS1alocsf1EventsBot', 'protocol3'],
+[ 'initS1amvaf1EventsBot', 'protocol3'],
+[ 'initS1amvaf1xEventsBot', 'protocol3'],
+[ 'initS1locsf1EventsBot', 'protocol3'],
+[ 'initS2ensf1EventsBot', 'protocol3'],
+[ 'initS2locsf0xEventsBot', 'protocol3'],
+[ 'initS2locsf1EventsBot', 'protocol3'],
+[ 'initS2mvaf1EventsBot', 'protocol3'],

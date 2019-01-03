@@ -1,0 +1,58 @@
+%%%%%%%%%%%  events
+% b(0) controlled events
+atloc(b(0),pt(0,n00:Nat)) @ s00:Time
+atloc(b(0),pt(2,n01:Nat)) @ s01:Time
+atloc(b(0),pt(0,n02:Nat)) @ s02:Time
+atloc(b(0),pt(2,n03:Nat)) @ s03:Time
+atloc(b(0),pt(0,n04:Nat)) @ s04:Time
+
+timeline(b(0), s00:Time, s01:Time, s02:Time, s03:Time, s04:Time)
+
+
+% b(1) controlled events
+atloc(b(1),pt(5,n10:Nat)) @ s10:Time
+atloc(b(1),pt(0,n11:Nat)) @ s11:Time
+atloc(b(1),pt(5,n12:Nat)) @ s12:Time
+atloc(b(1),pt(0,n13:Nat)) @ s13:Time
+
+timeline(b(1), s10:Time, s11:Time, s12:Time, s13:Time)
+
+% mystery event
+
+atloc(b(bi:Nat),pt(4,4)) @ smm:Time
+
+
+%%%%%%%%%%%%%  ordering constraints  %%%%%%%%%%%%%%%%%
+% b(0) local order
+s00:Time < s01:Time
+s01:Time < s02:Time
+s02:Time < s03:Time
+s03:Time < s04:Time
+
+% b(1) local order
+s10:Time < s11:Time
+s11:Time < s12:Time
+s12:Time < s13:Time
+
+%%%%%%%%%% other constraints
+% max delay between patrol allowing slack time for charging
+% time2patrol + time2charge + time2station = 6 + 5 + 2 = 13
+%s01:Time - s00:Time < 14
+%s02:Time - s01:Time < 14
+%s03:Time - s02:Time < 14
+%s04:Time - s03:Time < 14
+%s11:Time - s10:Time < 14
+%s12:Time - s11:Time < 14
+%s13:Time - s12:Time < 14
+
+% initial position
+% n00:Nat = 1
+% n10:Nat = 3
+
+%%%%%%%%%%%%%%%%%%%%%%  invariants: myY, energy
+atloc(b(0),pt(n0x:Nat,n0y:Nat)) @ s21:Time => n0y:Nat >= 0
+atloc(b(0),pt(n0x:Nat,n0y:Nat)) @ s21:Time => 2 >= n0y:Nat
+atloc(b(1),pt(n1x:Nat,n1y:Nat)) @ s21:Time => n1y:Nat >= 2
+atloc(b(1),pt(n1x:Nat,n1y:Nat)) @ s21:Time => 4 >= n1y:Nat
+%energy(b(0),e0:Nat) @ s22:Time => e0:Nat >= 15
+%energy(b(1),e1:Nat) @ s22:Time => e1:Nat >= 15

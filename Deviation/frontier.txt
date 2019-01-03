@@ -1,0 +1,14 @@
+
+given timelines [tl0, ... tlN]
+
+the frontier is the set of tuples:
+
+(i0, ... iN)
+
+such that  iJ is less than the length of tlJ
+
+the problem associated with (i0, ... iN) is unsat,
+but any smaller tuple (pointwise) is sat.
+
+we want to be able to compute the frontier of a log protocol pair
+that is unsat.

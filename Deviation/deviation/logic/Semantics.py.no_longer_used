@@ -1,0 +1,195 @@
+import sys
+
+from yices.Terms  import Terms
+from yices.Yices  import Yices
+
+from deviation.logic.Syntax import (Term, Variable, Integer, YicesSignature)
+
+import deviation.logic.Syntax as Syntax
+
+
+from deviation.logic.SymbolTable import SymbolTable
+
+
+class Semantics(object):
+
+    @staticmethod
+    def term2YicesTerm(term):
+        retval = Semantics._term2YicesTerm(term)
+        #print('{0} {1} {2}'.format(str(term), retval, term.yices_term))
+        return retval
+
+    @staticmethod
+    def _term2YicesTerm(term):
+
+        def make_binary_term(op, arg0, arg1):
+            yt_arg0 = Semantics._term2YicesTerm(arg0)
+            assert yt_arg0 is not None
+            yt_arg1 = Semantics._term2YicesTerm(arg1)
+            assert yt_arg1 is not None
+            yt = op(yt_arg0, yt_arg1)
+            assert yt is not None
+            return yt
+
+        if isinstance(term, Variable):
+            return term.toYicesTerm()
+        if isinstance(term, Integer):
+            return term.yices_term #YicesSignature.int2time(term.value)
+        if isinstance(term, Term):
+            opname = term.function.name
+            if opname == SymbolTable.B:
+                return Semantics.thingTerm2YicesTerm(term)
+            if opname == SymbolTable.OB:
+                return Semantics.thingTerm2YicesTerm(term)
+            if opname == SymbolTable.PT:
+                return Semantics.pt2Term2YicesTerm(term)
+            if opname in SymbolTable.binop_map:
+                yices_op = SymbolTable.binop_map[opname]
+                assert yices_op is not None
+                return make_binary_term(yices_op, term.args[0], term.args[1])
+            if opname in SymbolTable.infix_map:
+                yices_op = SymbolTable.infix_map[opname]
+                return make_binary_term(yices_op, term.args[0], term.args[1])
+            if opname in YicesSignature.op_map:
+                yices_op = YicesSignature.op_map[opname]
+                assert yices_op is not None
+                yt_arg0 = Semantics._term2YicesTerm(term.args[0])
+                assert yt_arg0 is not None
+                # This is a kludge: we need to make Times and Stages distinct, or add a type to the arguments.
+                # Maybe by extending the language (letting a base yices theory assert that bot(i) == b_i and pt(i,j) = p_i_j) a lot of this can go away
+                yt_arg1 = Semantics.integerTerm2YicesTerm(term.args[1]) if opname == SymbolTable.TREATSTAGE else Semantics._term2YicesTerm(term.args[1])
+                assert yt_arg1 is not None
+                yt_arg2 = Semantics._term2YicesTerm(term.args[2])
+                assert yt_arg2 is not None
+                application = Terms.application(yices_op, [yt_arg0, yt_arg1, yt_arg2])
+                if application == -1:
+                    sys.stderr.write('_term2YicesTerm: Terms.application failed {0}\n'.format(Yices.error_string()))
+                    return None
+                return application
+            sys.stderr.write('_term2YicesTerm: Unknown term {0}\n'.format(str(term)))
+            return None
+        #FIXME: this should go away
+        if isinstance(term, int):
+            return YicesSignature.integer(term)
+        sys.stderr.write('_term2YicesTerm: Unknown term {0}\n'.format(str(term)))
+        return None
+
+    @staticmethod
+    def integerTerm2YicesTerm(integer):
+        if isinstance(integer, Variable):
+            return integer.toYicesTerm()
+        if isinstance(integer, Integer):
+            return integer.yices_term
+        return YicesSignature.integer(integer)
+
+    #Semantics.thingname2YicesTerm(Syntax.thingTerm2Yices(thing))
+    @staticmethod
+    def thingTerm2YicesTerm(thing):
+        if isinstance(thing, Variable):
+            return thing.toYicesTerm()
+        thingname = Syntax.thingTerm2Yices(thing)
+        return Semantics.thingname2YicesTerm(thingname)
+
+    @staticmethod
+    def thingname2YicesTerm(thingname):
+        thing_term = YicesSignature.thing_map.get(thingname, None)
+        if thing_term is None:
+            sys.stderr.write('thingname2YicesTerm: no thing called {0}\n'.format(thingname))
+            return None
+        return thing_term
+
+    #Semantics.pt2name2YicesTerm(Syntax.pt2Term2Yices(pt))
+    @staticmethod
+    def pt2Term2YicesTerm(pt):
+        if isinstance(pt, Variable):
+            return pt.toYicesTerm()
+        ptname = Syntax.pt2Term2Yices(pt)
+        yt = Semantics.pt2name2YicesTerm(ptname)
+        return yt
+
+    @staticmethod
+    def pt2name2YicesTerm(ptname):
+        pt_term = YicesSignature.pt2_map.get(ptname, None)
+        if pt_term is None:
+            sys.stderr.write('pt2name2YicesTerm: no pt called {0}\n'.format(ptname))
+            return None
+        return pt_term
+
+#    @staticmethod
+#    def stageTerm2YicesTerm(stage):
+#        if isinstance(stage, Variable):
+#            return stage.toYicesTerm()
+#        stagename = Syntax.stageTerm2Yices(stage)
+#        return Semantics.stagename2YicesTerm(stagename)
+
+#    @staticmethod
+#    def stagename2YicesTerm(stagename):
+#        stage_term = YicesSignature.stage_map.get(stagename, None)
+#        if stage_term is None:
+#            sys.stderr.write('stagename2YicesTerm: no stage called {0}\n'.format(stagename))
+#            return None
+#        return stage_term
+
+    @staticmethod
+    def mkatlocFromNames(bot, pt, timestamp):
+
+        print(bot, type(bot))
+        print(pt, type(pt))
+        print(timestamp, type(timestamp))
+
+        bot_term = Semantics.thingname2YicesTerm(bot)
+        if bot_term is None:
+            sys.stderr.write('mkatlocFromNames: no bot called {0}\n'.format(bot))
+            return None
+
+        pt_term = Semantics.pt2name2YicesTerm(pt)
+        if pt_term is None:
+            sys.stderr.write('mkatlocFromNames: no pt called {0}\n'.format(pt))
+            return None
+
+        time_term = Semantics.integerTerm2YicesTerm(timestamp)
+
+        application = Terms.application(YicesSignature.atloc_op, [bot_term, pt_term, time_term])
+        if application is None:
+            sys.stderr.write('mkatlocFromNames: Terms.application failed {0}\n'.format(Yices.error_string()))
+            return None
+
+        return application
+
+
+    @staticmethod
+    def mktreatstageFromNames(pt, stage, timestamp):
+
+        pt_term = Semantics.pt2name2YicesTerm(pt)
+        if pt_term is None:
+            sys.stderr.write('assert_atloc: no pt called {0}\n'.format(pt))
+            return None
+
+        stage_term = Semantics.integerTerm2YicesTerm(stage)
+
+        time_term = Semantics.integerTerm2YicesTerm(timestamp)
+
+        application = Terms.application(YicesSignature.treatstage_op, [pt_term, stage_term, time_term])
+        if application is None:
+            sys.stderr.write('assert_atloc: Terms.application failed {0}\n'.format(Yices.error_string()))
+            return None
+
+        return application
+
+
+    @staticmethod
+    def assert_binop(context, op, arg0, arg1):
+        assert op.name in SymbolTable.BINOPS
+        yices_op = SymbolTable.binop_map[op.name]
+        assert yices_op is not None
+        yt_arg0 = Semantics._term2YicesTerm(arg0)
+        assert yt_arg0 is not None
+        yt_arg1 = Semantics._term2YicesTerm(arg1)
+        assert yt_arg1 is not None
+        yt = yices_op(yt_arg0, yt_arg1)
+        errcode = context.assert_formula(yt)
+        if errcode == -1:
+            sys.stderr.write('assert_binop: yices_assert_formula failed {0}\n'.format(Yices.error_string()))
+            return False
+
+        return True

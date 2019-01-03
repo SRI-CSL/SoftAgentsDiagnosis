@@ -1,0 +1,46 @@
+% MaintP(pt(2, 4) ; pt(0,5)): Simple BotTeamProtocol for initS1
+
+% bot 0 controlled events
+atloc(b(0),pt(2, 4)) @ s00:Time
+treatStage(pt(2, 4),2) @ s01:Time
+atloc(b(0),l0:Pt2) @ s02:Time
+atloc(b(0),pt(0, 5)) @ s03:Time
+treatStage(pt(0, 5),2) @ s04:Time
+atloc(b(0),l1:Pt2) @ s05:Time
+
+timeline(b(0), s00:Time, s01:Time, s02:Time, s03:Time, s04:Time, s05:Time)
+
+% bot 1 controlled events
+atloc(b(1),pt(2, 4)) @ s10:Time
+treatStage(pt(2, 4),4) @ s11:Time
+atloc(b(1),pt(0, 5)) @ s12:Time
+treatStage(pt(0, 5),4) @ s13:Time
+
+timeline(b(1), s10:Time, s11:Time, s12:Time, s13:Time)
+
+% bot0 moves away from target
+l0:Pt2 =/= pt(2,4)
+l1:Pt2 =/= pt(0,5)
+
+% bot0 local order
+s00:Time < s01:Time
+s01:Time < s02:Time
+s02:Time < s03:Time
+s03:Time < s04:Time
+s04:Time < s05:Time
+
+% bot1 local order
+s10:Time < s11:Time
+s11:Time < s12:Time
+s12:Time < s13:Time
+
+% bot sequencing
+s02:Time < s10:Time
+s05:Time < s12:Time
+
+% max delay between stages
+s11:Time - s01:Time < 10
+s13:Time - s04:Time < 10
+
+% max delay between targets
+s03:Time  - s01:Time < 15

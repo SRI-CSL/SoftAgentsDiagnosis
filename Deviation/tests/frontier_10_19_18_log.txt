@@ -1,0 +1,336 @@
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(1, 1)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 2)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(1, 1)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(2, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(4, 3)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(7, 5)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(0, 2), (6, 0), (1, 1)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+The timeline interpretation is: Timeline timestamps are distinct
+
+Frontier: set([(4, 3)])
+('initS1aObs4-2EventsEnv', 'protocol0')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol0')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol0')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol0')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol0')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol0')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol0')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1EventsEnv', 'protocol1')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol1')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol1')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol1')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol1')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol1')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol1')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1EventsEnv', 'protocol2')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol2')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol2')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol2')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol2')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol2')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol2')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1EventsEnv', 'protocol3')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol3')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol3')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol3')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol3')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol3')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol3')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol3')
+retcode = 0

@@ -1,0 +1,3857 @@
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Frontier: set([(0, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+(treatStage pt_0_5 stage2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(/= pt_0_5 l1)
+(atloc b0 l1 s05)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(/= pt_2_4 l0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 52
+	s03 is 20
+	s04 is 32
+	s05 is 52
+	s10 is 28
+	s11 is 32
+	s12 is 48
+	s13 is 51
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 52
+	s03 is 20
+	s04 is 32
+	s05 is 17
+	s10 is 28
+	s11 is 32
+	s12 is 48
+	s13 is 51
+	l0 is pt_0_1
+	l1 is pt_0_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 17
+	s03 is 20
+	s04 is 32
+	s05 is 36
+	s10 is 11
+	s11 is 32
+	s12 is 48
+	s13 is 51
+	l0 is pt_0_2
+	l1 is pt_0_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(/= pt_0_5 l1)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(treatStage pt_0_5 stage4 s13)
+(atloc b1 pt_0_5 s12)
+(treatStage pt_0_5 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Frontier: set([(1, 1)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 2)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 41
+	s03 is 25
+	s04 is 27
+	s05 is 41
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 41
+	s03 is 25
+	s04 is 27
+	s05 is 40
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_0_1
+	l1 is pt_0_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 12
+	s03 is 25
+	s04 is 27
+	s05 is 39
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_4_1
+	l1 is pt_1_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(/= pt_5_4 l1)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b0 l1 s05)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 47
+	s03 is 25
+	s04 is 27
+	s05 is 47
+	s10 is 19
+	s11 is 21
+	s12 is 41
+	s13 is 43
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 47
+	s03 is 25
+	s04 is 27
+	s05 is 46
+	s10 is 19
+	s11 is 21
+	s12 is 41
+	s13 is 43
+	l0 is pt_0_1
+	l1 is pt_0_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 14
+	s03 is 25
+	s04 is 27
+	s05 is 30
+	s10 is 19
+	s11 is 21
+	s12 is 41
+	s13 is 43
+	l0 is pt_3_1
+	l1 is pt_3_4
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Frontier: set([(1, 1)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+context.check_context_with_assumptions returned UNSAT
+(/= pt_5_4 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_4 stage2 s04)
+(treatStage pt_5_4 stage4 s13)
+(atloc b1 pt_5_4 s12)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 42
+	s03 is 24
+	s04 is 27
+	s05 is 42
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 42
+	s03 is 24
+	s04 is 27
+	s05 is 41
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_0_1
+	l1 is pt_0_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 12
+	s03 is 24
+	s04 is 27
+	s05 is 42
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_3_1
+	l1 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_4 stage2 s04)
+(atloc b1 pt_5_4 s12)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+context.check_context_with_assumptions returned UNSAT
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_4_0 s10)
+(treatStage pt_4_0 stage4 s11)
+(atloc b0 pt_5_4 s03)
+(< (+ (* -1 s01) s00) 0)
+(/= s01 s02)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s04) s03) 0)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_5_4 s12)
+(treatStage pt_5_4 stage4 s13)
+(/= pt_4_0 l0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 39
+	s03 is 20
+	s04 is 27
+	s05 is 39
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 39
+	s03 is 20
+	s04 is 27
+	s05 is 18
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_0_1
+	l1 is pt_5_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 20
+	s04 is 27
+	s05 is 38
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_4_1
+	l1 is pt_0_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s11) s10) 0)
+(atloc b0 l0 s02)
+(treatStage pt_4_0 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s10)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Frontier: set([(2, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Frontier: set([(0, 0)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s15) s14) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(treatStage pt_1_4 stage4 s15)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+Frontier: set([(0, 0)])
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+Frontier: set([(0, 0)])
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_2_0 stage2 s04)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_1_4 stage2 s07)
+(atloc b0 pt_1_4 s06)
+(< (+ (* -1 s15) s14) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 56
+	s03 is 19
+	s04 is 21
+	s05 is 56
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 23
+	s03 is 19
+	s04 is 21
+	s05 is 55
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_1_0
+	l1 is pt_0_2
+	l2 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s05 is 26
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_3_1
+	l1 is pt_2_2
+	l2 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s06) s05) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s07 (* -1 s08)) 0)
+(treatStage pt_2_0 stage2 s04)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s15) s14) 0)
+(atloc b1 pt_1_4 s14)
+(atloc b0 l2 s08)
+(treatStage pt_1_4 stage4 s15)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(/= pt_2_0 l1)
+Level 3 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(4, 3)])
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s07) s06) 0)
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_1_4 stage2 s07)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s14) s13) 0)
+(< (+ (* -1 s15) s14) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_1_4 stage4 s15)
+(< (+ -10 (* -1 s07) s15) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 67
+	s03 is 19
+	s04 is 21
+	s05 is 67
+	s06 is 47
+	s07 is 49
+	s08 is 67
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 67
+	s03 is 19
+	s04 is 21
+	s05 is 66
+	s06 is 47
+	s07 is 49
+	s08 is 1
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_0_1
+	l1 is pt_1_1
+	l2 is pt_1_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	s05 is 25
+	s06 is 47
+	s07 is 49
+	s08 is 67
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_4_1
+	l1 is pt_3_1
+	l2 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s07 (* -1 s08)) 0)
+(atloc b0 l2 s08)
+(treatStage pt_1_4 stage4 s15)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s06) s05) 0)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s14) s13) 0)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ -10 (* -1 s07) s15) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+Frontier: set([(7, 5)])
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+Frontier: set([(0, 2), (6, 0), (1, 1)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+context.check_context_with_assumptions returned UNSAT
+(/= pt_2_0 l1)
+(< (+ -10 (* -1 s04) s13) 0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(atloc b0 l1 s05)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_2_0 stage4 s13)
+(atloc b0 pt_1_4 s06)
+(treatStage pt_1_4 stage2 s07)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 62
+	s03 is 19
+	s04 is 21
+	s05 is 62
+	s06 is 39
+	s07 is 50
+	s08 is 62
+	s10 is 13
+	s11 is 15
+	s12 is 38
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 61
+	s03 is 19
+	s04 is 21
+	s05 is 4
+	s06 is 39
+	s07 is 50
+	s08 is 62
+	s10 is 13
+	s11 is 15
+	s12 is 38
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_0_2
+	l1 is pt_4_1
+	l2 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s05 is 26
+	s06 is 39
+	s07 is 50
+	s08 is 60
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_3_1
+	l1 is pt_2_2
+	l2 is pt_1_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_2_0 stage2 s04)
+(atloc b1 pt_2_0 s12)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s07 (* -1 s08)) 0)
+(atloc b0 l2 s08)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s06) s05) 0)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ -10 (* -1 s04) s13) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+Frontier: set([(4, 3)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Frontier: set([(0, 0)])
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 1), (1, 0)])
+('initS1aObs4-2EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+rFYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s4) s3) 0)
+(< (+ (* -1 s3) s2) 0)
+(< (+ s1 (* -1 s2)) 0)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s1) s0) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_4 stage4 s4)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Frontier: set([(3, 0), (0, 2)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Frontier: set([(0, 0)])
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Frontier: set([(0, 0)])
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+(treatStage pt_0_5 stage2 s04)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 0
+	s03 is 20
+	s04 is 32
+	s05 is 0
+	s10 is 33
+	s11 is 32
+	s12 is 53
+	s13 is 51
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 0
+	s03 is 20
+	s04 is 32
+	s05 is 52
+	s10 is 33
+	s11 is 32
+	s12 is 53
+	s13 is 51
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 7
+	s02 is 10
+	s03 is 20
+	s04 is 32
+	s05 is 52
+	s10 is 31
+	s11 is 32
+	s12 is 50
+	s13 is 51
+	l0 is pt_3_3
+	l1 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(/= pt_2_4 l0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(atloc b0 l1 s05)
+(/= pt_0_5 l1)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s02 (* -1 s10)) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_0_5 stage2 s04)
+(treatStage pt_0_5 stage4 s13)
+(treatStage pt_2_4 stage2 s01)
+(atloc b1 pt_0_5 s12)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Frontier: set([(1, 1)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Frontier: set([(0, 1), (1, 0)])
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_0_5 stage4 s13)
+(< (+ s01 (* -1 s02)) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_0_5 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 2)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 0
+	s03 is 25
+	s04 is 27
+	s05 is 0
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 0
+	s03 is 25
+	s04 is 27
+	s05 is 41
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 10
+	s02 is 24
+	s03 is 25
+	s04 is 27
+	s05 is 41
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+	l0 is pt_5_3
+	l1 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(atloc b0 l1 s05)
+(< (+ (* -1 s13) s12) 0)
+(/= pt_5_4 l1)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(/= pt_5_4 l1)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 0
+	s03 is 25
+	s04 is 27
+	s05 is 0
+	s10 is 22
+	s11 is 21
+	s12 is 45
+	s13 is 43
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 0
+	s03 is 25
+	s04 is 27
+	s05 is 47
+	s10 is 22
+	s11 is 21
+	s12 is 45
+	s13 is 43
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 11
+	s02 is 18
+	s03 is 25
+	s04 is 27
+	s05 is 29
+	s10 is 20
+	s11 is 21
+	s12 is 42
+	s13 is 43
+	l0 is pt_3_2
+	l1 is pt_4_4
+Level 3: context.check_context_with_assumptions returned UNSAT
+(/= pt_5_4 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(treatStage pt_5_4 stage2 s04)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_4_0 stage2 s01)
+(/= pt_4_0 l0)
+(atloc b0 l0 s02)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s02 (* -1 s10)) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Frontier: set([(1, 1)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+context.check_context_with_assumptions returned UNSAT
+(/= pt_5_4 l1)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 l1 s05)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_4 stage2 s04)
+(treatStage pt_5_4 stage4 s13)
+(atloc b1 pt_5_4 s12)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 0
+	s03 is 24
+	s04 is 27
+	s05 is 0
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 0
+	s03 is 24
+	s04 is 27
+	s05 is 42
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 24
+	s04 is 27
+	s05 is 41
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+	l0 is pt_4_1
+	l1 is pt_0_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(/= pt_5_4 l1)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b0 l1 s05)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_5_4 stage2 s04)
+(atloc b1 pt_5_4 s12)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s13 (* -1 s04)) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Frontier: set([(3, 0), (1, 1)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s11) s10) 0)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(atloc b0 pt_5_4 s03)
+(treatStage pt_4_0 stage2 s01)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_5_4 s12)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Level 0: context.check_context_with_assumptions returned SAT
+Level 1: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 39
+	s03 is 20
+	s04 is 27
+	s05 is 39
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 39
+	s03 is 20
+	s04 is 27
+	s05 is 0
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_0_1
+	l1 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 11
+	s03 is 20
+	s04 is 27
+	s05 is 30
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+	l0 is pt_4_1
+	l1 is pt_3_4
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s05 (* -1 s12)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_5_4 stage4 s13)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s11 (* -1 s12)) 0)
+(atloc b1 pt_5_4 s12)
+(/= pt_4_0 l0)
+Level 3 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Frontier: set([(2, 0)])
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(0, 0)])
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Frontier: set([(0, 0)])
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Frontier: set([(0, 0)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_5_4 stage4 s13)
+(< (+ s02 (* -1 s03)) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_5_4 stage4 s13)
+Level 0 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Frontier: set([(0, 0)])
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 49
+Frontier: set([(0, 0)])
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 59
+Frontier: set([(0, 0)])
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+Frontier: set([(0, 0)])
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 50
+Frontier: set([(0, 0)])
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 15, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 68
+Frontier: set([(0, 0)])
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 52
+Frontier: set([(0, 0)])
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 39
+Frontier: set([(0, 0)])
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [24, 25, 28, 48, 54].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 43) @ 43
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 48) @ 48
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 54) @ 54
+Maximum time = 67
+Frontier: set([(0, 0)])
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+context.check_context_with_assumptions returned UNSAT
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s07) s06) 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(atloc b0 pt_1_4 s06)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s15) s14) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 56
+	s03 is 19
+	s04 is 21
+	s05 is 56
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 0
+	s03 is 19
+	s04 is 21
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_0_1
+	l1 is pt_1_0
+	l2 is pt_0_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 18
+	s03 is 19
+	s04 is 21
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+	l0 is pt_2_1
+	l1 is pt_1_0
+	l2 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_2_0 stage2 s04)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s11 (* -1 s12)) 0)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s06) s05) 0)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_1_4 stage2 s07)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s15) s14) 0)
+(treatStage pt_1_4 stage4 s15)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+Frontier: set([(4, 3)])
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s07) s06) 0)
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(treatStage pt_1_4 stage2 s07)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s05 (* -1 s12)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s14) s13) 0)
+(< (+ (* -1 s15) s14) 0)
+(treatStage pt_1_4 stage4 s15)
+(< (+ -10 (* -1 s07) s15) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 10
+	s01 is 9
+	s02 is 0
+	s03 is 22
+	s04 is 21
+	s05 is 0
+	s06 is 50
+	s07 is 49
+	s08 is 0
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 10
+	s01 is 9
+	s02 is 67
+	s03 is 22
+	s04 is 21
+	s05 is 0
+	s06 is 50
+	s07 is 49
+	s08 is 1
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_1_1
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 8
+	s01 is 9
+	s02 is 10
+	s03 is 20
+	s04 is 21
+	s05 is 28
+	s06 is 47
+	s07 is 49
+	s08 is 67
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+	l0 is pt_5_1
+	l1 is pt_3_3
+	l2 is pt_0_1
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s07 (* -1 s08)) 0)
+(atloc b0 l2 s08)
+(treatStage pt_1_4 stage4 s15)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s13) s12) 0)
+(< (+ (* -1 s14) s13) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s07) s15) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [35, 36, 37, 51, 68, 70, 71, 77].
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 29) @ 29
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 34) @ 34
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 51) @ 51
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 59) @ 59
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 61) @ 61
+Skipping noLoc event atloc(b(0), noLoc:Pt2, 64) @ 64
+Maximum time = 81
+Frontier: set([(7, 5)])
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+context.check_context_with_assumptions returned UNSAT
+(< (+ s04 (* -1 s05)) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s07) s06) 0)
+(< (+ s01 (* -1 s02)) 0)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s14) s08) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Level 0: context.check_context_with_assumptions returned UNSAT
+(treatStage pt_1_4 stage2 s07)
+Level 0 unsat core is:
+
+
+FYI: no events at [6, 24].
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 6) @ 6
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 15) @ 15
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 24) @ 24
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 25) @ 25
+Skipping noLoc event atloc(b(1), noLoc:Pt2, 28) @ 28
+Maximum time = 32
+Frontier: set([(0, 2), (6, 0), (1, 1)])
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+context.check_context_with_assumptions returned UNSAT
+(< (+ (* -1 s07) s06) 0)
+(/= pt_2_0 l1)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s13) s12) 0)
+(atloc b0 l1 s05)
+(< (+ -10 (* -1 s04) s13) 0)
+(< (+ s05 (* -1 s12)) 0)
+(treatStage pt_2_0 stage4 s13)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage2 s04)
+(treatStage pt_1_4 stage2 s07)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ (* -1 s15) s14) 0)
+(< (+ s07 (* -1 s08)) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ (* -1 s06) s05) 0)
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Level 0: context.check_context_with_assumptions returned SAT
+Level 0 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 0
+	s03 is 19
+	s04 is 21
+	s05 is 0
+	s06 is 39
+	s07 is 50
+	s08 is 0
+	s10 is 13
+	s11 is 15
+	s12 is 38
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_1
+Level 1: context.check_context_with_assumptions returned SAT
+Level 1 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 62
+	s03 is 19
+	s04 is 21
+	s05 is 0
+	s06 is 39
+	s07 is 50
+	s08 is 61
+	s10 is 13
+	s11 is 15
+	s12 is 38
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_0_1
+	l1 is pt_0_1
+	l2 is pt_0_2
+Level 2: context.check_context_with_assumptions returned SAT
+Level 2 has a solution: smt_stat = 3
+
+	s00 is 5
+	s01 is 9
+	s02 is 18
+	s03 is 19
+	s04 is 21
+	s05 is 23
+	s06 is 39
+	s07 is 50
+	s08 is 59
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+	l0 is pt_2_1
+	l1 is pt_1_0
+	l2 is pt_2_2
+Level 3: context.check_context_with_assumptions returned UNSAT
+(< (+ s07 (* -1 s08)) 0)
+(atloc b0 l2 s08)
+(treatStage pt_1_4 stage4 s15)
+(< (+ s04 (* -1 s05)) 0)
+(< (+ (* -1 s06) s05) 0)
+(< (+ (* -1 s07) s06) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s15) s14) 0)
+(< (+ (* -1 s14) s08) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s13) s12) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s07) s15) 0)
+Level 3 unsat core is:
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 72
+Frontier: set([(4, 3)])
+etcode = 0
+('initS2locsf0xEventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsBot', 'protocol0')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsBot', 'protocol1')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf0EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsBot', 'protocol2')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1Obs1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aObs4-2EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1aensfmEventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1alocsf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1amvaf1xEventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS1locsf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2ensf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf0xEventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2locsf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0
+('initS2mvaf1EventsBot', 'protocol3')
+retcode = 0
+retcode = 0
+retcode = 0

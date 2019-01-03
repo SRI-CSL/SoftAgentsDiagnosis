@@ -1,0 +1,18 @@
+atloc(b(0),pt(2, 4)) @ s0:Time
+treatStage(pt(2, 4),2) @ s1:Time
+atloc(b(0),l0:Pt2) @ s2:Time
+
+timeline(b(0), s0:Time, s1:Time, s2:Time)
+
+atloc(b(1),pt(2, 4)) @ s3:Time
+treatStage(pt(2, 4),4) @ s4:Time
+
+timeline(b(1), s3:Time, s4:Time)
+
+
+0  <= s0:Time
+s0:Time < s1:Time
+s1:Time < s2:Time
+s2:Time < s3:Time
+s3:Time < s4:Time
+l0:Pt2 =/= pt(2,4)

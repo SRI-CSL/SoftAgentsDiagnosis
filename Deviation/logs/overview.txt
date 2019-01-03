@@ -1,0 +1,225 @@
+Files with full logs -- begin with maude command generating the log
+initS1.txt
+initS1Obs1.txt
+initS1aObs4-2.txt
+initS1aensfm.txt
+initS1alocsf1.txt
+initS1amvaf1.txt
+initS1amvaf1x.txt
+initS1locsf1.txt
+initS2ensf0.txt
+initS2ensf1.txt
+initS2locsf0x.txt
+initS2locsf1.txt
+initS2mvaf1.txt
+
+<str>Events.txt 
+  -- the pair consisting of 
+     the relevant Environment log items from <str>.txt
+     the relevant Bot log items from <str>.txt
+  -- begins with the maude command generating the pair of event sets
+
+Currently only atloc and treatStage items
+Later, add energy(b(i),e) @ t) events to the log
+and require e > 5  or e >= 35
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+<str>EventsEnv.txt -- the relevant Environment event log from <str>.txt
+begins with commented out maude command
+events are one line, each event is enclosed in parens
+
+initS1EventsEnv.txt
+initS1Obs1EventsEnv.txt
+initS1aObs4-2EventsEnv.txt
+initS1aensfmEventsEnv.txt
+initS1alocsf1EventsEnv.txt
+initS1amvaf1EventsEnv.txt
+initS1amvaf1xEventsEnv.txt
+initS1locsf1EventsEnv.txt
+initS2ensf0EventsEnv.txt
+initS2ensf1EventsEnv.txt
+initS2locsf0xEventsEnv.txt
+initS2locsf1EventsEnv.txt
+initS2mvaf1EventsEnv.txt
+
+<str>EventsBot.txt -- the relevant Bot/agent event log from <str>.txt
+
+initS1EventsBot.txt
+initS1Obs1EventsBot.txt
+initS1aObs4-2EventsBot.txt
+initS1aensfmEventsBot.txt
+initS1alocsf1EventsBot.txt
+initS1amvaf1EventsBot.txt
+initS1amvaf1xEventsBot.txt
+initS1locsf1EventsBot.txt
+initS2ensf0EventsBot.txt
+initS2ensf1EventsBot.txt
+initS2locsf0xEventsBot.txt
+initS2locsf1EventsBot.txt
+initS2mvaf1EventsBot.txt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% this is iam's protocol1.txt
+%
+% MaintP(pt(2, 4) ; pt(0,5)): Simple BotTeamProtocol for initS1
+
+% bot 0 controlled events
+atloc(b(0),pt(2, 4)) @ s00:Time
+treatStage(pt(2, 4),2) @ s01:Time
+atloc(b(0),l0:Pt2) @ s02:Time
+atloc(b(0),pt(0, 5)) @ s03:Time
+treatStage(pt(0, 5),2) @ s04:Time
+atloc(b(0),l1:Pt2) @ s05:Time
+
+% bot 1 controlled events
+atloc(b(1),pt(2, 4)) @ s10:Time
+treatStage(pt(2, 4),4) @ s11:Time
+atloc(b(1),pt(0, 5)) @ s12:Time
+treatStage(pt(0, 5),4) @ s13:Time
+
+% bot0 moves away from target
+l0:Pt2 =/= pt(2,4)
+l1:Pt2 =/= pt(0,5)
+
+% bot0 local order
+s00:Time < s01:Time
+s01:Time < s02:Time
+s02:Time < s03:Time
+s03:Time < s04:Time
+s04:Time < s05:Time
+
+% bot1 local order
+s10:Time < s11:Time
+s11:Time < s12:Time
+s12:Time < s13:Time
+
+% bot sequencing
+s02:Time < s10:Time 
+s05:Time < s12:Time 
+
+% max delay between stages
+s11:Time - s01:Time < 10
+s13:Time - s04:Time < 10
+
+% max delay between targets
+s03:Time  - s01:Time < 15
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% this is iam's protocol2.txt
+%
+% MaintP(pt(4,0) ; pt(5,4)): Simple BotTeamProtocol for initS1a
+% same as for initS1 with pt(2, 4) >> pt(4, 0) and pt(0, 5) >> pt(5, 4)
+
+% bot 0 controlled events
+atloc(b(0),pt(4, 0)) @ s00:Time
+treatStage(pt(4, 0),2) @ s01:Time
+atloc(b(0),l0:Pt2) @ s02:Time
+atloc(b(0),pt(5, 4)) @ s03:Time
+treatStage(pt(5, 4),2) @ s04:Time
+atloc(b(0),l1:Pt2) @ s05:Time
+
+% bot 1 controlled events
+atloc(b(1),pt(4, 0)) @ s10:Time
+treatStage(pt(4, 0),4) @ s11:Time
+atloc(b(1),pt(5, 4)) @ s12:Time
+treatStage(pt(5, 4),4) @ s13:Time
+
+% bot0 moves away from target
+l0:Pt2 =/= pt(4, 0)
+l1:Pt2 =/= pt(5, 4)
+
+% bot0 local order
+s00:Time < s01:Time
+s01:Time < s02:Time
+s02:Time < s03:Time
+s03:Time < s04:Time
+s04:Time < s05:Time
+
+% bot1 local order
+s10:Time < s11:Time
+s11:Time < s12:Time
+s12:Time < s13:Time
+
+% bot sequencing
+s02:Time < s10:Time 
+s05:Time < s12:Time 
+
+% max delay between stages
+s11:Time - s01:Time < 10
+s13:Time - s04:Time < 10
+
+% max delay between targets
+s03:Time  - s01:Time < 15
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% this is iam's protocol3.txt
+%
+% MaintP(pt(5,1) ; pt(2,0) ; pt(1,4)): Simple BotTeamProtocol for initS2
+
+% bot 0 controlled events
+atloc(b(0),pt(5, 1)) @ s00:Time
+treatStage(pt(5, 1),2) @ s01:Time
+atloc(b(0),l0:Pt2) @ s02:Time
+
+atloc(b(0),pt(2, 0)) @ s03:Time
+treatStage(pt(2, 0),2) @ s04:Time
+atloc(b(0),l1:Pt2) @ s05:Time
+
+atloc(b(0),pt(1, 4)) @ s06:Time
+treatStage(pt(1, 4),2) @ s07:Time
+atloc(b(0),l2:Pt2) @ s08:Time
+
+% bot 1 controlled events
+atloc(b(1),pt(5, 1)) @ s10:Time
+treatStage(pt(5, 1),4) @ s11:Time
+
+atloc(b(1),pt(2, 0)) @ s12:Time
+treatStage(pt(2, 0),4) @ s13:Time
+
+atloc(b(1),pt(1, 4)) @ s14:Time
+treatStage(pt(1, 4),4) @ s15:Time
+
+% bot0 moves away from target
+l0:Pt2 =/= pt(5, 1)
+l1:Pt2 =/= pt(2, 0)
+l2:Pt2 =/= pt(1, 4)
+
+% bot0 local order
+s00:Time < s01:Time
+s01:Time < s02:Time
+s02:Time < s03:Time
+s03:Time < s04:Time
+s04:Time < s05:Time
+s05:Time < s06:Time
+s06:Time < s07:Time
+s07:Time < s08:Time
+
+% bot1 local order
+s10:Time < s11:Time
+s11:Time < s12:Time
+s12:Time < s13:Time
+s13:Time < s14:Time
+s14:Time < s15:Time
+
+
+% bot sequencing
+s02:Time < s10:Time 
+s05:Time < s12:Time 
+s08:Time < s14:Time 
+
+% max delay between stages
+s11:Time - s01:Time < 10
+s13:Time - s04:Time < 10
+s15:Time - s07:Time < 10
+
+% max delay between targets
+s03:Time  - s01:Time < 15
+s06:Time  - s04:Time < 15
+
+

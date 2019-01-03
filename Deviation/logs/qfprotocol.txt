@@ -1,0 +1,7 @@
+
+atloc(b(0), pt(4, 3)) @ s:Time
+
+
+atloc(b(0), pt(nx:Nat,ny:Nat)) @ s:Time => ny:Nat < 4
+
+atloc(b(0), pt(nx:Nat,ny:Nat)) @ s:Time => ((nx:Nat + ny:Nat) < 9)

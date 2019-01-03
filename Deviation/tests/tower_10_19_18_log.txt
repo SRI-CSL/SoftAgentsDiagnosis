@@ -1,0 +1,11657 @@
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+(0, 0)
+SAT
+	s0 is 49
+	s3 is 55
+(0, 1)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s4) s3) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+(0, 0)
+SAT
+	s0 is 46
+	s3 is 53
+(0, 1)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s4) s3) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+(0, 0)
+SAT
+	s0 is 51
+	s3 is 78
+(0, 1)
+(treatStage pt_2_4 stage4 s4)
+(< (+ (* -1 s4) s3) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+(treatStage pt_2_4 stage2 s1)
+(< (+ (* -1 s1) s0) 0)
+(treatStage pt_2_4 stage4 s4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+(0, 0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+(atloc b0 pt_2_4 s0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 11
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 11
+	s11 is 13
+(0, 2)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s11 (* -1 s12)) 0)
+(atloc b1 pt_0_5 s12)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s11 (* -1 s12)) 0)
+(atloc b1 pt_0_5 s12)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+SAT
+	s00 is 5
+	s01 is 7
+	s10 is 11
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 7
+	s10 is 11
+	s11 is 13
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_3
+	s02 is 10
+	s10 is 11
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_3
+	s02 is 10
+	s10 is 11
+	s11 is 13
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+(0, 0)
+SAT
+	s00 is 16
+	s10 is 22
+(0, 1)
+SAT
+	s00 is 16
+	s10 is 22
+	s11 is 24
+(0, 2)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s11 (* -1 s12)) 0)
+(atloc b1 pt_0_5 s12)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s11 (* -1 s12)) 0)
+(atloc b1 pt_0_5 s12)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+SAT
+	s00 is 16
+	s01 is 18
+	s10 is 22
+(1, 1)
+SAT
+	s00 is 16
+	s01 is 18
+	s10 is 22
+	s11 is 24
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+SAT
+	s00 is 16
+	s01 is 18
+	l0 is pt_3_5
+	s02 is 21
+	s10 is 22
+(2, 1)
+SAT
+	s00 is 16
+	s01 is 18
+	l0 is pt_3_5
+	s02 is 21
+	s10 is 22
+	s11 is 24
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ (* -1 s01) s00) 0)
+(atloc b0 pt_2_4 s00)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(atloc b0 pt_0_5 s03)
+(treatStage pt_2_4 stage2 s01)
+(atloc b0 l0 s02)
+(< (+ s02 (* -1 s10)) 0)
+(atloc b1 pt_2_4 s10)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b1 pt_0_5 s12)
+(atloc b1 pt_0_5 s12)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 28
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 11
+	s11 is 32
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 11
+	s11 is 32
+	s12 is 48
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 11
+	s11 is 32
+	s12 is 48
+	s13 is 51
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 7
+	s10 is 11
+(1, 1)
+(treatStage pt_2_4 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_3
+	s02 is 10
+	s10 is 28
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_3
+	s02 is 10
+	s03 is 20
+	s10 is 28
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_3
+	s02 is 10
+	s03 is 20
+	s04 is 32
+	s10 is 28
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 7
+	l0 is pt_3_4
+	s02 is 9
+	s03 is 20
+	s04 is 32
+	l1 is pt_0_1
+	s05 is 52
+	s10 is 28
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+(0, 0)
+SAT
+	s00 is 49
+	s10 is 55
+(0, 1)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+(0, 0)
+SAT
+	s00 is 46
+	s10 is 53
+(0, 1)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+(0, 0)
+SAT
+	s00 is 51
+	s10 is 78
+(0, 1)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_2_4 stage4 s11)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+(treatStage pt_2_4 stage4 s11)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+(0, 0)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+(atloc b0 pt_2_4 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 14
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 14
+	s11 is 16
+(0, 2)
+(treatStage pt_4_0 stage4 s11)
+(atloc b1 pt_5_4 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_4_0 stage4 s11)
+(atloc b1 pt_5_4 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 14
+	s11 is 16
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s10 is 14
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s10 is 14
+	s11 is 16
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s10 is 14
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s10 is 14
+	s11 is 16
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s04 is 24
+	s10 is 14
+(4, 1)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s04 is 24
+	s10 is 14
+	s11 is 16
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+(atloc b1 pt_5_4 s12)
+(atloc b1 pt_5_4 s12)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s04 is 24
+	l1 is pt_0_1
+	s05 is 36
+	s10 is 14
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_1
+	s02 is 12
+	s03 is 22
+	s04 is 24
+	l1 is pt_0_1
+	s05 is 36
+	s10 is 14
+	s11 is 16
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 18
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 18
+	s11 is 20
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 18
+	s11 is 20
+	s12 is 35
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 18
+	s11 is 20
+	s12 is 35
+	s13 is 37
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 10
+	s10 is 18
+(1, 1)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 10
+	l0 is pt_4_2
+	s02 is 13
+	s10 is 18
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 pt_5_4 s03)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 pt_5_4 s03)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b0 l0 s02)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 pt_5_4 s03)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 19
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 19
+	s11 is 21
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 19
+	s11 is 21
+	s12 is 41
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 19
+	s11 is 21
+	s12 is 41
+	s13 is 43
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s10 is 19
+(1, 1)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_2
+	s02 is 18
+	s10 is 19
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_2
+	s02 is 18
+	s03 is 25
+	s10 is 19
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_2
+	s02 is 18
+	s03 is 25
+	s04 is 27
+	s10 is 19
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_1
+	s02 is 14
+	s03 is 25
+	s04 is 27
+	l1 is pt_0_1
+	s05 is 47
+	s10 is 19
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 17
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 17
+	s11 is 19
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 17
+	s11 is 19
+	s12 is 39
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 17
+	s11 is 19
+	s12 is 39
+	s13 is 41
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 17
+(1, 1)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(treatStage pt_4_0 stage4 s11)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_2
+	s02 is 16
+	s10 is 17
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 l0 s02)
+(atloc b0 pt_5_4 s03)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 l0 s02)
+(atloc b0 pt_5_4 s03)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(< (+ s01 (* -1 s02)) 0)
+(atloc b0 l0 s02)
+(atloc b0 pt_5_4 s03)
+(treatStage pt_4_0 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ -15 (* -1 s01) s03) 0)
+(< (+ s02 (* -1 s03)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+(treatStage pt_4_0 stage4 s11)
+(treatStage pt_4_0 stage2 s01)
+(< (+ -10 s11 (* -1 s01)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 9
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 9
+	s11 is 11
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 9
+	s11 is 11
+	s12 is 31
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 9
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 9
+	s11 is 11
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 9
+	s11 is 11
+	s12 is 31
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 9
+	s11 is 11
+	s12 is 31
+	s13 is 33
+(2, 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+(< (+ s02 (* -1 s10)) 0)
+(treatStage pt_4_0 stage2 s01)
+(atloc b1 pt_4_0 s10)
+(< (+ (* -1 s01) s00) 0)
+(< (+ s01 (* -1 s02)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 19, 25, 37, 42, 43, 45, 54].
+Maximum time = 59
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+(0, 0)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+(atloc b0 pt_4_0 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [8, 14, 27, 28, 29, 42, 43, 44].
+Maximum time = 50
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [11, 12, 13, 19, 25, 40, 41, 42, 55, 56, 57].
+Maximum time = 60
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [9, 17, 25, 30, 31, 32].
+Maximum time = 36
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 11, 14, 16, 21, 43, 44, 45, 49].
+Maximum time = 51
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 15, 16, 33, 34, 35, 36, 49, 51, 52, 55, 62, 63, 64].
+Maximum time = 69
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [14, 20, 32, 48, 49, 50, 51].
+Maximum time = 53
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [15, 16, 21, 22, 34].
+Maximum time = 40
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [22, 23, 25, 26, 29, 33, 40, 41, 55, 60, 61, 62, 63].
+Maximum time = 68
+(0, 0)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+(atloc b0 pt_5_1 s00)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 15, 22, 27, 31, 38, 39, 40, 42, 52].
+Maximum time = 57
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 13
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 16
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+(0, 4)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+(0, 5)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 16
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+(1, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+(1, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 16
+(2, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(2, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+(2, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+(2, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 16
+(3, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(3, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+(3, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+(3, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 16
+	s12 is 30
+	s13 is 33
+	s14 is 49
+	s15 is 51
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+(4, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 16
+(4, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(4, 3)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s10 is 13
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s10 is 13
+	s11 is 16
+(5, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s10 is 13
+(6, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s10 is 13
+	s11 is 16
+(6, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	s10 is 13
+(7, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	s10 is 13
+	s11 is 16
+(7, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_2
+	s05 is 35
+	s06 is 37
+	s07 is 44
+	l2 is pt_0_1
+	s08 is 56
+	s10 is 13
+(8, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_2
+	s05 is 35
+	s06 is 37
+	s07 is 44
+	l2 is pt_0_1
+	s08 is 56
+	s10 is 13
+	s11 is 16
+(8, 2)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 37
+	s07 is 44
+	l2 is pt_0_1
+	s08 is 56
+	s10 is 13
+	s11 is 16
+	s12 is 30
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 23, 35, 36, 37, 41, 42, 43, 50, 52, 62, 68, 70, 71, 77, 82, 83, 84, 85].
+Maximum time = 86
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 13
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(0, 4)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(0, 5)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(1, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(1, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+(2, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(2, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(2, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(2, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+(3, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(3, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(3, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(3, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+(4, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+(4, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(4, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(4, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(4, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_0_1
+	s05 is 67
+	s10 is 13
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_0_1
+	s05 is 67
+	s10 is 13
+	s11 is 15
+(5, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(5, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(5, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(5, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(6, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+(6, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+	s11 is 15
+(6, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(6, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(6, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(6, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+	s15 is 76
+(7, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	s10 is 13
+(7, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	s10 is 13
+	s11 is 15
+(7, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(7, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(7, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(7, 5)
+(treatStage pt_1_4 stage4 s15)
+(treatStage pt_1_4 stage2 s07)
+(< (+ -10 (* -1 s07) s15) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+(treatStage pt_1_4 stage4 s15)
+(treatStage pt_1_4 stage2 s07)
+(< (+ -10 (* -1 s07) s15) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	l2 is pt_2_4
+	s08 is 51
+	s10 is 13
+(8, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	l2 is pt_2_4
+	s08 is 51
+	s10 is 13
+	s11 is 15
+(8, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	l2 is pt_2_4
+	s08 is 51
+	s10 is 13
+	s11 is 15
+	s12 is 28
+(8, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	l2 is pt_2_4
+	s08 is 51
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+(8, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_2_1
+	s05 is 24
+	s06 is 47
+	s07 is 49
+	l2 is pt_2_4
+	s08 is 51
+	s10 is 13
+	s11 is 15
+	s12 is 28
+	s13 is 30
+	s14 is 74
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [7, 16, 31].
+Maximum time = 33
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 28
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 15
+	s11 is 32
+(0, 2)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ s11 (* -1 s12)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(0, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	s10 is 15
+(1, 1)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(1, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_1
+	s02 is 14
+	s10 is 15
+(2, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(2, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_1
+	s02 is 14
+	s03 is 21
+	s10 is 15
+(3, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(3, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_1
+	s02 is 14
+	s03 is 21
+	s04 is 23
+	s10 is 15
+(4, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+SAT
+	s00 is 5
+	s01 is 11
+	l0 is pt_3_1
+	s02 is 14
+	s03 is 21
+	s04 is 23
+	l1 is pt_1_0
+	s05 is 25
+	s10 is 15
+(5, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 pt_1_4 s06)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(/= pt_5_1 l0)
+(atloc b0 l0 s02)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s06) s05) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 pt_1_4 s06)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(/= pt_5_1 l0)
+(atloc b0 l0 s02)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s06) s05) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(/= pt_2_0 l1)
+(atloc b0 l1 s05)
+(< (+ s04 (* -1 s05)) 0)
+(atloc b0 pt_1_4 s06)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s02 (* -1 s03)) 0)
+(< (+ (* -1 s04) s03) 0)
+(< (+ s01 (* -1 s02)) 0)
+(/= pt_5_1 l0)
+(atloc b0 l0 s02)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s01) s00) 0)
+(< (+ (* -1 s06) s05) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_5_1 stage2 s01)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 s11 (* -1 s01)) 0)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+(atloc b1 pt_2_0 s12)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 1)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 2)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+FYI: no events at [10, 16, 22, 27, 28, 29, 30, 43, 44, 45, 46, 48, 65, 66, 67, 68, 69].
+Maximum time = 73
+(0, 0)
+SAT
+	s00 is 5
+	s10 is 13
+(0, 1)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+(0, 2)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 38
+(0, 3)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+(0, 4)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(0, 5)
+SAT
+	s00 is 5
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(1, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+(1, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+(1, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 33
+(1, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+(1, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(1, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(2, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+(2, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+(2, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 33
+(2, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+(2, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(2, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(3, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+(3, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+(3, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 33
+(3, 3)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+(3, 4)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+(3, 5)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s10 is 13
+	s11 is 15
+	s12 is 33
+	s13 is 35
+	s14 is 56
+	s15 is 58
+(4, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+(4, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+(4, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_3_1
+	s02 is 12
+	s03 is 19
+	s04 is 21
+	s10 is 13
+	s11 is 15
+	s12 is 33
+(4, 3)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_5_1 stage4 s11)
+(treatStage pt_2_0 stage4 s13)
+(< (+ (* -1 s11) s10) 0)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+(treatStage pt_5_1 stage4 s11)
+(atloc b1 pt_2_0 s12)
+(< (+ (* -1 s11) s10) 0)
+(< (+ (* -1 s13) s12) 0)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ s11 (* -1 s12)) 0)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(4, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_0_1
+	s05 is 62
+	s10 is 13
+(5, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_0_1
+	s05 is 62
+	s10 is 13
+	s11 is 15
+(5, 2)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+(atloc b1 pt_2_0 s12)
+(treatStage pt_2_0 stage4 s13)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage2 s04)
+(< (+ (* -1 s13) s12) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s10 is 13
+	s11 is 15
+	s12 is 38
+(5, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(5, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s10 is 13
+(6, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s10 is 13
+	s11 is 15
+(6, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s10 is 13
+	s11 is 15
+	s12 is 38
+(6, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(6, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s07 is 50
+	s10 is 13
+(7, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s07 is 50
+	s10 is 13
+	s11 is 15
+(7, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_1
+	s05 is 24
+	s06 is 39
+	s07 is 50
+	s10 is 13
+	s11 is 15
+	s12 is 38
+(7, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(7, 5)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+(treatStage pt_2_0 stage4 s13)
+(treatStage pt_2_0 stage2 s04)
+(< (+ -10 (* -1 s04) s13) 0)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 39
+	s07 is 50
+	l2 is pt_0_1
+	s08 is 62
+	s10 is 13
+(8, 1)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 39
+	s07 is 50
+	l2 is pt_0_1
+	s08 is 62
+	s10 is 13
+	s11 is 15
+(8, 2)
+SAT
+	s00 is 5
+	s01 is 9
+	l0 is pt_4_1
+	s02 is 11
+	s03 is 19
+	s04 is 21
+	l1 is pt_1_0
+	s05 is 23
+	s06 is 39
+	s07 is 50
+	l2 is pt_0_1
+	s08 is 62
+	s10 is 13
+	s11 is 15
+	s12 is 38
+(8, 3)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 4)
+UNSAT
+
+Unsat core:
+
+
+
+(8, 5)
+UNSAT
+
+Unsat core:
+
+
+
+('initS1aObs4-2EventsEnv', 'protocol0')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol0')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol0')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol0')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol0')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol0')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol0')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol0')
+retcode = 0
+('initS1EventsEnv', 'protocol1')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol1')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol1')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol1')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol1')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol1')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol1')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol1')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol1')
+retcode = 0
+('initS1EventsEnv', 'protocol2')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol2')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol2')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol2')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol2')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2ensf0EventsEnv', 'protocol2')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol2')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol2')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol2')
+retcode = 0
+('initS1EventsEnv', 'protocol3')
+retcode = 0
+('initS1Obs1EventsEnv', 'protocol3')
+retcode = 0
+('initS1aObs4-2EventsEnv', 'protocol3')
+retcode = 0
+('initS1aensfmEventsEnv', 'protocol3')
+retcode = 0
+('initS1alocsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS1amvaf1EventsEnv', 'protocol3')
+retcode = 0
+('initS1amvaf1xEventsEnv', 'protocol3')
+retcode = 0
+('initS1locsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2ensf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2locsf0xEventsEnv', 'protocol3')
+retcode = 0
+('initS2locsf1EventsEnv', 'protocol3')
+retcode = 0
+('initS2mvaf1EventsEnv', 'protocol3')
+retcode = 0
