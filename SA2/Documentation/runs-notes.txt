@@ -47,30 +47,38 @@ BotTeamRuns
   --- term representing the scenario initial system configuration 
 Maude files
 <scenarioName>.maude 
-  --- executes 
+  --- executes the scenario -- final term contains a log
 <scenarioName>EDevsL.maude
+  --- computes the local deviations of the executed scenarion log
 <scenarioName>Events.maude
+  --- computes the location and treatment events of the executed scenarion log
 <scenarioName>EventsX.maude
+  --- computes the location,treatment,energy events of the executed scenarion log
 
 BotTeam ScenarioNames
 
-  initS1
+initS1..., initS1a... are 2 target location scenarios, 
+  in initS1... the bots get in trouble due to
+  the closeness of one of the target locations to botFs home location
+initS2...  are 3 target location scenarios   
+  
+  initS1      
   initS1Obs1
 
   initS1a
-  initS1aObs4-2
-  initS1aensfm1
-  initS1alocsf1x
-  initS1amvaf1
-  initS1amvaf1x
-  initS1locsf1
+  initS1aObs4-2  -- obstacle at pt(4,2)
+  initS1aensfm1  --  botF (b(1)) energy sensor fault
+  initS1alocsf1x --  botF (b(1)) location sensor fault
+  initS1amvaf1   --  botF (b(1)) move action fault
+  initS1amvaf1x  --  botF (b(1)) move action fault with different random seed
+  initS1locsf1   --  botF (b(1)) location sensor fault with different random seed
 
-  initS2
-  initS2ensf0
-  initS2ensf1
-  initS2locsf0x
-  initS2locsf1
-  initS2mvaf1
+  initS2         
+  initS2ensf0    --  botI (b(0)) energy sensor fault
+  initS2ensf1    --  botF (b(1)) energy sensor fault
+  initS2locsf0x  --  botI (b(0)) location sensor fault
+  initS2locsf1   --  botF (b(1)) location sensor fault
+  initS2mvaf1    --  botF (b(1)) move action fault
 
 R scripts
   energy.R 
