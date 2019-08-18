@@ -837,7 +837,7 @@ endm
 
 see Notes/BotRuns1/getEDevs.txt
 
-
+)
 **** best to configure max ranked actions  
 **** using load.maude BotI waits til BotF within 3 to treat
 **** using load1.maude  BotI waits til BotF within 1 to treat
