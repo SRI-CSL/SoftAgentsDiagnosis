@@ -38,7 +38,7 @@ setup(
     license='MIT',
 
     install_requires=[
-        "antlr4-python2-runtime >= 4.5.3",
+        "antlr4-python3-runtime >= 4.9",
         "yices >= 1.1.0"
     ],
 
@@ -50,7 +50,5 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
     ],
 )

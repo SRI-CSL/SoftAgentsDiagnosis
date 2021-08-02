@@ -1,20 +1,14 @@
-# Generated from java-escape by ANTLR 4.5
+# Generated from Deviation.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from __future__ import print_function
 from antlr4 import *
 from io import StringIO
-package = globals().get("__package__", None)
-ischild = len(package)>0 if package is not None else False
-if ischild:
-    from .DeviationListener import DeviationListener
-    from .DeviationVisitor import DeviationVisitor
-else:
-    from DeviationListener import DeviationListener
-    from DeviationVisitor import DeviationVisitor
+import sys
+
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write(u"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3")
+        buf.write(u"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3")
         buf.write(u"\20\u0091\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7")
         buf.write(u"\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t")
         buf.write(u"\r\4\16\t\16\4\17\t\17\4\20\t\20\3\2\6\2\"\n\2\r\2\16")
@@ -28,7 +22,7 @@ def serializedATN():
         buf.write(u"\f\3\r\3\r\3\r\7\r\u0080\n\r\f\r\16\r\u0083\13\r\3\16")
         buf.write(u"\3\16\3\17\6\17\u0088\n\17\r\17\16\17\u0089\3\20\3\20")
         buf.write(u"\3\20\3\20\3\20\3\20\2\3\20\21\2\4\6\b\n\f\16\20\22\24")
-        buf.write(u"\26\30\32\34\36\2\2\u0090\2!\3\2\2\2\4)\3\2\2\2\6\65")
+        buf.write(u"\26\30\32\34\36\2\2\2\u0090\2!\3\2\2\2\4)\3\2\2\2\6\65")
         buf.write(u"\3\2\2\2\bA\3\2\2\2\nC\3\2\2\2\fJ\3\2\2\2\16N\3\2\2\2")
         buf.write(u"\20b\3\2\2\2\22l\3\2\2\2\24v\3\2\2\2\26x\3\2\2\2\30|")
         buf.write(u"\3\2\2\2\32\u0084\3\2\2\2\34\u0087\3\2\2\2\36\u008b\3")
@@ -67,7 +61,7 @@ def serializedATN():
 
 class DeviationParser ( Parser ):
 
-    grammarFileName = "java-escape"
+    grammarFileName = "Deviation.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -120,11 +114,12 @@ class DeviationParser ( Parser ):
     LINE_COMMENT=13
     WHITE_SPACE=14
 
-    def __init__(self, input):
-        super(DeviationParser, self).__init__(input)
-        self.checkVersion("4.5")
+    def __init__(self, input, output=sys.stdout):
+        super(DeviationParser, self).__init__(input, output=output)
+        self.checkVersion("4.9.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
+
 
 
 
@@ -145,15 +140,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_unit
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterUnit"):
                 listener.enterUnit(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitUnit"):
                 listener.exitUnit(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitUnit"):
                 return visitor.visitUnit(self)
             else:
                 return visitor.visitChildren(self)
@@ -188,6 +183,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class FactContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -214,15 +210,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_fact
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterFact"):
                 listener.enterFact(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitFact"):
                 listener.exitFact(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitFact"):
                 return visitor.visitFact(self)
             else:
                 return visitor.visitChildren(self)
@@ -236,6 +232,7 @@ class DeviationParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_fact)
         try:
             self.state = 39
+            self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
@@ -270,6 +267,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ConstraintContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -296,15 +294,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_constraint
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterConstraint"):
                 listener.enterConstraint(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitConstraint"):
                 listener.exitConstraint(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitConstraint"):
                 return visitor.visitConstraint(self)
             else:
                 return visitor.visitChildren(self)
@@ -318,6 +316,7 @@ class DeviationParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_constraint)
         try:
             self.state = 51
+            self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
@@ -352,6 +351,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class EventContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -376,15 +376,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_event
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterEvent"):
                 listener.enterEvent(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitEvent"):
                 listener.exitEvent(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitEvent"):
                 return visitor.visitEvent(self)
             else:
                 return visitor.visitChildren(self)
@@ -398,6 +398,7 @@ class DeviationParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_event)
         try:
             self.state = 63
+            self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [DeviationParser.LPAREN]:
                 self.enterOuterAlt(localctx, 1)
@@ -411,7 +412,7 @@ class DeviationParser ( Parser ):
                 self.timestamp()
                 self.state = 57
                 self.match(DeviationParser.RPAREN)
-
+                pass
             elif token in [DeviationParser.ID]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 59
@@ -420,7 +421,7 @@ class DeviationParser ( Parser ):
                 self.match(DeviationParser.T__0)
                 self.state = 61
                 self.timestamp()
-
+                pass
             else:
                 raise NoViableAltException(self)
 
@@ -431,6 +432,7 @@ class DeviationParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class TimelineContext(ParserRuleContext):
 
@@ -459,15 +461,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_timeline
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterTimeline"):
                 listener.enterTimeline(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitTimeline"):
                 listener.exitTimeline(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitTimeline"):
                 return visitor.visitTimeline(self)
             else:
                 return visitor.visitChildren(self)
@@ -501,6 +503,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InvariantContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -522,15 +525,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_invariant
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterInvariant"):
                 listener.enterInvariant(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitInvariant"):
                 listener.exitInvariant(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitInvariant"):
                 return visitor.visitInvariant(self)
             else:
                 return visitor.visitChildren(self)
@@ -558,6 +561,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ExpressionContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -581,15 +585,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_expression
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterExpression"):
                 listener.enterExpression(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitExpression"):
                 listener.exitExpression(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitExpression"):
                 return visitor.visitExpression(self)
             else:
                 return visitor.visitChildren(self)
@@ -618,6 +622,7 @@ class DeviationParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class TermContext(ParserRuleContext):
 
@@ -662,15 +667,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_term
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterTerm"):
                 listener.enterTerm(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitTerm"):
                 listener.exitTerm(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitTerm"):
                 return visitor.visitTerm(self)
             else:
                 return visitor.visitChildren(self)
@@ -687,6 +692,7 @@ class DeviationParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 96
+            self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
             if la_ == 1:
                 self.state = 82
@@ -759,6 +765,7 @@ class DeviationParser ( Parser ):
             self.unrollRecursionContexts(_parentctx)
         return localctx
 
+
     class TermlistContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -776,15 +783,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_termlist
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterTermlist"):
                 listener.enterTermlist(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitTermlist"):
                 listener.exitTermlist(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitTermlist"):
                 return visitor.visitTermlist(self)
             else:
                 return visitor.visitChildren(self)
@@ -821,6 +828,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class TimestampContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -838,15 +846,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_timestamp
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterTimestamp"):
                 listener.enterTimestamp(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitTimestamp"):
                 listener.exitTimestamp(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitTimestamp"):
                 return visitor.visitTimestamp(self)
             else:
                 return visitor.visitChildren(self)
@@ -860,17 +868,18 @@ class DeviationParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_timestamp)
         try:
             self.state = 116
+            self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [DeviationParser.INTEGER]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 114
                 self.match(DeviationParser.INTEGER)
-
+                pass
             elif token in [DeviationParser.ID]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 115
                 self.variable()
-
+                pass
             else:
                 raise NoViableAltException(self)
 
@@ -881,6 +890,7 @@ class DeviationParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class VariableContext(ParserRuleContext):
 
@@ -899,15 +909,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_variable
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterVariable"):
                 listener.enterVariable(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitVariable"):
                 listener.exitVariable(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitVariable"):
                 return visitor.visitVariable(self)
             else:
                 return visitor.visitChildren(self)
@@ -935,6 +945,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class VarlistContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -952,15 +963,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_varlist
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterVarlist"):
                 listener.enterVarlist(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitVarlist"):
                 listener.exitVarlist(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitVarlist"):
                 return visitor.visitVarlist(self)
             else:
                 return visitor.visitChildren(self)
@@ -997,6 +1008,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class VartypeContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -1010,15 +1022,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_vartype
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterVartype"):
                 listener.enterVartype(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitVartype"):
                 listener.exitVartype(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitVartype"):
                 return visitor.visitVartype(self)
             else:
                 return visitor.visitChildren(self)
@@ -1042,6 +1054,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ConfigurationContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -1059,15 +1072,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_configuration
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterConfiguration"):
                 listener.enterConfiguration(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitConfiguration"):
                 listener.exitConfiguration(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitConfiguration"):
                 return visitor.visitConfiguration(self)
             else:
                 return visitor.visitChildren(self)
@@ -1102,6 +1115,7 @@ class DeviationParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class SettingContext(ParserRuleContext):
 
         def __init__(self, parser, parent=None, invokingState=-1):
@@ -1124,15 +1138,15 @@ class DeviationParser ( Parser ):
             return DeviationParser.RULE_setting
 
         def enterRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "enterSetting"):
                 listener.enterSetting(self)
 
         def exitRule(self, listener):
-            if isinstance( listener, DeviationListener ):
+            if hasattr(listener, "exitSetting"):
                 listener.exitSetting(self)
 
         def accept(self, visitor):
-            if isinstance( visitor, DeviationVisitor ):
+            if hasattr(visitor, "visitSetting"):
                 return visitor.visitSetting(self)
             else:
                 return visitor.visitChildren(self)
@@ -1178,6 +1192,7 @@ class DeviationParser ( Parser ):
             if predIndex == 0:
                 return self.precpred(self._ctx, 2)
          
+
 
 
 

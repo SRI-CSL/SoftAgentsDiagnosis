@@ -1,5 +1,6 @@
 THISDIR   =  $(shell pwd)
-CLASSPATH =  ${THISDIR}/antlers/antlr-4.5-complete.jar
+#CLASSPATH =  ${THISDIR}/antlers/antlr-4.5-complete.jar
+CLASSPATH =  ${THISDIR}/antlers/antlr-4.9.2-complete.jar
 ANTLR     =  "java -Xmx500M -cp ${CLASSPATH} org.antlr.v4.Tool"
 
 

@@ -1,13 +1,15 @@
-# Generated from java-escape by ANTLR 4.5
+# Generated from Deviation.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from __future__ import print_function
 from antlr4 import *
 from io import StringIO
+import sys
+
 
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write(u"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\2")
+        buf.write(u"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2")
         buf.write(u"\20y\b\1\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7")
         buf.write(u"\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t")
         buf.write(u"\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22")
@@ -21,9 +23,9 @@ def serializedATN():
         buf.write(u"\6\22t\n\22\r\22\16\22u\3\22\3\22\4Wh\2\23\3\3\5\4\7")
         buf.write(u"\5\t\6\13\7\r\b\17\t\21\n\23\13\25\f\27\r\31\2\33\16")
         buf.write(u"\35\2\37\2!\17#\20\3\2\6\4\2,-//\3\2\62;\t\2##\61\61")
-        buf.write(u">@C\\aac|\u0082\u0101\5\2\13\f\17\17\"\"~\2\3\3\2\2\2")
-        buf.write(u"\2\5\3\2\2\2\2\7\3\2\2\2\2\t\3\2\2\2\2\13\3\2\2\2\2\r")
-        buf.write(u"\3\2\2\2\2\17\3\2\2\2\2\21\3\2\2\2\2\23\3\2\2\2\2\25")
+        buf.write(u">@C\\aac|\u0082\u0101\5\2\13\f\17\17\"\"\2~\2\3\3\2\2")
+        buf.write(u"\2\2\5\3\2\2\2\2\7\3\2\2\2\2\t\3\2\2\2\2\13\3\2\2\2\2")
+        buf.write(u"\r\3\2\2\2\2\17\3\2\2\2\2\21\3\2\2\2\2\23\3\2\2\2\2\25")
         buf.write(u"\3\2\2\2\2\27\3\2\2\2\2\33\3\2\2\2\2!\3\2\2\2\2#\3\2")
         buf.write(u"\2\2\3%\3\2\2\2\5\'\3\2\2\2\7)\3\2\2\2\t+\3\2\2\2\13")
         buf.write(u"-\3\2\2\2\r/\3\2\2\2\17\61\3\2\2\2\21\67\3\2\2\2\23@")
@@ -57,7 +59,6 @@ class DeviationLexer(Lexer):
 
     decisionsToDFA = [ DFA(ds, i) for i, ds in enumerate(atn.decisionToState) ]
 
-
     T__0 = 1
     T__1 = 2
     T__2 = 3
@@ -72,6 +73,8 @@ class DeviationLexer(Lexer):
     STRING = 12
     LINE_COMMENT = 13
     WHITE_SPACE = 14
+
+    channelNames = [ u"DEFAULT_TOKEN_CHANNEL", u"HIDDEN" ]
 
     modeNames = [ u"DEFAULT_MODE" ]
 
@@ -90,9 +93,9 @@ class DeviationLexer(Lexer):
 
     grammarFileName = u"Deviation.g4"
 
-    def __init__(self, input=None):
-        super(DeviationLexer, self).__init__(input)
-        self.checkVersion("4.5")
+    def __init__(self, input=None, output=sys.stdout):
+        super(DeviationLexer, self).__init__(input, output=output)
+        self.checkVersion("4.9.2")
         self._interp = LexerATNSimulator(self, self.atn, self.decisionsToDFA, PredictionContextCache())
         self._actions = None
         self._predicates = None
