@@ -1,0 +1,56 @@
+red getEDevsL(addFaults(mkInitS(pt(4, 0) ; pt(5, 4), true), locsf(1)),bot0base bot1base,175,18,30) .
+
+result EDevsList:
+[22,
+{{(zero).RVal,noAct},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(4, 4)) @ 19) (energy(b(1), 15) @ 22) (mode(b(1), enroute(pt(5, 4)))
+    @ 22) supply(b(1), 60) @ 17,
+atloc(b(1), noLoc) @ 22,
+atloc(b(1), pt(3, 2)) @ 22}
+]
+ ;
+[24,
+{{(zero).RVal,noAct},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(5, 4)) @ 20) (energy(b(1), 35) @ 24) (mode(b(1), enroute(pt(5, 4)))
+    @ 24) supply(b(1), 60) @ 17,
+atloc(b(1), noLoc) @ 24,
+atloc(b(1), pt(3, 2)) @ 22}
+]
+ ;
+[25,
+{{{cv(50),u(3/4)},mv(b(1), pt(0, -1))},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(5, 4)) @ 20) (atloc(b(1), pt(3, 3)) @ 25) (energy(b(1), 35) @ 24) (
+    mode(b(1), enroute(pt(5, 4))) @ 25) supply(b(1), 60) @ 17,
+(atloc(b(1), pt(3, 2)) @ 26) energy(b(1), 30) @ 26,
+atloc(b(1), pt(3, 1)) @ 26}
+]
+ ;
+[30,
+{{(zero).RVal,noAct},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(4, 2)) @ 28) (energy(b(1), 85) @ 30) (mode(b(1), enroute(pt(5, 4)))
+    @ 30) supply(b(1), 60) @ 17,
+atloc(b(1), noLoc) @ 30,
+atloc(b(1), pt(3, 2)) @ 27}
+]
+ ;
+[31,
+{{{cv(100),u(1)},mv(b(1), pt(0, 1))},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(4, 2)) @ 28) (atloc(b(1), pt(3, 3)) @ 31) (energy(b(1), 85) @ 30) (
+    mode(b(1), enroute(pt(5, 4))) @ 31) supply(b(1), 60) @ 17,
+(atloc(b(1), pt(3, 4)) @ 32) energy(b(1), 80) @ 32,
+atloc(b(1), pt(3, 3)) @ 32}
+]
+ ;
+[47,
+{{(zero).RVal,noAct},
+(targets(nil) @ 20) (target(pt(5, 4)) @ 10) (targetF(pt(5, 4)) @ 19) (atloc(b(
+    0), pt(1, 1)) @ 39) (energy(b(1), 95) @ 47) (mode(b(1), enroute(pt(0, 4)))
+    @ 47) (supply(b(1), 20) @ 37) treatStage(pt(5, 4), 4) @ 37,
+atloc(b(1), noLoc) @ 47,
+atloc(b(1), pt(3, 3)) @ 47}
+]
