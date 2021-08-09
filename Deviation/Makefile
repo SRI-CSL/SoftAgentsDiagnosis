@@ -67,8 +67,8 @@ lint:
 ifeq ($(PYLINT),)
 	$(error lint target requires pylint)
 endif
-	@ $(PYLINT) --rcfile=.pylintrc \
-	deviation/*.py                 \
-    deviation/logic/*.py           \
-    deviation/visitor/*.py         \
+	@ $(PYLINT) --rcfile=.pylintrc  --disable=W0511 \
+	deviation/*.py                                  \
+    deviation/logic/*.py                            \
+    deviation/visitor/*.py                          \
     deviation/util/*.py
