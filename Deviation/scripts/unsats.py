@@ -107,9 +107,9 @@ args = [
 
 for (log, protocol) in args:
     print(log, protocol)
-    retcode = subprocess.call([deviate, '-u', 'logs/{0}.txt'.format(log), 'logs/{0}.txt'.format(protocol)])
-    print('retcode = {0}'.format(retcode))
-    retcode = subprocess.call([deviate, '-i', 'logs/{0}.txt'.format(log), 'logs/{0}.txt'.format(protocol)])
-    print('retcode = {0}'.format(retcode))
-    retcode = subprocess.call([deviate, '-f', 'logs/{0}.txt'.format(log), 'logs/{0}.txt'.format(protocol)])
-    print('retcode = {0}'.format(retcode))
+    retcode = subprocess.call([deviate, '-u', f'logs/{log}.txt', f'logs/{protocol}.txt'])
+    print(f'retcode = {retcode}')
+    retcode = subprocess.call([deviate, '-i', f'logs/{log}.txt', f'logs/{protocol}.txt'])
+    print(f'retcode = {retcode}')
+    retcode = subprocess.call([deviate, '-f', f'logs/{log}.txt', f'logs/{protocol}.txt'])
+    print(f'retcode = {retcode}')

@@ -37,6 +37,8 @@ setup(
 
     license='MIT',
 
+    python_requires='>3.5',
+
     install_requires=[
         "antlr4-python3-runtime >= 4.9",
         "yices >= 1.1.0"

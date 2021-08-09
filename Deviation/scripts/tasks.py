@@ -55,7 +55,7 @@ gen_theory = False
 count = 0
 for protocol in protocols:
     for log in environment_logs:
-        print('Env: ', count, log, protocol)
+        print(f"Env: {count} {log} {protocol}")
         logpath = 'logs/{0}.txt'.format(log)
         protocolpath = 'logs/{0}.txt'.format(protocol)
         if gen_theory:
@@ -70,7 +70,7 @@ for protocol in protocols:
 
 for protocol in protocols:
     for log in bot_logs:
-        print('Bot: ', count, log, protocol)
+        print(f"Bot: {count} {log} {protocol}")
         logpath = 'logs/{0}.txt'.format(log)
         protocolpath = 'logs/{0}.txt'.format(protocol)
         if gen_theory:
@@ -86,4 +86,4 @@ for protocol in protocols:
 
 print(unsatisfiable)
 for (log, protocol) in unsat_pairs:
-    print("[ '{0}', '{1}'],".format(log, protocol))
+    print(f"[ {log}, {protocol}]")

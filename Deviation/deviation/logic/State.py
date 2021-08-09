@@ -1,7 +1,4 @@
-from __future__ import print_function
-
 import sys
-
 
 from yices.Terms import Terms
 
@@ -71,12 +68,12 @@ class State:
                     self.bot_state[bot] = (pt, ts)
                 else:
                     # should not happen any more
-                    print('Skipping variable {0}'.format(args[1]))
+                    print(f'Skipping variable {args[1]}')
             elif thing.function.name == SymbolTable.OB:
                 pt = Syntax.pt2Term2Yices(args[1])
                 self.obstacles.append(pt)
             else:
-                print('Unexpected atloc argument {0}'.format(thing))
+                print(f'Unexpected atloc argument {thing}')
                 return
         elif op == SymbolTable.TREATSTAGE:
             pt = Syntax.pt2Term2Yices(args[0])
@@ -84,7 +81,7 @@ class State:
             ts = Syntax.integerTerm2Yices(args[2])
             self.pt_state[pt] = (stage, ts)
         else:
-            sys.stderr.write('Surprising event: {0}.\n'.format(ev))
+            sys.stderr.write(f'Surprising event: {ev}.\n')
 
     def toYicesTerms(self, ts):
         retval = []

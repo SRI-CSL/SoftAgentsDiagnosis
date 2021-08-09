@@ -69,5 +69,5 @@ class Configuration:
             return True
 
 
-        sys.stderr.write('Unknown configuration key: {0}\n'.format(key))
+        sys.stderr.write(f'Unknown configuration key: {key}\n')
         return False

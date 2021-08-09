@@ -16,9 +16,9 @@ from .Space import Space
 def thingTerm2Yices(term):
     assert isinstance(term, SyntacticOccurrence)
     if term.function.name == SymbolTable.B:
-        return 'b{0}'.format(str(term.args[0]))
+        return f'b{str(term.args[0])}'
     if term.function.name == SymbolTable.OB:
-        return 'ob{0}'.format(str(term.args[0]))
+        return f'ob{str(term.args[0])}'
     return None
 
 def pt2Term2Yices(term):
@@ -26,7 +26,7 @@ def pt2Term2Yices(term):
     if isinstance(term, Variable):
         return term.name
     assert term.function.name == SymbolTable.PT
-    return 'pt_{0}_{1}'.format(str(term.args[0]), str(term.args[1]))
+    return f'pt_{str(term.args[0])}_{str(term.args[1])}'
 
 def integerTerm2Yices(term):
     if isinstance(term, Variable):
@@ -58,7 +58,7 @@ class SyntacticOccurrence:
 
     # repr's goal is to be unambiguous
     def __repr__(self):
-        return '{0} ... {1}'.format(str(self), str(self.location))
+        return f'{str(self)} ... {str(self.location)}'
 
     def FV(self):
         assert self.fv is not None
@@ -71,7 +71,7 @@ class Event(SyntacticOccurrence):
         super().__init__(location)
         self.expression = expression
         self.timestamp = timestamp
-        self.printstring = '{0} @ {1}'.format(str(self.expression), self.timestamp)
+        self.printstring = f'{str(self.expression)} @ {self.timestamp}'
         self.fv = expression.fv #timestamp has already been added to the expression
         self.yices_term = self.expression.yices_term
         self.yices_string = self.expression.yices_string
@@ -82,7 +82,7 @@ class Event(SyntacticOccurrence):
         return self.printstring
 
     def toYicesAssertion(self):
-        return '(assert {0})\n'.format(self.expression.yices_string)
+        return f'(assert {self.expression.yices_string})\n'
 
 
 class Invariant(SyntacticOccurrence):
@@ -96,7 +96,7 @@ class Invariant(SyntacticOccurrence):
         self.constraint = constraint
         self.fv = event.fv.union(constraint.fv)
         self.bv = [bv[key] for key in bv]
-        self.printstring = '(forall ({0}) ({1} => {2}))'.format(' '.join([str(v) for v in self.bv]), str(event), str(constraint))
+        self.printstring = f'(forall ({" ".join([str(v) for v in self.bv])}) ({str(event)} => {str(constraint)}))'
 
         self.var_types = []
         self.var_names = []
@@ -130,8 +130,8 @@ class Invariant(SyntacticOccurrence):
 
     def toYicesAssertion(self, maxTimeStamp=None):
         if maxTimeStamp is not None:
-            return '(assert {0})\n'.format(self.toYicesStringQF(maxTimeStamp))
-        return '(assert {0})\n'.format(self.yices_string)
+            return f'(assert {self.toYicesStringQF(maxTimeStamp)})\n'
+        return f'(assert {self.yices_string})\n'
 
     def toYicesTerm(self, maxTimeStamp=None):
         if maxTimeStamp is not None:
@@ -226,7 +226,7 @@ class Timeline(SyntacticOccurrence):
         super().__init__(location)
         self.term = term
         self.varlist = varlist
-        self.printstring = 'timeline({0}, {1})'.format(str(self.term), [str(var) for var in self.varlist])
+        self.printstring = f'timeline({str(self.term)}, {[str(var) for var in self.varlist]})'
         self.fv = set(self.varlist)
         self.length = len(varlist)
         self.yices_string = self._toYices()
@@ -315,7 +315,7 @@ class Timeline(SyntacticOccurrence):
         return Terms.yand(retval)
 
     def toYicesAssertion(self):
-        return '(assert {0})\n'.format(self._toYices())
+        return f'(assert {self._toYices()})\n'
 
 
 
@@ -388,7 +388,7 @@ class Term(SyntacticOccurrence):
 
 
     def toYicesAssertion(self):
-        return '(assert {0})\n'.format(self.yices_string)
+        return f'(assert {self.yices_string})\n'
 
 class Variable(SyntacticOccurrence):
 
@@ -401,7 +401,7 @@ class Variable(SyntacticOccurrence):
         # in contrast to the above this is the yices type that we use to constrain it range.
         # it is a plain string (since mostly the actual type will be Types.INT)
         self.yices_type = typename
-        self.printstring = '{0}:{1}'.format(self.name, self.vartype)
+        self.printstring = f'{self.name}:{self.vartype}'
         self.bound = False
         # this will (re)set the bound flag if it is indeed bound
         self.yices_term = YicesSignature.declare_variable(self, bound_variables)
@@ -463,7 +463,7 @@ class Variable(SyntacticOccurrence):
 
         if self.name == SymbolTable.MAXTIME:
             assert maxTimeStamp is not None
-            return '(= {0} {1})'.format(SymbolTable.MAXTIME, maxTimeStamp)
+            return f'(= {SymbolTable.MAXTIME} {maxTimeStamp})'
 
         def constrainVariable(maxValue):
             sb = StringBuilder()

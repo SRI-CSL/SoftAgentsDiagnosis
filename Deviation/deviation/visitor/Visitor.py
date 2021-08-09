@@ -60,7 +60,7 @@ class Visitor:
         if bound_variables is None:
             # parsing a naked event; it gets added to the facts
             if Visitor.NOLOC in expression.fv:
-                print('Skipping noLoc event {0}'.format(event))
+                print(f'Skipping noLoc event {event}')
             else:
                 self.facts.addEvent(event)
         else:
@@ -154,7 +154,7 @@ class Visitor:
         argtypes = signature[0]
         for ti, term in enumerate(ctx.term()):
             if ti >= len(argtypes):
-                print('Incorrect arity of {0}: {1}\n'.format(function.name, ti + 1))
+                print(f'Incorrect arity of {function.name}: {ti + 1}\n')
                 return None
             retval.append(self.visitTerm(term, argtypes[ti], bound_variables))
         return retval
@@ -162,7 +162,7 @@ class Visitor:
     def visitNoLoc(self, noloc):
         sym = noloc.getSymbol()
         location = Location(self.filename, sym.line)
-        #varname = '{0}{1}'.format(SymbolTable.NOLOC, self.noLocCounter)
+        #varname = f'{SymbolTable.NOLOC}{self.noLocCounter}'
         varname = SymbolTable.NOLOC
         #self.noLocCounter += 1
         retval = Variable(varname, Type(SymbolTable.PT2, location), location, SymbolTable.PT2)
@@ -206,4 +206,4 @@ class Location:
 
 
     def __str__(self):
-        return '[{0}:{1}]'.format(self.filename, self.lineno)
+        return f'[{self.filename}:{self.lineno}]'

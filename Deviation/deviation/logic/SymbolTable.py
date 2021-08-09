@@ -61,7 +61,7 @@ class SymbolTable:
             return (0, Configuration.bot_count)
         if yices_type == SymbolTable.OBINDEX:
             return (0, Configuration.obs_count)
-        sys.stderr.write('SymbolTable.get_type_range: unrecognized type {0}\n'.format(yices_type))
+        sys.stderr.write(f'SymbolTable.get_type_range: unrecognized type {yices_type}\n')
         return None
 
     @staticmethod
@@ -80,7 +80,7 @@ class SymbolTable:
             return SymbolTable.bot_name(i)
         if yices_type == SymbolTable.OBINDEX:
             return  SymbolTable.obs_name(i)
-        sys.stderr.write('SymbolTable.get_type_element_as_string: unrecognized type {0}\n'.format(yices_type))
+        sys.stderr.write(f'SymbolTable.get_type_element_as_string: unrecognized type {yices_type}\n')
         return None
 
     @staticmethod
@@ -99,7 +99,7 @@ class SymbolTable:
             return Terms.get_by_name(SymbolTable.bot_name(i))
         if yices_type == SymbolTable.OBINDEX:
             return  Terms.get_by_name(SymbolTable.obs_name(i)) # could do all enums like this
-        sys.stderr.write('SymbolTable.get_type_element_as_string: unrecognized type {0}\n'.format(yices_type))
+        sys.stderr.write(f'SymbolTable.get_type_element_as_string: unrecognized type {yices_type}\n')
         return None
 
 
@@ -173,11 +173,11 @@ class SymbolTable:
 
     @staticmethod
     def bot_name(i):
-        return 'b{0}'.format(i)
+        return f'b{i}'
 
     @staticmethod
     def obs_name(i):
-        return 'ob{0}'.format(i)
+        return f'ob{i}'
 
     @staticmethod
     def thing_names():
@@ -188,7 +188,7 @@ class SymbolTable:
 
     @staticmethod
     def pt2_name(i):
-        return 'pt_{0}_{1}'.format(i//Configuration.grid_dimension[1], i % Configuration.grid_dimension[1])
+        return f'pt_{i//Configuration.grid_dimension[1]}_{i % Configuration.grid_dimension[1]}'
 
     @staticmethod
     def pt2_names():
@@ -198,7 +198,7 @@ class SymbolTable:
     def canonicalize(name):
         retval = SymbolTable.symbol_table.get(name)
         if retval is None:
-            sys.stderr.write('Warning: {0} not in the SymbolTable\n'.format(name))
+            sys.stderr.write(f'Warning: {name} not in the SymbolTable\n')
         return retval
 
     @staticmethod
@@ -235,7 +235,7 @@ class SymbolTable:
     @staticmethod
     def enums2Yices(sb):
         for i in range(0, Configuration.bot_count):
-            sb.append('(assert (= (b {0}) b{0}))\n'.format(i))
+            sb.append(f'(assert (= (b {i}) b{i}))\n')
         for x in range(0, Configuration.grid_dimension[0]):
             for y in range(0, Configuration.grid_dimension[1]):
-                sb.append('(assert (= (pt {0} {1}) pt_{0}_{1}))\n'.format(x, y))
+                sb.append(f'(assert (= (pt {x} {y}) pt_{x}_{y}))\n')

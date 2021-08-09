@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import sys
 
 from .State import State
@@ -142,7 +140,7 @@ class Facts:
             state.addEvents(ts, events)
             negations = state.toYicesTerms(ts)
             retval.extend(negations)
-        sys.stderr.write('FYI: no events at {0}.\n'.format(no_events))
+        sys.stderr.write(f'FYI: no events at {no_events}.\n')
         return retval
 
 

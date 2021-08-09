@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import sys
 
 from yices import (Constructor, Terms, Types, Yices)
@@ -221,8 +219,8 @@ class YicesSignature:
         # DANGER: python2 crazyness! Enter at own risk!!
         YicesSignature.abs_op = Terms.abs
         YicesSignature.op_map[SymbolTable.ABS] = Terms.abs # cannot use YicesSignature.abs_op because it has been mangled into an "unbound method"!!!!
-        #print('YicesSignature.abs_op = {0}'.format(YicesSignature.abs_op))
-        #print('YicesSignature.op_map[SymbolTable.ABS] = {0}'.format(YicesSignature.op_map[SymbolTable.ABS]))
+        #print(f'YicesSignature.abs_op = {YicesSignature.abs_op}')
+        #print(f'YicesSignature.op_map[SymbolTable.ABS] = {YicesSignature.op_map[SymbolTable.ABS]}')
 
 
         return True
@@ -264,14 +262,14 @@ class YicesSignature:
             # we need to make a yices variable not an uninterpreted term
             var_term = Terms.new_variable(type_term, varname)
             if var_term is None:
-                sys.stderr.write('declare_variable: Term.new_variable failed {0}\n'.format(Yices.error_string()))
+                sys.stderr.write(f'declare_variable: Term.new_variable failed {Yices.error_string()}\n')
                 return None
             bound_variables[varname] = var
             var.bound = True
         else:
             var_term = Terms.new_uninterpreted_term(type_term, varname)
             if var_term is None:
-                sys.stderr.write('declare_variable: Term.new_uninterpreted_term failed {0}\n'.format(Yices.error_string()))
+                sys.stderr.write(f'declare_variable: Term.new_uninterpreted_term failed {Yices.error_string()}\n')
                 return None
 
             YicesSignature.types_to_variables[type_name].add(var)
@@ -336,19 +334,19 @@ class YicesSignature:
 
         bot_term = YicesSignature.thing_map.get(bot, None)
         if bot_term is None:
-            sys.stderr.write('mkatloc: no bot called {0}\n'.format(bot))
+            sys.stderr.write(f'mkatloc: no bot called {bot}\n')
             return None
 
         pt_term = YicesSignature.pt2_map.get(pt, None)
         if pt_term is None:
-            sys.stderr.write('mkatloc: no pt called {0}\n'.format(pt))
+            sys.stderr.write(f'mkatloc: no pt called {pt}\n')
             return None
 
         time_term = YicesSignature.integer(timestamp)
 
         application = Terms.application(YicesSignature.atloc_op, [bot_term, pt_term, time_term])
         if application is None:
-            sys.stderr.write('mkatloc: Terms.application failed {0}\n'.format(Yices.error_string()))
+            sys.stderr.write(f'mkatloc: Terms.application failed {Yices.error_string()}\n')
             return None
 
         return application
@@ -359,7 +357,7 @@ class YicesSignature:
 
         pt_term = YicesSignature.pt2_map.get(pt, None)
         if pt_term is None:
-            sys.stderr.write('assert_atloc: no pt called {0}\n'.format(pt))
+            sys.stderr.write(f'assert_atloc: no pt called {pt}\n')
             return None
 
         stage_term = YicesSignature.integer(stage)
@@ -368,7 +366,7 @@ class YicesSignature:
 
         application = Terms.application(YicesSignature.treatstage_op, [pt_term, stage_term, time_term])
         if application is None:
-            sys.stderr.write('assert_atloc: Terms.application failed {0}\n'.format(Yices.error_string()))
+            sys.stderr.write(f'assert_atloc: Terms.application failed {Yices.error_string()}\n')
             return None
 
         return application
@@ -381,7 +379,7 @@ class YicesSignature:
         for i in range(0, Configuration.bot_count):
             retval.append(Terms.eq(Terms.application(YicesSignature.b_op, [YicesSignature.integer(i)]),
                                    YicesSignature.thing_map[SymbolTable.bot_name(i)]))
-            #sb.append('(assert (= (b {0}) b{0}))\n'.format(i))
+            #sb.append(f'(assert (= (b {i}) b{i}))\n')
 
 
         for i in range(0, Configuration.pt2_count):
@@ -390,6 +388,6 @@ class YicesSignature:
             retval.append(Terms.eq(Terms.application(YicesSignature.pt_op, [YicesSignature.integer(x), YicesSignature.integer(y)]),
                                    YicesSignature.pt2_map[SymbolTable.pt2_name(i)]))
 
-                #sb.append('(assert (= (pt {0} {1}) pt_{0}_{1}))\n'.format(x, y))
+                #sb.append(f'(assert (= (pt {x} {y}) pt_{x}_{y}))\n')
 
         return retval

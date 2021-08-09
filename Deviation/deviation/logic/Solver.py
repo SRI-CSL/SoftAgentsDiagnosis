@@ -1,6 +1,3 @@
-
-from __future__ import print_function
-
 import sys
 
 from yices.Context import Context
@@ -23,7 +20,7 @@ DEBUG = False
 
 #smt_stat = self.context.check_context()
 #if smt_stat != Status.SAT:
-#    print('No solution: smt_stat = {0}\n'.format(smt_stat))
+#    print(f'No solution: smt_stat = {smt_stat}\n')
 
 def yassert_formula(solver, formula):
     if DEBUG:
@@ -32,7 +29,7 @@ def yassert_formula(solver, formula):
     if DEBUG:
         smt_stat = solver.context.check_context()
         if smt_stat != Status.SAT:
-            print('Not SAT: {0}\n'.format(smt_stat))
+            print(f'Not SAT: {smt_stat}\n')
     return errcode
 
 def yassert_formulas(solver, formulas):
@@ -43,7 +40,7 @@ def yassert_formulas(solver, formulas):
     if DEBUG:
         smt_stat = solver.context.check_context()
         if smt_stat != Status.SAT:
-            print('Not SAT: {0}\n'.format(smt_stat))
+            print(f'Not SAT: {smt_stat}\n')
     return errcode
 
 
@@ -55,7 +52,7 @@ class Solver:
         self.protocol = protocol
         self.verbose = verbose
         self.maxTimeStamp = diagram.max_timestamp
-        print('Maximum time = {0}'.format(self.maxTimeStamp))
+        print(f'Maximum time = {self.maxTimeStamp}')
         self.context = Context()
         # assert that (b i) = b_i and (pt x y) = pt_x_y
         yassert_formulas(self, YicesSignature.toYicesTerms())
@@ -109,7 +106,7 @@ class Solver:
         alen = len(assertions)
         if alen:
             smt_stat = self.context.check_context_with_assumptions(None, assertions)
-            sys.stderr.write('context.check_context_with_assumptions returned {0}\n'.format(Status.name(smt_stat)))
+            sys.stderr.write(f'context.check_context_with_assumptions returned {Status.name(smt_stat)}\n')
             if smt_stat == Status.SAT:
                 #sys.stderr.write('Calling unsat_core on a satisfiable theory is user error\n')
                 retcode = 0
@@ -140,7 +137,7 @@ class Solver:
             self.writeTheory(theory_file)
         smt_stat = self.context.check_context()
         if smt_stat != Status.SAT:
-            print('No solution: smt_stat = {0}\n'.format(smt_stat))
+            print(f'No solution: smt_stat = {smt_stat}\n')
             retcode = 1
         else:
             print('\nSatisfiable.')
@@ -161,7 +158,7 @@ class Solver:
             return retcode
         self.protocol.constrainVariablesAPI(self.context)
         if self.context.status() == Status.UNSAT:
-            print('The model appears to be UNSAT: smt_stat = {}\n'.format(self.context.status()))
+            print(f'The model appears to be UNSAT: smt_stat = {self.context.status()}\n')
             print('For more information use the --consistency option.\n')
             return retcode
         # The meaning of the levels:
@@ -176,11 +173,11 @@ class Solver:
             alen = len(assertions)
             if alen:
                 smt_stat = self.context.check_context_with_assumptions(None, assertions)
-                sys.stderr.write('Level {0}: context.check_context_with_assumptions returned {1}\n'.format(level, Status.name(smt_stat)))
+                sys.stderr.write(f'Level {level}: context.check_context_with_assumptions returned {Status.name(smt_stat)}\n')
                 if smt_stat == Status.SAT:
                     #get the model
                     model = Model.from_context(self.context, 1)
-                    print('Level {0} has a solution: smt_stat = {1}\n'.format(level, smt_stat))
+                    print(f'Level {level} has a solution: smt_stat = {smt_stat}\n')
                     self.print_solution(model)
                     model.dispose()
                 elif smt_stat == Status.UNSAT:
@@ -188,13 +185,13 @@ class Solver:
                     if not unsat_core:
                         sys.stderr.write('unsat_core is empty\n')
                     else:
-                        print('Level {0} unsat core is:\n'.format(level))
+                        print(f'Level {level} unsat core is:\n')
                         for term in unsat_core:
                             Terms.print_to_fd(1, term, 80, 100, 0)
                         print('')
                     return 0
                 else:
-                    sys.stderr.write('context.check_context_with_assumptions returned {0}\n'.format(Status.name(smt_stat)))
+                    sys.stderr.write(f'context.check_context_with_assumptions returned {Status.name(smt_stat)}\n')
             self.context.pop()
         self._cleanUp()
         return 0
@@ -210,7 +207,7 @@ class Solver:
         # another way would be to use 'yices_assert_blocking_clause'
         while  self.context.check_context() == Status.SAT:
             model = Model.from_context(self.context, 1)
-            self.print_solution(model, 'Model #{0}:'.format(result))
+            self.print_solution(model, f'Model #{result}:')
             diagram = YicesSignature.model2term(model)
             self.context.assert_formula(Terms.ynot(diagram))
             model.dispose()
@@ -218,7 +215,7 @@ class Solver:
             if result == Configuration.aleph_nought:
                 break
         self.context.pop()
-        print("I found {1} distinct model{2} (using an upper limit of {0})".format(Configuration.aleph_nought, result, "" if result == 1 else "s"))
+        print(f'I found {result} distinct model{"" if result == 1 else "s"} (using an upper limit of {Configuration.aleph_nought})')
         return result
 
 
@@ -230,7 +227,7 @@ class Solver:
             return retcode
         self.protocol.constrainVariablesAPI(self.context)
         smt_stat = self.context.check_context()
-        #sys.stderr.write('context.check_context returned {0}\n'.format(Status.name(smt_stat)))
+        #sys.stderr.write(f'context.check_context returned {Status.name(smt_stat))}\n'
         if smt_stat == Status.UNSAT:
             sys.stderr.write('The model is UNSAT: something is rotten in the State\n')
             retcode = 1
@@ -239,7 +236,7 @@ class Solver:
         alen = len(assertions)
         if alen:
             smt_stat = self.context.check_context_with_assumptions(None, assertions)
-            sys.stderr.write('context.check_context_with_assumptions returned {0}\n'.format(Status.name(smt_stat)))
+            sys.stderr.write(f'context.check_context_with_assumptions returned {Status.name(smt_stat)}\n')
             if smt_stat == Status.SAT:
                 sys.stderr.write('Calling unsat_core on a satisfiable theory is user error\n')
                 retcode = 1
@@ -267,7 +264,7 @@ class Solver:
         tlen = len(timelines)
         interpretation = Configuration.timeline_interpretation
         tint_text = Configuration.INTERPRETATIONS[interpretation]
-        print('There are {0} timelines ({1})\n'.format(tlen, tint_text))
+        print(f'There are {tlen} timelines ({tint_text})\n')
         if not timelines:
             return retcode
         for timeline in timelines:
@@ -288,7 +285,7 @@ class Solver:
                 smt_stat = self.context.check_context_with_assumptions(None, yevents)
                 if smt_stat == Status.UNSAT:
                     satisfiable = False
-                    print('UNSAT at level {0}, i.e. timestamp {1}'.format(eindex, timevar))
+                    print(f'UNSAT at level {eindex}, i.e. timestamp {timevar}')
                     unsat_core = self.context.get_unsat_core()
                     print("\nUnsat core :\n")
                     for term in unsat_core:
@@ -296,12 +293,12 @@ class Solver:
                     print("\n")
                     break
                 if self.verbose and smt_stat == Status.SAT:
-                    print('SAT at level {0}, i.e. timestamp {1}'.format(eindex, timevar))
+                    print(f'SAT at level {eindex}, i.e. timestamp {timevar}')
                     model = Model.from_context(self.context, 1)
                     self.print_solution(model, header=None, frees=timeline.fv)
                     model.dispose()
             if satisfiable:
-                print('Timeline of {0} OK ({1}):\n'.format(timeline.term, tint_text))  #print a model
+                print(f'Timeline of {timeline.term} OK ({tint_text}):\n')  #print a model
                 model = Model.from_context(self.context, 1)
                 self.print_solution(model, header=None, frees=timeline.fv)
                 model.dispose()
@@ -316,7 +313,7 @@ class Solver:
         def print_int(v):
             ytvar = v.yices_term
             ytval = model.get_value(ytvar)
-            print('\t{0} is {1}'.format(v.name, ytval))
+            print(f'\t{v.name} is {ytval}')
 
 
         if header is not None:
@@ -338,7 +335,7 @@ class Solver:
                 ytvar = ptvar.yices_term
                 ytval = model.get_value(ytvar)
                 val = YicesSignature.pt2_invmap[ytval]
-                print('\t{0} is {1}'.format(ptvar.name, val))
+                print(f'\t{ptvar.name} is {val}')
         else:
             frees = list(frees)
             frees.sort()
@@ -347,7 +344,7 @@ class Solver:
                 ytval = model.get_value(ytvar)
                 if var.vartype.name == 'Pt2':
                     ytval = YicesSignature.pt2_invmap[ytval]
-                print('\t{0} is {1}'.format(var.name, ytval))
+                print(f'\t{var.name} is {ytval}')
 
 
     def frontier(self):
@@ -358,7 +355,7 @@ class Solver:
         searchSpace = Frontier(self.protocol)
         interpretation = Configuration.timeline_interpretation
         tint_text = Configuration.INTERPRETATIONS[interpretation]
-        print('The timeline interpretation is: {0}\n'.format(tint_text))
+        print(f'The timeline interpretation is: {tint_text}\n')
         while not searchSpace.finished():
             point = searchSpace.nextElement()
             if point is None:
@@ -387,7 +384,7 @@ class Solver:
                         print("\n")
             else:
                 sys.stderr.write('context.check_context_with_assumptions returned {0}\n', smt_stat)
-        print('Frontier: {0}'.format(searchSpace.frontier))
+        print(f'Frontier: {searchSpace.frontier}')
         self._cleanUp()
         return retcode
 
