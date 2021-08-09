@@ -11,7 +11,6 @@ all:
 	@echo 'To regenerate the antlr4 python code :  "make antlr"'
 	@echo 'To develop                           :  "make develop"'
 	@echo 'To test                              :  "make check"'
-	@echo 'To try 2to3                          :  "make 2to3"'
 	@echo 'To pylint                            :  "make lint"'
 	@echo ''
 
@@ -53,9 +52,6 @@ tower:
 	diff ./tests/tower_10_19_18_log.txt /tmp/tower.log
 	echo "tower OK"
 
-
-2to3:
-	rm -rf deviation3; 2to3 -nvw -o deviation3 deviation
 
 clean:
 	rm -f tests/*.pyc deviation/*.pyc deviation/*/*.pyc deviation/*/*~

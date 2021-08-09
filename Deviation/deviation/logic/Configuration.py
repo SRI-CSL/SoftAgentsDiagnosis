@@ -1,6 +1,6 @@
 import sys
 
-class Configuration(object):
+class Configuration:
 
     grid_dimension = [6, 6]
 
@@ -59,7 +59,7 @@ class Configuration(object):
             return True
 
         if key == 'timeline_interpretation':
-            assert value >= 0 and value <= 3
+            assert 0 <= value <= 3
             Configuration.timeline_interpretation = value
             return True
 

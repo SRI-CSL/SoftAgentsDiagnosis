@@ -13,17 +13,17 @@ from .YicesSignature import YicesSignature
 
 #from .Semantics import Semantics
 
-class State(object):
+class State:
     """ The State object is used to complete the logs.
 
 
     """
 
     inited    = False
-    bots      = None
-    obstacles = None
-    pts       = None
-    stages    = None
+    bots      = []   #None
+    obstacles = []   #None
+    pts       = []   #None
+    stages    = []   #None
 
 
     @staticmethod

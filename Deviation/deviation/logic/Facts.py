@@ -8,7 +8,7 @@ from .Syntax import Integer
 
 from ..visitor.Visitor import Visitor
 
-class Facts(object):
+class Facts:
 
 
     def __init__(self):

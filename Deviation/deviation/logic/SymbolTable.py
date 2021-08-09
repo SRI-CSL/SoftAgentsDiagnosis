@@ -2,49 +2,47 @@ import sys
 
 from yices.Terms import Terms
 
-from ..crap.py import deviation_intern
-
 from .Configuration import Configuration
 
 
-class SymbolTable(object):
+class SymbolTable:
 
 
     # operations
-    ATLOC         = deviation_intern('atloc')
-    TREATSTAGE    = deviation_intern('treatStage')
-    PT            = deviation_intern('pt')
-    B             = deviation_intern('b')
-    OB            = deviation_intern('ob')
-    NOLOC         = deviation_intern('noLoc')
+    ATLOC         = sys.intern('atloc')
+    TREATSTAGE    = sys.intern('treatStage')
+    PT            = sys.intern('pt')
+    B             = sys.intern('b')
+    OB            = sys.intern('ob')
+    NOLOC         = sys.intern('noLoc')
 
 
     # constraint operations
-    LT            = deviation_intern('<')
-    LEQ           = deviation_intern('<=')
-    GT            = deviation_intern('>')
-    GEQ           = deviation_intern('>=')
-    EQ            = deviation_intern('=')
-    NEQ           = deviation_intern('/=')
-    ADD           = deviation_intern('+')
-    MINUS         = deviation_intern('-')
-    MUL           = deviation_intern('*')
-    ABS           = deviation_intern('abs')
+    LT            = sys.intern('<')
+    LEQ           = sys.intern('<=')
+    GT            = sys.intern('>')
+    GEQ           = sys.intern('>=')
+    EQ            = sys.intern('=')
+    NEQ           = sys.intern('/=')
+    ADD           = sys.intern('+')
+    MINUS         = sys.intern('-')
+    MUL           = sys.intern('*')
+    ABS           = sys.intern('abs')
 
     #types
-    ATOM          = deviation_intern('Atom')  # a wild card for the lhs and rhs of the infix boolean operations
-    BOOL          = deviation_intern('Bool')
-    NAT           = deviation_intern('Nat')
-    TIME          = deviation_intern('Time')
-    PT2           = deviation_intern('Pt2')
-    THING         = deviation_intern('Thing')  # a bot or an obstacle
-    STAGE         = deviation_intern('Stage')
+    ATOM          = sys.intern('Atom')  # a wild card for the lhs and rhs of the infix boolean operations
+    BOOL          = sys.intern('Bool')
+    NAT           = sys.intern('Nat')
+    TIME          = sys.intern('Time')
+    PT2           = sys.intern('Pt2')
+    THING         = sys.intern('Thing')  # a bot or an obstacle
+    STAGE         = sys.intern('Stage')
 
     #pseudo types (used as the yices_type field of variables to indicate sutype of Nat)
-    BINDEX        = deviation_intern('BI')
-    OBINDEX       = deviation_intern('OBI')
-    XAXIS         = deviation_intern('X')
-    YAXIS         = deviation_intern('Y')
+    BINDEX        = sys.intern('BI')
+    OBINDEX       = sys.intern('OBI')
+    XAXIS         = sys.intern('X')
+    YAXIS         = sys.intern('Y')
 
 
     @staticmethod
@@ -108,10 +106,10 @@ class SymbolTable(object):
 
     # the maximum timestamp
 
-    MAXTIME  =  deviation_intern('maxTime')
+    MAXTIME  =  sys.intern('maxTime')
 
     #maude mismatches
-    MAUDE_NEQ     = deviation_intern('=/=')
+    MAUDE_NEQ     = sys.intern('=/=')
 
 
     translate     = { MAUDE_NEQ: NEQ }
@@ -190,7 +188,7 @@ class SymbolTable(object):
 
     @staticmethod
     def pt2_name(i):
-        return 'pt_{0}_{1}'.format(i/Configuration.grid_dimension[1], i % Configuration.grid_dimension[1])
+        return 'pt_{0}_{1}'.format(i//Configuration.grid_dimension[1], i % Configuration.grid_dimension[1])
 
     @staticmethod
     def pt2_names():

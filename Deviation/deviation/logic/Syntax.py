@@ -1,10 +1,8 @@
-from __future__ import print_function
+import sys
 
 from yices import Terms
 
-from ..util.StringBuffer import StringBuffer
-
-from ..crap.py import deviation_intern
+from ..util.StringBuilder import StringBuilder
 
 from .SymbolTable import SymbolTable
 
@@ -37,7 +35,7 @@ def integerTerm2Yices(term):
         return term.value
     return int(term)
 
-class SyntacticOccurrence(object):
+class SyntacticOccurrence:
 
     def __init__(self, location):
         self.location = location
@@ -70,7 +68,7 @@ class SyntacticOccurrence(object):
 class Event(SyntacticOccurrence):
 
     def __init__(self, expression, timestamp, location):
-        super(Event, self).__init__(location)
+        super().__init__(location)
         self.expression = expression
         self.timestamp = timestamp
         self.printstring = '{0} @ {1}'.format(str(self.expression), self.timestamp)
@@ -93,7 +91,7 @@ class Invariant(SyntacticOccurrence):
     """
 
     def __init__(self, event, constraint, bv, location):
-        super(Invariant, self).__init__(location)
+        super().__init__(location)
         self.event = event
         self.constraint = constraint
         self.fv = event.fv.union(constraint.fv)
@@ -167,14 +165,14 @@ class Invariant(SyntacticOccurrence):
 
 
     def toYicesStringQF(self, maxTimeStamp):
-        sb = StringBuffer()
+        sb = StringBuilder()
         antecedent = self.event.yices_string
         consequent = self.constraint.yices_string
         self.init_space(maxTimeStamp)
         sb.append('(and ')
         while not self.space.finished():
             point = self.space.nextElement()
-            bindings = StringBuffer()
+            bindings = StringBuilder()
             bindings.append('(')
             for index, elem in enumerate(point):
                 if index > 0:
@@ -192,7 +190,7 @@ class Invariant(SyntacticOccurrence):
         return str(sb)
 
     def _toYicesStringQ(self):
-        sb = StringBuffer()
+        sb = StringBuilder()
         first = True
         antecedent = self.event.yices_string
         consequent = self.constraint.yices_string
@@ -225,7 +223,7 @@ class Invariant(SyntacticOccurrence):
 class Timeline(SyntacticOccurrence):
 
     def __init__(self, term, varlist, location):
-        super(Timeline, self).__init__(location)
+        super().__init__(location)
         self.term = term
         self.varlist = varlist
         self.printstring = 'timeline({0}, {1})'.format(str(self.term), [str(var) for var in self.varlist])
@@ -239,7 +237,7 @@ class Timeline(SyntacticOccurrence):
         return self.printstring
 
     def _toYices(self):
-        sb = StringBuffer()
+        sb = StringBuilder()
         sb.append('(and ')
         for i in range(1, len(self.varlist)):
             sb.append('(< ').append(self.varlist[i -1].toYices()).append(' ').append(self.varlist[i].toYices()).append(')')
@@ -258,11 +256,11 @@ class Timeline(SyntacticOccurrence):
             height = self.length + 1
         if interpretation == 0:
             return Terms.TRUE
-        elif interpretation == 1:
+        if interpretation == 1:
             return self.toYicesTermDistinct(height)
-        elif interpretation == 2:
+        if interpretation == 2:
             return self.toYicesTermNondecreasing(height)
-        elif interpretation == 3:
+        if interpretation == 3:
             return self.toYicesTermAscending(height)
         return None
 
@@ -324,7 +322,7 @@ class Timeline(SyntacticOccurrence):
 class Term(SyntacticOccurrence):
 
     def __init__(self, function, args, location):
-        super(Term, self).__init__(location)
+        super().__init__(location)
         self.function = function
         self.args = args
         self.printstring = self.toString()
@@ -341,7 +339,7 @@ class Term(SyntacticOccurrence):
 
 
     def _toYicesString(self):
-        sb = StringBuffer()
+        sb = StringBuilder()
         sb.append('(')
         sb.append(self.function)
         for term in self.args:
@@ -364,7 +362,7 @@ class Term(SyntacticOccurrence):
             return None
 
     def toString(self):
-        sb = StringBuffer()
+        sb = StringBuilder()
         sb.append(self.function)
         sb.append('(')
         first = True
@@ -395,9 +393,9 @@ class Term(SyntacticOccurrence):
 class Variable(SyntacticOccurrence):
 
     def __init__(self, name, vartype, location, typename, bound_variables = None):
-        super(Variable, self).__init__(location)
+        super().__init__(location)
         assert typename is not None
-        self.name = deviation_intern(str(name))
+        self.name = sys.intern(str(name))
         # currently this is the Maude type we read in when parsing
         self.vartype = vartype
         # in contrast to the above this is the yices type that we use to constrain it range.
@@ -445,16 +443,16 @@ class Variable(SyntacticOccurrence):
 
         if self.vartype.name == SymbolTable.TIME:
             return constrainVariable(SymbolTable.MAXTIME)
-        elif self.vartype.name == SymbolTable.STAGE:
+        if self.vartype.name == SymbolTable.STAGE:
             return constrainVariable(Configuration.stage_count - 1)
-        elif self.vartype.name == SymbolTable.NAT:
+        if self.vartype.name == SymbolTable.NAT:
             if self.yices_type == SymbolTable.BINDEX:
                 return constrainVariable(Configuration.bot_count - 1)
-            elif self.yices_type == SymbolTable.OBINDEX:
+            if self.yices_type == SymbolTable.OBINDEX:
                 return constrainVariable(Configuration.obs_count - 1)
-            elif self.yices_type == SymbolTable.XAXIS:
+            if self.yices_type == SymbolTable.XAXIS:
                 return constrainVariable(Configuration.grid_dimension[0] - 1)
-            elif self.yices_type == SymbolTable.YAXIS:
+            if self.yices_type == SymbolTable.YAXIS:
                 return constrainVariable(Configuration.grid_dimension[1] - 1)
         return None
 
@@ -468,7 +466,7 @@ class Variable(SyntacticOccurrence):
             return '(= {0} {1})'.format(SymbolTable.MAXTIME, maxTimeStamp)
 
         def constrainVariable(maxValue):
-            sb = StringBuffer()
+            sb = StringBuilder()
             sb.append('(and (<= 0 ').append(self.name).append(')')
             if maxValue is not None:
                 sb.append(' (<= ').append(self.name).append(' ').append(maxValue).append(')')
@@ -502,13 +500,11 @@ class Variable(SyntacticOccurrence):
         if constraint is not None:
             sb.append('(assert ').append(constraint).append(')\n')
 
-        return None
-
 
 class Operation(SyntacticOccurrence):
 
     def __init__(self, name, location):
-        super(Operation, self).__init__(location)
+        super().__init__(location)
         self.name = name
         self.printstring = name
         self.fv = set()
@@ -529,7 +525,7 @@ class Operation(SyntacticOccurrence):
 class Type(SyntacticOccurrence):
 
     def __init__(self, name, location):
-        super(Type, self).__init__(location)
+        super().__init__(location)
         self.name = name
         self.printstring = name
         self.fv = set()
@@ -549,7 +545,7 @@ class Type(SyntacticOccurrence):
 class Integer(SyntacticOccurrence):
 
     def __init__(self, valuestr, typestr, location):
-        super(Integer, self).__init__(location)
+        super().__init__(location)
         self.value = int(valuestr)
         self.printstring = valuestr
         self.fv = set()

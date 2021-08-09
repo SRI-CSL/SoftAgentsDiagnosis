@@ -7,7 +7,7 @@ from yices import (Constructor, Terms, Types, Yices)
 from .Configuration import Configuration
 from .SymbolTable import SymbolTable
 
-class YicesSignature(object):
+class YicesSignature:
     """ Maintains the connection between the Maude language and the Yices2 language.
     """
 
@@ -31,13 +31,12 @@ class YicesSignature(object):
     abs_type        = None
 
     # a prototype is a tuple: (argument_types, return_type)
-    b_prototype          = None
-    ob_prototype         = None
-    pt_prototype         = None
-    atloc_prototype      = None
-    treatstage_prototype = None
-
-    abs_prototype        = None
+    b_prototype          = (None, None)
+    ob_prototype         = (None, None)
+    pt_prototype         = (None, None)
+    atloc_prototype      = (None, None)
+    treatstage_prototype = (None, None)
+    abs_prototype        = (None, None)
 
     # the yices terms (operations)
     b_op            = None

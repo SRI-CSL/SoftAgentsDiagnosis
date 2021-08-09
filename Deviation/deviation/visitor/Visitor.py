@@ -1,14 +1,12 @@
 """ The Visitor class that calls into antlr.
 """
 
-from __future__ import print_function
-
 from ..logic.SymbolTable import (SymbolTable, Configuration)
 
 from ..logic.Syntax import (Event, Invariant, Timeline, Operation, Term, Type, Variable, Integer)
 
 
-class Visitor(object):
+class Visitor:
 
     NOLOC = None
 
@@ -200,7 +198,7 @@ class Visitor(object):
         return Configuration.configure(key, value)
 
 
-class Location(object):
+class Location:
 
     def __init__(self, filename, lineno):
         self.filename = filename

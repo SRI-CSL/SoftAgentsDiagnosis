@@ -15,7 +15,7 @@ from .SymbolTable import SymbolTable
 from .Syntax import YicesSignature
 from .Space import Space
 
-from ..util.StringBuffer import StringBuffer
+from ..util.StringBuilder import StringBuilder
 from ..util.Util import string2File
 
 
@@ -48,7 +48,7 @@ def yassert_formulas(solver, formulas):
 
 
 
-class Solver(object):
+class Solver:
 
     def __init__(self, diagram, protocol, verbose):
         self.diagram = diagram
@@ -94,7 +94,7 @@ class Solver(object):
         return self.protocol.toYicesTermsIncrementally(level)
 
     def writeTheory(self, theory_file):
-        sb = StringBuffer()
+        sb = StringBuilder()
         SymbolTable.toYices(sb)
         self.diagram.toYices(sb, None, True)
         self.protocol.toYices(sb, self.maxTimeStamp, False)
@@ -295,7 +295,7 @@ class Solver(object):
                         Terms.print_to_fd(1, term, 80, 100, 0)
                     print("\n")
                     break
-                elif self.verbose and smt_stat == Status.SAT:
+                if self.verbose and smt_stat == Status.SAT:
                     print('SAT at level {0}, i.e. timestamp {1}'.format(eindex, timevar))
                     model = Model.from_context(self.context, 1)
                     self.print_solution(model, header=None, frees=timeline.fv)
@@ -432,7 +432,7 @@ class Solver(object):
         Yices.exit()
 
 
-class Frontier(object):
+class Frontier:
 
     def __init__(self, facts):
         self.frontier = set()

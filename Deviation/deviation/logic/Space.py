@@ -2,7 +2,7 @@ from __future__ import print_function
 
 
 
-class Space(object):
+class Space:
     """  We use this to generate and process the set of all tuples whose
     corrdinates are less than an upper bound and above a lower bound:
 
