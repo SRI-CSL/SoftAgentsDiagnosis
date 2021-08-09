@@ -69,7 +69,6 @@ ifeq ($(PYLINT),)
 endif
 	@ $(PYLINT) --rcfile=.pylintrc \
 	deviation/*.py                 \
-    deviation/crap/*.py            \
     deviation/logic/*.py           \
     deviation/visitor/*.py         \
     deviation/util/*.py
