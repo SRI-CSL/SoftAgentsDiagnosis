@@ -338,7 +338,7 @@ class Solver:
                 print(f'\t{ptvar.name} is {val}')
         else:
             frees = list(frees)
-            frees.sort()
+            frees.sort(key=str)
             for var in frees:
                 ytvar = var.yices_term
                 ytval = model.get_value(ytvar)
