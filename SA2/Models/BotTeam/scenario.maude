@@ -289,7 +289,8 @@ eq initS2f = mkInitS(pt(5,1) ; pt(2,0) ; pt(1,4),false) .
 **** replace these two equations by a pair from above
 **** if you want to see the effects of different action selections
  eq updateRks(rks,act,v) = updateRksMx(rks,act,v) .
- eq selectKeK(kb,kekset) = allKeK(kb, kekset) .
+**** eq selectKeK(kb,kekset) = allKeK(kb, kekset) .
+ eq selectKeK(kb,kekset) = bestKeK(kb, kekset) .
 
 
 

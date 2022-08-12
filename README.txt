@@ -2,7 +2,13 @@ This is the Maude implementation of the SoftAgent Framework for specification of
 is extended with fault models and tools for detection and diagnosis.
 It includes example case studies and diagnosis scenarios.
 
-Directory structure
+Deviation is the implementation of the deviate tool that
+using SMT constraint solving to compare events from and
+execution to a protocol, looking for deviations.
+
+Example contains sample input for testing deviate.
+
+SA Directory structure
   Documentation  
   Lib     --- modules defining the framework 
   Models  --- specific SA models
